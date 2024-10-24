@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap-icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- chart -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+    <!-- script -->
+    <script src="./script.js" defer></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./custom.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="container-fluid bg-body-tertiary">
+        <nav class="navbar row navbar-expand-lg header-navbar">
+            <div class="col-lg-4 col-5 col-sm-4">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="menu-icon-btn" data-menu-icon-btn>
+                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="menu-icon">
+                        <g>
+                            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <div class="col-lg-8 col-7 col-sm-8 d-flex justify-content-end">
+                <ul class="navbar-nav gap-2 flex-row">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-bell-fill"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-people-fill"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-question-circle-fill"></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link pt-0 mt-0" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span class="rounded-circle text-center d-inline-block">SG</span><i
+                                class="dropdown-toggle"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">My Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="container">
+
+        <!-- sidebar -->
+        <div class="sidebar" data-sidebar>
+            <div class="middle-sidebar">
+                <ul class="sidebar-list">
+                    <li class="sidebar-list-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="bi bi-graph-up-arrow"></i>
+                            <div class="hidden-sidebar">Guided Analytics</div>
+                        </a>
+                    </li>
+                    <li class="sidebar-list-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="bi bi-database-fill"></i>
+                            <div class="hidden-sidebar">Data Query & <br> Extraction</div>
+                        </a>
+                    </li>
+                    <li class="sidebar-list-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="bi bi-diagram-3-fill"></i>
+                            <div class="hidden-sidebar">Case Tracking</div>
+                        </a>
+                    </li>
+                    <li class="sidebar-list-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="bi bi-file-bar-graph-fill"></i>
+                            <div class="hidden-sidebar">Custom Analysis & <br>Reports</div>
+                        </a>
+                    </li>
+                    <li class="sidebar-list-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="bi bi-person-fill-gear"></i>
+                            <div class="hidden-sidebar">Administrator</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-12 col-md-12 col-sm-12 text">
+                <h5>Technologies Guided of software Engineer</h5>
+
+                <ul id="tabs" class="nav nav-tabs nav-fill mt-3">
+                    <li class="nav-item"><a href="#tab1" data-bs-target="#tab1" data-bs-toggle="tab"
+                            class="nav-link text-dark active">Tab1</a></li>
+                    <li class="nav-item nav-space"><a href="#tab2" data-bs-target="#tab2" data-bs-toggle="tab"
+                            class="nav-link text-dark">Tab2</a></li>
+                    <li class="nav-item nav-space"><a href="#tab3" data-bs-target="#tab3" data-bs-toggle="tab"
+                            class="nav-link text-dark">Tab3</a></li>
+                    <li class="nav-item nav-space"><a href="#tab4" data-bs-target="#tab4" data-bs-toggle="tab"
+                            class="nav-link text-dark">Tab4</a></li>
+                </ul>
+
+                <div id="tabsContent" class="tab-content border border-top-0">
+
+                    <!-- tab-1 -->
+                    <div id="tab1" class="tab-pane p-5 fade active show">
+                        <div class="d-flex flex-wrap gap-2" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+                            <button class="btn btn-danger" type="submit">Search</button>
+
+                            <button class="btn btn-warning" type="submit">Clear</button>
+
+                            <div class="dropdown-center">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Category Filter
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Action two</a></li>
+                                    <li><a class="dropdown-item" href="#">Action three</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <table id="customers">
+                            <tr>
+                                <th>Company</th>
+                                <th>Contact</th>
+                                <th>Country</th>
+                            </tr>
+                            <tr>
+                                <td>Alfreds Futterkiste</td>
+                                <td>Maria Anders</td>
+                                <td>Germany</td>
+                            </tr>
+                            <tr>
+                                <td>Berglunds snabbköp</td>
+                                <td>Christina Berglund</td>
+                                <td>Sweden</td>
+                            </tr>
+                            <tr>
+                                <td>Centro comercial Moctezuma</td>
+                                <td>Francisco Chang</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Ernst Handel</td>
+                                <td>Roland Mendel</td>
+                                <td>Austria</td>
+                            </tr>
+                            <tr>
+                                <td>Island Trading</td>
+                                <td>Helen Bennett</td>
+                                <td>UK</td>
+                            </tr>
+                            <tr>
+                                <td>Königlich Essen</td>
+                                <td>Philip Cramer</td>
+                                <td>Germany</td>
+                            </tr>
+                            <tr>
+                                <td>Laughing Bacchus Winecellars</td>
+                                <td>Yoshi Tannamuri</td>
+                                <td>Canada</td>
+                            </tr>
+                            <tr>
+                                <td>Magazzini Alimentari Riuniti</td>
+                                <td>Giovanni Rovelli</td>
+                                <td>Italy</td>
+                            </tr>
+                            <tr>
+                                <td>North/South</td>
+                                <td>Simon Crowther</td>
+                                <td>UK</td>
+                            </tr>
+                            <tr>
+                                <td>Paris spécialités</td>
+                                <td>Marie Bertrand</td>
+                                <td>France</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- tab-2 -->
+                    <div id="tab2" class="tab-pane p-5 fade">
+                        <div class="container">
+
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <h1 class="logo">LOGO.</h1>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <h1>Dashboard</h1>
+                                            <p>Lorem ipsum</p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="search">
+                                                <form action="#">
+                                                    <input type="text" placeholder="Search here..." name="search">
+                                                    <a><i class=" i bi bi-search"></i></a>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <ul class="insidersidebar">
+                                        <li class="item">
+                                            <a href="#" class="">
+                                                <i class="bi bi-triangle-fill"></i>
+                                                <div class="icon-item">Project</div>
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="#" class="">
+                                                <i class="bi bi-bar-chart-fill"></i>
+                                                <div class="icon-item">Statistics</div>
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="#" class="">
+                                                <i class="bi bi-star-fill"></i>
+                                                <div class="icon-item">Media</div>
+                                            </a>
+                                        </li>
+                                        <li class="item active">
+                                            <a href="#" class="">
+                                                <i class="bi bi-columns"></i>
+                                                <div class="icon-item">Dashboard</div>
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="#" class="">
+                                                <i class="bi bi-circle"></i>
+                                                <div class="icon-item">Reports</div>
+                                                <i class="notification-icon bi bi-3-circle-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="#" class="">
+                                                <i class="bi bi-gear-fill"></i>
+                                                <div class="icon-item">Settings</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="insidersidebarfooter">
+                                        <img class="user-image" src="./assests/green-background_53876-14521.avif"
+                                            alt="">
+                                        <div class="user mx-2">
+                                            <b>User name</b><br>
+                                            <span>Lorem ipsum</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="main">
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-sm-12">
+                                                        <div class="category1 shadow mt-4">
+                                                            <h6>Category1</h6>
+                                                            <div class="table-responsive">
+                                                                <table class="table">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Firstname</th>
+                                                                            <th>Lastname</th>
+                                                                            <th>Email</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>John</td>
+                                                                            <td>Doe</td>
+                                                                            <td>john@example.com</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Mary</td>
+                                                                            <td>Moe</td>
+                                                                            <td>mary@example.com</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>July</td>
+                                                                            <td>Dooley</td>
+                                                                            <td>july@example.com</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-sm-12">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 mt-5">
+                                                                <div class="category2 shadow">
+                                                                    <h6>Category2 name</h6>
+                                                                    <div class="mnth">
+
+                                                                        <div class="flex-jan">
+                                                                            <div class="JAN">
+                                                                                <span
+                                                                                    class="text-secondary d-block">Jan</span>
+                                                                                <b class="d-block">12k</b>
+                                                                                <span class="text-success">+432</span>
+                                                                            </div>
+                                                                            <table id="data-example-4"
+                                                                                class="charts-css column data-spacing-2">
+
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td
+                                                                                            style="--size: calc( 100 / 150 );--color: rgba(164,232,241,255);">
+                                                                                        </td>
+                                                                                    </tr>
+
+                                                                                    <tr>
+                                                                                        <td
+                                                                                            style="--size: calc( 121 / 150 );--color: rgba(164,232,241,255);">
+                                                                                        </td>
+                                                                                    </tr>
+
+                                                                                    <tr>
+                                                                                        <td
+                                                                                            style="--size: calc( 140 / 150 );--color: rgba(164,232,241,255);">
+                                                                                        </td>
+                                                                                    </tr>
+
+                                                                                    <tr>
+                                                                                        <td
+                                                                                            style="--size: calc( 130 / 150 );--color:rgba(164,232,241,255);">
+                                                                                        </td>
+                                                                                    </tr>
+
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+
+                                                                        <div class="flex">
+                                                                            <div class="FEB mt-3">
+                                                                                <span
+                                                                                    class="text-secondary d-block">Feb</span>
+                                                                                <b class="d-block">1.2m</b>
+                                                                                <span class="text-success">+3K</span>
+                                                                            </div>
+                                                                            <table id="data-example-4"
+                                                                                class="charts-css column data-spacing-2">
+
+                                                                                <tbody class="me-2">
+                                                                                    <tr>
+                                                                                        <td
+                                                                                            style="--size: calc( 100 / 150 );--color: rgba(210,199,253,255);">
+                                                                                        </td>
+                                                                                    </tr>
+
+                                                                                    <tr>
+                                                                                        <td
+                                                                                            style="--size: calc( 121 / 150 );--color: rgba(210,199,253,255);">
+                                                                                        </td>
+                                                                                    </tr>
+
+                                                                                    <tr>
+                                                                                        <td
+                                                                                            style="--size: calc( 140 / 150 );--color: rgba(210,199,253,255);">
+                                                                                        </td>
+                                                                                    </tr>
+
+                                                                                    <tr>
+                                                                                        <td
+                                                                                            style="--size: calc( 130 / 150 );--color: rgba(210,199,253,255);">
+                                                                                        </td>
+                                                                                    </tr>
+
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+
+
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-sm-6 mt-5">
+                                                                <div class="category3 shadow">
+                                                                    <h6 class="text-white">Category3</h6>
+
+                                                                    <div class="lorem">
+                                                                        <span class="text-secondary d-block">Lorem
+                                                                            ipsum</span>
+                                                                        <span class="fs-3 d-block">25K</span>
+                                                                        <small class="text-success">+136</small>
+                                                                        <div class="progress-circle">
+                                                                            <div class="barOverflow">
+                                                                                <div class="bar"></div>
+                                                                            </div>
+                                                                            <span class="fs-4">75</span>%
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-4">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-sm-12">
+                                                        <div class="category4 shadow mt-4">
+                                                            <h6>Category4 name</h6>
+                                                            <div class="progress-data">
+                                                                <div class="">
+                                                                    <label for="progress-bar"
+                                                                        class="text-secondary">Lorem ipsum</label>
+                                                                    <b class="percent">40%</b>
+                                                                </div>
+                                                                <div class="progress" role="progressbar"
+                                                                    aria-label="Default striped example"
+                                                                    aria-valuenow="40" aria-valuemin="0"
+                                                                    aria-valuemax="100">
+                                                                    <div class="progress-bar" style="width: 40%"></div>
+                                                                </div>
+
+                                                                <div class="progress-text">
+                                                                    <label for="progress-bar"
+                                                                        class="text-secondary">Donar</label>
+                                                                    <b class="percent">35%</b>
+                                                                </div>
+                                                                <div class="progress" role="progressbar"
+                                                                    aria-label="Success striped example"
+                                                                    aria-valuenow="35" aria-valuemin="0"
+                                                                    aria-valuemax="100">
+                                                                    <div class="progress-bar bg-success"
+                                                                        style="width: 35%"></div>
+                                                                </div>
+
+                                                                <div class="progress-text">
+                                                                    <label for="progress-bar" class="text-secondary">sit
+                                                                        amet</label>
+                                                                    <b class="percent">15%</b>
+                                                                </div>
+                                                                <div class="progress" role="progressbar"
+                                                                    aria-label="Info striped example" aria-valuenow="15"
+                                                                    aria-valuemin="0" aria-valuemax="100">
+                                                                    <div class="progress-bar bg-info"
+                                                                        style="width: 15%"></div>
+                                                                </div>
+
+                                                                <div class="progress-text">
+                                                                    <label for="progress-bar"
+                                                                        class="text-secondary">consectetur</label>
+                                                                    <b class="percent">10%</b>
+                                                                </div>
+                                                                <div class="progress" role="progressbar"
+                                                                    aria-label="Danger striped example"
+                                                                    aria-valuenow="10" aria-valuemin="0"
+                                                                    aria-valuemax="100">
+                                                                    <div class="progress-bar bg-danger"
+                                                                        style="width: 10%"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-sm-12">
+                                                        <div class="category5 mt-4">
+                                                            <h6 class="mx-4">Category5 name</h6>
+                                                            <div class="mx-4 mt-3">
+                                                                <span class="d-block fs-3 lh-1">$4,751</span>
+                                                                <span class="text-success">+3.5%</span>
+                                                            </div>
+                                                            <div id="my_dataviz"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- tab-3 -->
+                    <div id="tab3" class="tab-pane p-5 fade">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-5 col-sm-4">
+                                    <img class="image" src="./assests/chefs/chefs-2.jpg" alt="">
+                                </div>
+                                <div class="col-lg-7">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, ab enim! Praesentium
+                                    recusandae, laboriosam sapiente quibusdam qui sed saepe iure quam officia voluptates
+                                    enim. Commodi voluptatem odio nisi assumenda! Officia quam aspernatur neque earum
+                                    fugit
+                                    similique minus ea magnam. Provident.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- tab-4 -->
+                    <div id="tab4" class="tab-pane p-5 fade">
+                        <h3>Contact Us</h3>
+
+                        <div class="form">
+                            <form>
+                                <label for="fname">First Name</label>
+                                <input type="text" id="fname" name="firstname" required placeholder="Your name..">
+
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname" name="lastname" required placeholder="Your last name..">
+
+                                <label for="email">Email Address</label>
+                                <input type="text" id="email" name="email" required placeholder="Your email address..">
+
+                                <label for="feedback">Feedback</label>
+                                <select id="feedback" name="feedback">
+                                    <option selected value="1">select your rating</option>
+                                    <option value="2">5*</option>
+                                    <option value="3">4*</option>
+                                    <option value="4">3*</option>
+                                </select>
+
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- footer -->
+    <footer class=" text-center mt-5">
+        <div class="text-center p-3 text-light">
+            Copyright© Your Website 2023
+        </div>
+    </footer>
+
+    <!-- js -->
+    <!-- js bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+         <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+</body>
+
+</html>

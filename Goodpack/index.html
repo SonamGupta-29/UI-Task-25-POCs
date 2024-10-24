@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="./custom.css">
+    <title>GOODPACK</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <!-- As a link -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="logo_image" src="./assests/images/logo.png" alt="logo"></a>
+        </div>
+    </nav>
+
+    <div class="hr"></div>
+
+    <div class="cq p-3">CQ</div>
+
+    <div class="hr"></div>
+
+    <div class="bg-color">
+
+        <div class="container-fluid pt-3 pb-3">
+            <div class=" wrapper">
+                <div class="section-1 p-3">
+                    <h5>Complaint Details</h5>
+                    <div class="row mt-2">
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="number" class="pt-1">NC No:</label>
+                                <input type="text" class="form-control form-group-bg-color" id="number"
+                                    placeholder="132321">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="incident" class="pt-1">Incident Type:</label>
+                                <select class="form-select form-control" id="incident"
+                                    aria-label="Default select example">
+                                    <option select>Select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="issue" class="pt-1 required">Issue Type:</label>
+                                <select class="form-select form-control" id="issue" aria-label="Default select example">
+                                    <option select>Select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="cdate" class="pt-1 required">Creation Date:</label>
+                                <input type="date" class="form-control date form-group-bg-color" id="cdate"
+                                    name="cdate">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="odate" class="pt-1 required">Occurrence Date:</label>
+                                <input type="date" class="form-control ddate" id="odate" name="odate">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="ddate" class="pt-1 required">Due Date:</label>
+                                <input type="date" class="form-control ddate" id="ddate" name="ddate">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="product" class="pt-1 required">Product:</label>
+                                <select class="form-select form-control" id="product"
+                                    aria-label="Default select example">
+                                    <option select>Select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="category" class="pt-1">Issue Category:</label>
+                                <select class="form-select form-control" id="category"
+                                    aria-label="Default select example">
+                                    <option select>Select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="account" class="pt-1">Account:</label>
+                                <select class="form-select form-control" id="account"
+                                    aria-label="Default select example">
+                                    <option select>Select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="external" class="pt-0">External </br> Contact:</label>
+                                <select class="form-select form-control" id="external"
+                                    aria-label="Default select example">
+                                    <option select>Select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="vertical" class="pt-1">Vertical:</label>
+                                <select class="form-select form-control" id="vertical"
+                                    aria-label="Default select example">
+                                    <option select>Select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="reference" class="pt-1">Reference No:</label>
+                                <select class="form-select form-control" id="reference"
+                                    aria-label="Default select example">
+                                    <option select>Select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="title" class="pt-1 required">Title:</label>
+                                <input type="text" class="form-control color-placeholder" id="title"
+                                    placeholder="Enter Title">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="status" class="pt-1">Status:</label>
+                                <select class="form-select form-control" id="status"
+                                    aria-label="Default select example">
+                                    <option select>Implemented</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 col-md-12 mt-3">
+                            <div class="form-group ">
+                                <label for="description" class="pt-4">Description:</label>
+                                <input type="text" class="form color-placeholder" id="description"
+                                    placeholder="Enter Your Comments">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="section-2 p-3">
+                    <h5>Ownership</h5>
+
+                    <div class="row mt-3">
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="division" class="pt-1">Org.Division:</label>
+                                <select class="form-select form-control" id="division"
+                                    aria-label="Default select example">
+                                    <option select>Select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="department" class="pt-1 required">Department:</label>
+                                <select class="form-select form-control" id="department"
+                                    aria-label="Default select example">
+                                    <option select>Select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="buisiness" class="pt-1">Org-Buisiness Unit:</label>
+                                <select class="form-select form-control" id="buisiness"
+                                    aria-label="Default select example">
+                                    <option select>Select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="region" class="pt-1 required">Org.Region:</label>
+                                <select class="form-select form-control" id="region"
+                                    aria-label="Default select example">
+                                    <option select>Select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="depot" class="pt-1 required">Org.Depot:</label>
+                                <select class="form-select form-control" id="depot" aria-label="Default select example">
+                                    <option select>Select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="owner_name" class="pt-1">Owner Name:</label>
+                                <select class="form-select form-control" id="owner_name"
+                                    aria-label="Default select example">
+                                    <option select>Select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-3 p-3">
+                    <h5>Impacted SKU/ITR[0]</h5>
+
+                    <div class="row mt-3">
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="impacted" class="pt-1">Impacted SKU:</label>
+                                <input type="text" class="form-control color-placeholder" id="impacted"
+                                    placeholder="Enter impacted SKU">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="itr" class="pt-1">ITR No:</label>
+                                <input type="text" class="form-control color-placeholder" id="itr"
+                                    placeholder="Enter ITR No">
+                            </div>
+                        </div>
+
+                        <!-- <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="quantity" class="pt-1">Quantity:</label>
+                                <input type="text" class="form-control color-placeholder" id="quantity"
+                                    placeholder="Enter Quantity">
+                            </div>
+                        </div> -->
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <!-- <div class="form-group">
+                                <label for="formFileMultiple" class="form-label">Attach File:</label>
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03">Button</button>
+                                    <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                                  </div>
+                              </div> -->
+
+                            <div class="form-group">
+                                <label for="attach_file" class="pt-1">Attach File:</label>
+                                <input type="text" class="form-control color-placeholder" id="attach_file"
+                                    placeholder="Enter Title">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="rfid_num" class="pt-1">RFID ID No:</label>
+                                <input type="text" class="form-control color-placeholder" id="rfid_num"
+                                    placeholder="Enter RFID 1D No">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-4 p-3">
+                    <h5>Defect</h5>
+
+                    <div class="row mt-3">
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="itr_num" class="pt-1">ITR No:</label>
+                                <input type="text" class="form-control color-placeholder" id="itr_num"
+                                    placeholder="Enter ITR No">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="d-flex">
+                            <label for="sponsor" class="pt-1">Defect/Failure:</label>
+                            <div class="can-toggle margin mx-5">
+                                <input id="a" type="checkbox">
+                                <label for="a">
+                                  <div class="can-toggle__switch" data-checked="No" data-unchecked="Yes"></div>
+                                </label>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="defect" class="pt-1">Defect Category:</label>
+                                <select class="form-select form-control" id="defect"
+                                    aria-label="Default select example">
+                                    <option select>Contamination</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="severity" class="pt-1">Defect Severity:</label>
+                                <select class="form-select form-control" id="severity"
+                                    aria-label="Default select example">
+                                    <option select>Major</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="defect_num" class="pt-1">No of Defects:</label>
+                                <input type="text" class="form-control color-placeholder" id="defect_num"
+                                    placeholder="Enter No of Defects">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 col-md-12 mt-3">
+                            <div class="form-group ">
+                                <label for="des" class="pt-4">Description:</label>
+                                <input type="text" class="form color-placeholder" id="des"
+                                    placeholder="Enter Your Comments">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="section-5 p-3">
+                    <h5>Approval</h5>
+                    <div class="row mt-3">
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="approval_1" class="pt-1">Approval 1:</label>
+                                <input type="text" class="form-control form-group-bg-color" id="approval_1"
+                                    placeholder="Approval 1 Name">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="approval_date_1" class="pt-1 required">Approval Date:</label>
+                                <input type="date" class="form-control ddate" id="approval_date_1"
+                                    name="approval_date_1">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="pt-2">
+                                <input type="checkbox" id="app_1" name="app_1" value="app_1">
+                                <label for="app_1"> Approval </label>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="approval_2" class="pt-1">Approval 2:</label>
+                                <input type="text" class="form-control form-group-bg-color" id="approval_2"
+                                    placeholder="Approval 2 Name">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="approval_date_2" class="pt-1 required">Approval Date:</label>
+                                <input type="date" class="form-control ddate" id="approval_date_2"
+                                    name="approval_date_2">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="pt-2">
+                                <input type="checkbox" id="app_2" name="app_1" value="app_2">
+                                <label for="app_2"> Approval </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-6 p-3">
+                    <h5>8D Form</h5>
+                    <div class="row mt-3">
+                        <div class="col-lg-4">
+
+                        </div>
+
+                        <div class="col-lg-12 col-md-12 mt-3 mt-3">
+                            <div class="form-group ">
+                                <label for="desc" class="pt-4">Description:</label>
+                                <input type="text" class="form color-placeholder" id="desc"
+                                    placeholder="Enter Your Comments">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="hr mt-4 mx-4"></div>
+
+                <div class="section-7 p-3">
+                    <div class="row mt-3 button">
+                        <div class="col-lg-2 col-md-2">
+                            <button type="button" class="btn btn-outline-primary">Take Ownership</button>
+                        </div>
+
+                        <div class="col-lg-10 col-md-10 text-end">
+                            <button type="button" class="btn btn-outline-danger">Reject</button>
+                            <button type="button" class="btn btn-outline-warning">on hold</button>
+                            <button type="button" class="btn btn-outline-success">Approve</button>
+                            <button type="button" class="btn btn-secondary">Save</button>
+                            <button type="button" class="btn btn-info">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-2 p-2 text-center">
+        Copyright © 2023 Goodpack Pte Ltd. All rights reserved
+    </footer>
+    
+    <!-- js -->
+    <!-- bootsrap-bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

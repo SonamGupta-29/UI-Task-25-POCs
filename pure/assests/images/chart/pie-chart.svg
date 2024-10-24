@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="475" height="234.001" viewBox="0 0 475 234.001">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_130" data-name="Ellipse 130" cx="84" cy="84" r="84" fill="#f28602"/>
+    </clipPath>
+  </defs>
+  <g id="Group_17445" data-name="Group 17445" transform="translate(-293 -862.999)">
+    <g id="Group_3785" data-name="Group 3785" transform="translate(319 879)">
+      <g id="Pie_graph" data-name="Pie graph" transform="translate(0 0)">
+        <g id="Group_2" data-name="Group 2" transform="translate(0 0)" clip-path="url(#clip-path)">
+          <path id="Path_1584" data-name="Path 1584" d="M136.243,20.254,54.69-29.718C2.771,6.714,96.151,122.765,96.913,126.4Z" transform="translate(-52.043 63.507)" fill="#f28602"/>
+          <path id="Path_1585" data-name="Path 1585" d="M131.388,81.949,105.265,24.262,100.6,13.96,95.443,2.572c-14.527,4.489-47.982,12.9-56.65,23.415Z" transform="translate(-46.972 2.047)" fill="#8b5cf6"/>
+          <path id="Path_1587" data-name="Path 1587" d="M30.258,84.509-.058,167.555c9,45.87,2.736,18.866,48.913,9.944s73.95-63.279,64.986-109.155S70.006-8.731,23.823.157L12.206.964Z" transform="translate(53.59 -0.825)" fill="#00857e"/>
+          <path id="Path_1588" data-name="Path 1588" d="M0,0,26.917,83.388C32,82.594,62,77.876,66.881,76.642Z" transform="translate(83.533 83.11) rotate(-163)" fill="#ce2356"/>
+        </g>
+      </g>
+    </g>
+    <text id="_26_" data-name="26%" transform="translate(293 996.999)" fill="#2b3a44" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">26%</tspan></text>
+    <text id="_12_" data-name="12%" transform="translate(322 895.999)" fill="#2b3a44" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">12%</tspan></text>
+    <text id="_72_" data-name="72%" transform="translate(375 874.999)" fill="#2b3a44" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">7%</tspan></text>
+    <text id="_55_" data-name="55%" transform="translate(494 976.999)" fill="#2b3a44" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">55%</tspan></text>
+    <g id="Group_17381" data-name="Group 17381" transform="translate(581 916.156)">
+      <path id="Divider" d="M0,0H182.723V1H0Z" fill="#ebedf5"/>
+      <path id="Divider-2" data-name="Divider" d="M0,0H182.723V1H0Z" transform="translate(0 47)" fill="#ebedf5"/>
+      <path id="Divider-3" data-name="Divider" d="M0,0H182.723V1H0Z" transform="translate(0 94)" fill="#ebedf5"/>
+    </g>
+    <g id="Group_17382" data-name="Group 17382" transform="translate(746 889)">
+      <text id="_192" data-name="192" transform="translate(22 12)" fill="#2b3a44" font-size="13" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="-22.166" y="0">192</tspan></text>
+      <text id="_91" data-name="91" transform="translate(22 56.426)" fill="#2b3a44" font-size="13" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="-14.777" y="0">91</tspan></text>
+      <text id="_42" data-name="42" transform="translate(22 102.426)" fill="#2b3a44" font-size="13" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="-14.777" y="0">42</tspan></text>
+      <text id="_25" data-name="25" transform="translate(22 150.426)" fill="#2b3a44" font-size="13" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="-14.777" y="0">25</tspan></text>
+    </g>
+    <g id="Group_17383" data-name="Group 17383" transform="translate(597 888)">
+      <text id="Bound_Quotes_" data-name="Bound Quotes " transform="translate(0 13)" fill="#2b3a44" font-size="14" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Bound Quotes </tspan></text>
+      <text id="Incomplete_Quotes_" data-name="Incomplete Quotes " transform="translate(0 57.426)" fill="#2b3a44" font-size="14" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Incomplete Quotes </tspan></text>
+      <text id="Declined_Quotes" data-name="Declined Quotes" transform="translate(0 104.426)" fill="#2b3a44" font-size="14" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Declined Quotes</tspan></text>
+      <text id="Overdue_Quotes" data-name="Overdue Quotes" transform="translate(0 151.426)" fill="#2b3a44" font-size="14" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Overdue Quotes</tspan></text>
+    </g>
+    <g id="Group_17384" data-name="Group 17384" transform="translate(581 891.156)">
+      <path id="Path_7761" data-name="Path 7761" d="M5,0A5,5,0,1,1,0,5,5,5,0,0,1,5,0Z" fill="#00857e"/>
+      <circle id="Ellipse_271" data-name="Ellipse 271" cx="5" cy="5" r="5" transform="translate(0 44)" fill="#f28602"/>
+      <circle id="Ellipse_271-2" data-name="Ellipse 271" cx="5" cy="5" r="5" transform="translate(0 91)" fill="#8b5cf6"/>
+      <circle id="Ellipse_404" data-name="Ellipse 404" cx="5" cy="5" r="5" transform="translate(0 138)" fill="#ce2356"/>
+    </g>
+    <text id="Total_Quotes:_350" data-name="Total Quotes: 350" transform="translate(348 1093)" fill="#3b82f6" font-size="14" font-family="Roboto-Regular, Roboto" text-decoration="underline"><tspan x="0" y="0">Total Quotes: </tspan><tspan y="0" font-family="Roboto-Medium, Roboto" font-weight="500">350</tspan></text>
+  </g>
+</svg>

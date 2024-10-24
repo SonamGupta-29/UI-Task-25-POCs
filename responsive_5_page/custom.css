@@ -1,0 +1,10 @@
+
+#carouselButtons {
+    margin-left: 100px;
+    position: absolute;
+    bottom: 0px;
+  }
+
+  .carousel-caption{
+    margin-bottom: 200px !important;
+  }

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap-icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./custom.css">
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container-fluid bg-body-tertiary">
+        <nav class="navbar row navbar-expand-lg header-navbar">
+            <div class="col-lg-4 col-5 col-sm-4">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="menu-icon-btn" data-menu-icon-btn>
+                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="menu-icon">
+                        <g>
+                            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <div class="col-lg-8 col-7 col-sm-8 d-flex justify-content-end">
+                <ul class="navbar-nav gap-2 flex-row">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-bell-fill"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-people-fill"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-question-circle-fill"></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="rounded-circle">SG</span><i class="dropdown-toggle"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">My Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="container">
+        <div class="sidebar" data-sidebar>
+            <div class="middle-sidebar">
+                <ul class="sidebar-list">
+                    <li class="sidebar-list-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="bi bi-graph-up-arrow"></i>
+                            <div class="hidden-sidebar">Guided Analytics</div>
+                        </a>
+                    </li>
+                    <li class="sidebar-list-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="bi bi-database-fill"></i>
+                            <div class="hidden-sidebar">Data Query & <br> Extraction</div>
+                        </a>
+                    </li>
+                    <li class="sidebar-list-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="bi bi-diagram-3-fill"></i>
+                            <div class="hidden-sidebar">Case Tracking</div>
+                        </a>
+                    </li>
+                    <li class="sidebar-list-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="bi bi-file-bar-graph-fill"></i>
+                            <div class="hidden-sidebar">Custom Analysis & <br>Reports</div>
+                        </a>
+                    </li>
+                    <li class="sidebar-list-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="bi bi-person-fill-gear"></i>
+                            <div class="hidden-sidebar">Administrator</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 text">
+                <h5>Technologies Guided of software Engineer</h5>
+
+                <ul id="tabs" class="nav nav-tabs nav-fill mt-3">
+                    <li class="nav-item"><a href="#tab1" data-bs-target="#tab1" data-bs-toggle="tab"
+                            class="nav-link text-dark active">Tab1</a></li>
+                    <li class="nav-item nav-space"><a href="#tab2" data-bs-target="#tab2" data-bs-toggle="tab"
+                            class="nav-link text-dark">Tab2</a></li>
+                    <li class="nav-item nav-space"><a href="#tab3" data-bs-target="#tab3" data-bs-toggle="tab"
+                            class="nav-link text-dark">Tab3</a></li>
+                    <li class="nav-item nav-space"><a href="#tab4" data-bs-target="#tab4" data-bs-toggle="tab"
+                            class="nav-link text-dark">Tab4</a></li>
+                </ul>
+                <div id="tabsContent" class="tab-content border border-top-0">
+                    <div id="tab1" class="tab-pane p-5 fade active show">
+                        <div class="d-flex flex-wrap gap-2" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+                            <button class="btn btn-danger" type="submit">Search</button>
+
+                            <button class="btn btn-warning" type="submit">Clear</button>
+
+                            <div class="dropdown-center">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Category Filter
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Action two</a></li>
+                                    <li><a class="dropdown-item" href="#">Action three</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <table id="customers">
+                            <tr>
+                                <th>Company</th>
+                                <th>Contact</th>
+                                <th>Country</th>
+                            </tr>
+                            <tr>
+                                <td>Alfreds Futterkiste</td>
+                                <td>Maria Anders</td>
+                                <td>Germany</td>
+                            </tr>
+                            <tr>
+                                <td>Berglunds snabbköp</td>
+                                <td>Christina Berglund</td>
+                                <td>Sweden</td>
+                            </tr>
+                            <tr>
+                                <td>Centro comercial Moctezuma</td>
+                                <td>Francisco Chang</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Ernst Handel</td>
+                                <td>Roland Mendel</td>
+                                <td>Austria</td>
+                            </tr>
+                            <tr>
+                                <td>Island Trading</td>
+                                <td>Helen Bennett</td>
+                                <td>UK</td>
+                            </tr>
+                            <tr>
+                                <td>Königlich Essen</td>
+                                <td>Philip Cramer</td>
+                                <td>Germany</td>
+                            </tr>
+                            <tr>
+                                <td>Laughing Bacchus Winecellars</td>
+                                <td>Yoshi Tannamuri</td>
+                                <td>Canada</td>
+                            </tr>
+                            <tr>
+                                <td>Magazzini Alimentari Riuniti</td>
+                                <td>Giovanni Rovelli</td>
+                                <td>Italy</td>
+                            </tr>
+                            <tr>
+                                <td>North/South</td>
+                                <td>Simon Crowther</td>
+                                <td>UK</td>
+                            </tr>
+                            <tr>
+                                <td>Paris spécialités</td>
+                                <td>Marie Bertrand</td>
+                                <td>France</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="tab2" class="tab-pane py-5 fade">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-2 col-sm-2">
+                                    <h4>LOGO.</h4>
+                                    <ul class="insidersidebar">
+                                        <li class="">
+                                            <a href="#" class="">
+                                                <i class="bi bi-triangle-fill"></i>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;<div class="">Project</div>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">
+                                                <i class="bi bi-bar-chart-fill"></i>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;<div class="">Statistics</div>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">
+                                                <i class="bi bi-star-fill"></i>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;<div class="">Media</div>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">
+                                                <i class="bi bi-columns"></i>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;<div class="">Dashboard</div>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">
+                                                <i class="bi bi-circle"></i>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;<div class="">Reports</div>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">
+                                                <i class="bi bi-gear-fill"></i>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;<div class="">Settings</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="insidersidebarfooter">
+                                        <img src="./assests/green-background_53876-14521.avif" alt="">
+                                        <div class="user">
+                                            <b>User name</b>
+                                            <small>Lorem ipsum</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10">
+                                   
+                                    <div class="main">
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-sm-12">
+                                                        <div class="category1 mt-4">
+                                                            <h6>Category1 name</h6>
+                                                            <table class="table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Firstname</th>
+                                                                        <th>Lastname</th>
+                                                                        <th>Email</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>John</td>
+                                                                        <td>Doe</td>
+                                                                        <td>john@example.com</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Mary</td>
+                                                                        <td>Moe</td>
+                                                                        <td>mary@example.com</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>July</td>
+                                                                        <td>Dooley</td>
+                                                                        <td>july@example.com</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-sm-12">
+                                                        <div class="row">
+                                                            <div class="col-lg-6">
+                                                                <div class="category2 mt-4">
+                                                                    <h6>Category2 name</h6>
+                                                                    <div class="mnth">
+                                                                        <div class="jan">
+                                                                            <span>Jan</span><br>
+                                                                            <b>12k</b><br>
+                                                                            <span>+432</span>
+                                                                        </div>
+
+                                                                        <div class="feb mt-3">
+                                                                            <span>Feb</span><br>
+                                                                            <b>1.2m</b><br>
+                                                                            <span>+3K</span>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-sm-6 mt-4">
+                                                                <div class="category3">
+                                                                    <h6>Category3</h6>
+
+                                                                    <div class="lorem">
+                                                                        <span>Lorem, ipsum</span><br>
+                                                                        <span>25K</span><br>
+                                                                        <span>+136</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-4">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-sm-12 mx-3">
+                                                        <div class="category4 mt-4">
+                                                            <h6>Category4 name</h6>
+                                                            <div class="progress-data">
+                                                                <label for="progress-bar">Lorem ipsum</label>
+                                                                <span>40%</span><br>
+                                                                <progress id="progress-bar bg-info" value="40" max="100">40
+                                                                    %</progress>
+                                                                <br />
+                                                                <label for="progress-bar">Donar</label>
+                                                                <span>35%</span><br>
+                                                                <progress id="progress-bar" value="35"
+                                                                    max="100">35
+                                                                    %</progress>
+                                                                <br />
+                                                                <label for="progress-bar">sit amet</label>
+                                                                <span>15%</span><br>
+                                                                <progress id="progress-bar" value="15" max="100">15
+                                                                    %</progress>
+                                                                <br />
+                                                                <label for="progress-bar">consectetur</label>
+                                                                <span>10%</span><br>
+                                                                <progress id="progress-bar" value="10" max="100">10
+                                                                    %</progress>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-sm-12">
+                                                        <div class="category5 mt-4">
+                                                            <h6>Category5 name</h6>
+                                                            <span>$4,751</span><br>
+                                                            <span>+3.5%</span>
+                                                            <div id="my_dataviz"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab3" class="tab-pane p-5 fade">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <img src="./assests/chefs/chefs-2.jpg" width="400px" height="400px" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, ab enim! Praesentium
+                                    recusandae, laboriosam sapiente quibusdam qui sed saepe iure quam officia voluptates
+                                    enim. Commodi voluptatem odio nisi assumenda! Officia quam aspernatur neque earum
+                                    fugit
+                                    similique minus ea magnam. Provident.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab4" class="tab-pane p-5 fade">
+
+                        <h3>Contact Us</h3>
+                            <form>
+                            <div>
+                            <label> Full Name</label>
+                            <input type="text" placeholder="Enter Full Name" name="name" required>
+                            </div>
+                            <div>
+                            <label> E-id </label>
+                            <input type="email" placeholder="Enter E-ID" name="email" required>
+                            </div>
+                            <div>
+                            <label> Location </label>
+                            <input type="text" placeholder="Enter the Location." name="Loc" required>
+                            </div>
+                            <div>
+                            <label>Password Pin</label>
+                            <input type="password" placeholder="Enter PIN Password" name="pwd" required>
+                            <br>
+                            </div>
+                            <button type="submit" VALUE="SUBMIT"> Login </button>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class=" text-center mt-5">
+        <div class="text-center p-3 text-light">
+            Copyright© Your Website 2023
+        </div>
+    </footer>
+
+    <!-- js -->
+    <!-- js bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

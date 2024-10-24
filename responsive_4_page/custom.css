@@ -1,0 +1,139 @@
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke=' rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+    outline: none;
+    background-color: darkgrey;
+}
+
+.navbar-dark .navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background-size: 60% !important;
+}
+
+.offcanvas-header .btn-close {
+    margin-left: 328px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.carousel-indicators{
+    margin-bottom: 30px;
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.py-5 {
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.container p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+/* .btn-group,
+.btn-group-vertical {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+} */
+
+span {
+    padding-left: 20px;
+    color: gray;
+}
+
+.offcanvas.show:not(.hiding),
+.offcanvas.showing {
+    background: rgba(71, 4, 35, .1) !important;
+}
+
+.row {
+    margin-right: 0px !important;
+}
+
+.bg-danger {
+    margin: 30px !important;
+    padding: 20px !important;
+    margin-top: 60px !important;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide-container {
+    display: flex;
+    animation: scroll 80s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translatex(0);
+    }
+    100% {
+        transform: translatex(calc(-250px * 9));
+    }
+}
+
+.slide-image a{
+    height: 250px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+img {
+    transition: transform 1s;
+}
+
+.slide-container:hover{
+    animation-play-state: paused;
+}
+
+img:hover {
+    transform: translateZ(20px);
+}
+
+.carousel-caption{
+         background: rgba(71, 4, 35, .2) !important;
+         margin-bottom: 270px !important;
+}
+
+/* @media (min-width: 1200px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1202px;
+    }
+} */

@@ -1,0 +1,48 @@
+.p-2 {
+    padding: 1rem!important;
+    background-color: rgba(245, 245, 245, 0.984);
+}
+
+.container-fluid .p-2{
+    background-color:     "rgba(232,232,232,255)" !important;;
+}
+
+.bg-light {
+    background-color: rgba(116,30,82,255) !important;
+}
+
+[type=search] {
+    padding-right: 17rem !important;
+    width: 100%;
+    padding: 2px;
+    background-color: rgba(242,244,245,255);
+}
+
+.img_box img{
+max-width: 100%;
+}
+
+.slider_container .container{
+    padding: 0 15px;
+    max-width: 1230px;
+    margin: auto;
+}
+.card_slider{
+    padding: 50px 0px;
+}
+
+.row p{
+    font-size: 30px;
+    font-weight: 500;
+    padding-left: 100px !important;
+}
+
+.row .px-5{
+    padding-left: 100px !important;
+}
+
+.row span:hover { 
+   text-decoration: underline;
+   color: brown;
+   font-weight: 700;
+  }

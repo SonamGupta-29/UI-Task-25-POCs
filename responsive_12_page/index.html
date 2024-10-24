@@ -1,0 +1,2716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap-icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- task-list -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- script -->
+    <script src="./script.js" defer></script>
+    <!-- table -->
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <!-- end -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="./custom.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="header-navbar shadow">
+            <div class="logo_details">
+                <div class="logo_name">Code Effect</div>
+                <i class="bx bx-x" id="btn"></i>
+            </div>
+
+            <div class="data">
+                <div class="row">
+
+                    <div class="col-lg-6">
+                        <div class="navbar navbar-expand-lg">
+
+                            <div class="search-box mx-5">
+                                <div class="input-holder">
+                                    <input type="text" placeholder="Type to search..." />
+                                <div class="search-btn">
+                                    <i class="fas fa-search icon-search-fa"></i>
+                                </div>
+                
+                                <div class="cancel-btn">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="collapse navbar-collapse" id="navbarScroll">
+
+                                <ul class="navbar-nav me-auto my-2 my-lg-0 test navbar-nav-scroll" id="hide"
+                                    style="--bs-scroll-height: 100px;">
+                
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="popover"
+                                            data-bs-container="body" data-bs-placement="bottom" data-bs-content="Bottom popover"
+                                            aria-expanded="false">
+                                            <i class="bi bi-gear-wide"></i>
+                                            Mega Menu
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <div class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <span class="badge badge-light bg-danger">4</span>
+                                            Settings
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <i class="bi bi-gear-wide"></i>
+                                            Project
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </div>
+                
+                            <button type="button"
+                                class=" navbar-toggler btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav"
+                                data-bs-target="#navbarScroll" data-bs-toggle="collapse">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                
+                           
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 left-navbar">
+
+                                <div class="icons d-flex justify-content-space-between gap-2">
+                                    <div class="grid-icon">
+                                        <i class='header-icon bx bxs-grid'></i>
+                                    </div>
+                                    <div class="bell-icon">
+                                        <i class='header-icon bx bxs-bell'></i>
+                                    </div>
+                                    <div class="img-flag-icon">
+                                        <img class="flag" src="./assests/fonts/DE.svg" alt="">
+                                    </div>
+                                    <div class="circle-icon">
+                                        <i class='header-icon bx bx-circle'></i>
+                                    </div>
+                                </div>
+                          
+                                <div class="vr"></div>
+                            
+                              <div class="drop-text d-flex justify-content-end">
+                                  <!-- dropdowm -->
+                                  <div class="dropdown user">
+                                    <div class="dropdown-toggle" type="" id="dropdownMenuButton"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img class="rounded-circle img-dropdown" src="./assests/avtars/1.jpg" alt="">
+                                    </div>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                                <div class="vr"></div>
+                                <!-- toggle -->
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                                        aria-label="Toggle navigation">
+                                        <i class='bx bx-menu offcanvas-btn'></i>
+                                    </button>
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                                        aria-labelledby="offcanvasNavbarLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Link</a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Dropdown
+                                                    </a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                        <li>
+                                                            <hr class="dropdown-divider">
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="#">Something else here</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <form class="d-flex mt-3" role="search">
+                                                <input class="form-control me-2" type="search" placeholder="Search"
+                                                    aria-label="Search">
+                                                <button class="btn btn-outline-success" type="submit">Search</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                              </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <!-- sidenavbar -->
+            <div class="sidebar">
+                <ul class="nav-list shadow" id="style-1">
+
+                    <!-- Menu -->
+                    <li class="li">
+                        <a href="#">
+                            <span class="link_name color">Menu</span>
+                        </a>
+                    </li>
+
+                    <li class="li">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingdashboard">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapsedashboard" aria-expanded="false"
+                                        aria-controls="flush-collapsedashboard">
+                                        <div class="iocn-link">
+                                            <div class="svg">
+                                                <a href="#">
+                                                    <svg id="Layer_1" style="enable-background:new 0 0 128 128;"
+                                                        version="1.1" viewBox="0 0 128 128" xml:space="preserve"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <style type="text/css">
+                                                        </style>
+                                                        <g>
+                                                            <path
+                                                                d="M71,61.9c1.7,0,3-1.3,3-3v-10c0-1.7-1.3-3-3-3h-4c-1.7,0-3,1.3-3,3v2c0,1.7-1.3,3-3,3h-4c-1.7,0-3,1.3-3,3v2   c0,1.7,1.3,3,3,3H71z" />
+                                                            <path
+                                                                d="M22,127h4c0.6,0,1.2-0.2,1.7-0.5L46.9,113H52v3c0,1.7,1.3,3,3,3s3-1.3,3-3v-3h3v3c0,1.7,1.3,3,3,3s3-1.3,3-3v-3h3v3   c0,1.7,1.3,3,3,3s3-1.3,3-3v-3h5.1l19.2,13.5c0.5,0.4,1.1,0.5,1.7,0.5h4c1,0,2-0.5,2.5-1.4c0.5-0.9,0.6-2,0.1-2.9L85,74.3V48.8   c0-11.9-2.7-23.8-7.6-33.6C74,8.4,68.7,1.2,64,1.2c-7.2,0-21,20.1-21,47.6c0,1.7,1.3,3,3,3s3-1.3,3-3C49,24.3,60.8,8.6,64,7.2   c3.2,1.4,15,17.1,15,41.6V75c0,0.5,0.1,0.9,0.3,1.3l21,42.8L83,107v-8c0-1.7-1.3-3-3-3s-3,1.3-3,3v8H51v-7c0-1.7-1.3-3-3-3   s-3,1.3-3,3v7l-17.3,12.1l21-42.8c0.7-1.5,0.1-3.3-1.4-4c-1.5-0.7-3.3-0.1-4,1.4l-24,49c-0.5,0.9-0.4,2,0.1,2.9   C20,126.5,21,127,22,127z" />
+                                                        </g>
+                                                    </svg>
+                                                    <span class="link_name">Dashboards</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapsedashboard" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingdashboard" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul class="mm-collapse mm-show">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Analytics
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Commerce
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon">
+                                                    </i>Sales
+                                                </a>
+                                            </li>
+
+
+                                            <li>
+                                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="flush-headingminimal">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#flush-collapseminimal"
+                                                                aria-expanded="false"
+                                                                aria-controls="flush-collapseminimal">
+                                                                <div class="iocn-link">
+                                                                    <a href="#">
+                                                                        <span class="link_name">Buttons</span>
+                                                                    </a>
+                                                                </div>
+                                                            </button>
+                                                        </h2>
+                                                        <div id="flush-collapseminimal"
+                                                            class="accordion-collapse collapse"
+                                                            aria-labelledby="flush-headingminimal"
+                                                            data-bs-parent="#accordionFlushExample">
+                                                            <div class="accordion-body">
+                                                                <ul class="mm-collapse mm-show">
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="metismenu-icon"></i> Variation 1
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="metismenu-icon"></i>Variation 2
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i> CRM
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="li">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading-db">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapse-db" aria-expanded="false"
+                                        aria-controls="flush-collapse-db">
+                                        <div class="iocn-link">
+                                            <div class="svg">
+                                                <a href="#">
+                                                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                        <title />
+                                                        <g id="Order_history">
+                                                            <path
+                                                                d="M251.2305,448H70.7735a150.4432,150.4432,0,0,0,32.2656-93.5391V64H381.4336V217.1719a8,8,0,0,0,16,0V56a7.9979,7.9979,0,0,0-8-8H95.0391a7.9979,7.9979,0,0,0-8,8V354.4609a134.7126,134.7126,0,0,1-39.711,95.8829A7.9993,7.9993,0,0,0,52.9844,464H251.2305a8,8,0,0,0,0-16Z" />
+                                                            <path
+                                                                d="M333.9961,148.7656h-183.52a8,8,0,0,0,0,16h183.52a8,8,0,0,0,0-16Z" />
+                                                            <path
+                                                                d="M341.9961,210.9688a7.9979,7.9979,0,0,0-8-8h-183.52a8,8,0,1,0,0,16h183.52A7.9979,7.9979,0,0,0,341.9961,210.9688Z" />
+                                                            <path
+                                                                d="M262.2305,265.1719a7.9979,7.9979,0,0,0-8-8H150.4766a8,8,0,0,0,0,16H254.2305A7.9979,7.9979,0,0,0,262.2305,265.1719Z" />
+                                                            <path
+                                                                d="M150.4766,311.375a8,8,0,1,0,0,16h65.2539a8,8,0,0,0,0-16Z" />
+                                                            <path
+                                                                d="M436.7266,287.4609A103.32,103.32,0,0,0,261.7905,342.873l-6.3569-6.3574a7.9991,7.9991,0,0,0-11.3125,11.3125L262.53,366.2363a8.026,8.026,0,0,0,11.3232,0l18.4126-18.4082a7.9991,7.9991,0,0,0-11.3125-11.3125l-1.8169,1.8164a87.3378,87.3378,0,1,1,22.6568,84.0664,7.9991,7.9991,0,0,0-11.3125,11.3125,103.413,103.413,0,0,0,146.2461-146.25Z" />
+                                                            <path
+                                                                d="M363.6055,291.32a7.9979,7.9979,0,0,0-8,8v61.2656a8.115,8.115,0,0,0,2.3506,5.6641l28.9931,28.9922A7.9991,7.9991,0,0,0,398.2617,383.93l-26.6562-26.6563V299.32A7.9979,7.9979,0,0,0,363.6055,291.32Z" />
+                                                        </g>
+                                                    </svg>
+                                                    <span class="link_name">Pages</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse-db" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-heading-db" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul class="mm-collapse mm-show">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i> Login
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Login Boxed
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Register
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Register Boxed
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Forgot Password
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Forgot Password Boxed
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="li">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        <div class="iocn-link">
+                                            <div class="svg">
+                                                <a href="#">
+                                                    <svg fill="none" viewBox="0 0 28 28"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path clip-rule="evenodd"
+                                                            d="M1.5 2C1.5 1.72386 1.72386 1.5 2 1.5H22C22.2761 1.5 22.5 1.72386 22.5 2V22C22.5 22.2761 22.2761 22.5 22 22.5H2C1.72386 22.5 1.5 22.2761 1.5 22V2ZM2.5 2.5V21.5H21.5V2.5H2.5Z"
+                                                            fill="black" fill-rule="evenodd" />
+                                                        <path clip-rule="evenodd"
+                                                            d="M1.5 12C1.5 11.7239 1.72386 11.5 2 11.5H12C12.2761 11.5 12.5 11.7239 12.5 12V22C12.5 22.2761 12.2761 22.5 12 22.5H2C1.72386 22.5 1.5 22.2761 1.5 22V12ZM2.5 12.5V21.5H11.5V12.5H2.5Z"
+                                                            fill="black" fill-rule="evenodd" />
+                                                        <path clip-rule="evenodd"
+                                                            d="M11.5 2C11.5 1.72386 11.7239 1.5 12 1.5H22C22.2761 1.5 22.5 1.72386 22.5 2V12C22.5 12.2761 22.2761 12.5 22 12.5H12C11.7239 12.5 11.5 12.2761 11.5 12V2ZM12.5 2.5V11.5H21.5V2.5H12.5Z"
+                                                            fill="black" fill-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="link_name">Applications</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul class="mm-collapse mm-show">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Mailbox
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Chat
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>FAQ Section
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="flush-headingforum">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#flush-collapseforum"
+                                                                aria-expanded="false"
+                                                                aria-controls="flush-collapseforum">
+                                                                <div class="iocn-link">
+                                                                    <a href="#">
+                                                                        <span class="link_name">Forums</span>
+                                                                    </a>
+                                                                </div>
+                                                            </button>
+                                                        </h2>
+                                                        <div id="flush-collapseforum"
+                                                            class="accordion-collapse collapse"
+                                                            aria-labelledby="flush-heading"
+                                                            data-bs-parent="#accordionFlushExample">
+                                                            <div class="accordion-body">
+                                                                <ul class="mm-collapse mm-show">
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="metismenu-icon"></i> Forum Listing
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="metismenu-icon"></i> Forum Threads
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="metismenu-icon"></i> Forum
+                                                                            Discussion
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- UI Components -->
+                    <li class="li">
+                        <a href="#">
+                            <span class="link_name color">UI Components</span>
+                        </a>
+                    </li>
+
+                    <li class="li">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingelements">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseelements" aria-expanded="false"
+                                        aria-controls="flush-collapseelements">
+                                        <div class="iocn-link">
+                                            <div class="svg">
+                                                <a href="#">
+                                                    <!DOCTYPE svg
+                                                        PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                                    <svg enable-background="new 0 0 24 24" id="Layer_1" version="1.1"
+                                                        viewBox="0 0 24 24" xml:space="preserve"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g>
+                                                            <path
+                                                                d="M22.7,7l-3.4-2.6c-0.1-0.1-0.1-0.1-0.2-0.2l-2.4-1.8c-0.1-0.1-0.2-0.1-0.3-0.1H7.6c-0.1,0-0.2,0-0.3,0.1L1.3,7   C1.2,7.1,1.1,7.2,1.1,7.4c0,0.1,0,0.3,0.1,0.4l10.4,13.7c0.2,0.2,0.6,0.2,0.8,0L22.8,7.7c0.1-0.1,0.1-0.2,0.1-0.4   C22.9,7.2,22.8,7.1,22.7,7z M6.5,4.3l1.1-0.8c0.1-0.1,0.2-0.1,0.3-0.1h8.2c0.1,0,0.2,0,0.3,0.1l1.1,0.9c0.1,0.1,0.2,0.2,0.2,0.4   c0,0.2-0.1,0.3-0.2,0.4L16,6.2c-0.1,0.1-0.2,0.1-0.3,0.1c0,0,0,0,0,0L8.6,6.2c-0.1,0-0.2,0-0.3-0.1L6.6,5.1C6.4,5,6.4,4.9,6.3,4.7   C6.3,4.5,6.4,4.4,6.5,4.3z M4.9,10.6C4.9,10.6,4.9,10.6,4.9,10.6c-0.2,0-0.3-0.1-0.4-0.2L2.6,7.9C2.5,7.8,2.4,7.7,2.5,7.5   c0-0.1,0.1-0.2,0.2-0.3l2.2-1.7c0.2-0.1,0.4-0.1,0.6,0l1.8,1.1c0.1,0.1,0.2,0.2,0.2,0.3c0,0.1,0,0.3-0.1,0.4l-2.1,3.1   C5.2,10.5,5,10.6,4.9,10.6z M17.8,12.7l-5.4,7.1C12.3,19.9,12.2,20,12,20s-0.3-0.1-0.4-0.2l-5.4-7.1c-0.1-0.2-0.1-0.4,0-0.5   c0.1-0.2,0.3-0.3,0.4-0.3h10.9c0.2,0,0.4,0.1,0.4,0.3C18,12.3,17.9,12.5,17.8,12.7z M17.9,10.6c-0.1,0.2-0.3,0.3-0.4,0.3H7.1   c-0.2,0-0.4-0.1-0.4-0.3s-0.1-0.4,0-0.5l1.8-2.7c0.1-0.1,0.2-0.2,0.4-0.2c0,0,0,0,0,0l6.7,0.1c0.2,0,0.3,0.1,0.4,0.2l1.9,2.6   C18,10.2,18,10.4,17.9,10.6z M21.4,7.9L19.8,10c-0.1,0.1-0.2,0.2-0.4,0.2c0,0,0,0,0,0c-0.2,0-0.3-0.1-0.4-0.2l-2-2.8   c-0.2-0.2-0.1-0.5,0.1-0.7l1.4-1c0.2-0.1,0.4-0.1,0.6,0l2.2,1.7c0.1,0.1,0.2,0.2,0.2,0.3C21.6,7.7,21.5,7.8,21.4,7.9z" />
+                                                        </g>
+                                                    </svg>
+                                                    <span class="link_name">Elements</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseelements" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingelements" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul class="mm-collapse mm-show">
+
+                                            <li>
+                                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="flush-headingbuttons">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#flush-collapsebuttons"
+                                                                aria-expanded="false"
+                                                                aria-controls="flush-collapsebuttons">
+                                                                <div class="iocn-link">
+                                                                    <a href="#">
+                                                                        <span class="link_name">Buttons</span>
+                                                                    </a>
+                                                                </div>
+                                                            </button>
+                                                        </h2>
+                                                        <div id="flush-collapsebuttons"
+                                                            class="accordion-collapse collapse"
+                                                            aria-labelledby="flush-headingbuttons"
+                                                            data-bs-parent="#accordionFlushExample">
+                                                            <div class="accordion-body">
+                                                                <ul class="mm-collapse mm-show">
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="metismenu-icon"></i> Standard
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="metismenu-icon"></i>Pills
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="metismenu-icon"></i> Square
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="metismenu-icon"></i>Shadow
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="metismenu-icon"></i> With icons
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Dropdowm
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Icon
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon">
+                                                    </i>Badges
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Cards
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Loading Indicators
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon">
+                                                    </i>List Groups
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Navigation Menus
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Timeline
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon">
+                                                    </i>Utilities
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="li">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingComponents">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseComponents" aria-expanded="false"
+                                        aria-controls="flush-collapseComponents">
+                                        <div class="iocn-link">
+                                            <div class="svg">
+                                                <a href="#">
+                                                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                        <title />
+                                                        <g id="Taxi">
+                                                            <path
+                                                                d="M441.5179,264.8645l-26.3-140.2688a17.11,17.11,0,0,0-16.8106-13.9438h-52.21L334.5605,48.5957a17.11,17.11,0,0,0-16.81-13.9438H194.25a17.11,17.11,0,0,0-16.81,13.9438l-11.635,62.0562H113.5928a17.11,17.11,0,0,0-16.8106,13.9438l-26.3,140.2688a55.1171,55.1171,0,0,0-40.58,52.9783V393.75A17.0965,17.0965,0,0,0,47,410.8481H58.4019V427a50.3481,50.3481,0,0,0,100.6962,0V410.8481H352.9019V427a50.3481,50.3481,0,0,0,100.6962,0V410.8481H465A17.0965,17.0965,0,0,0,482.0981,393.75V317.8428A55.1171,55.1171,0,0,0,441.5179,264.8645ZM123.0023,365.2454a28.5,28.5,0,1,1,28.5-28.5A28.4992,28.4992,0,0,1,123.0023,365.2454ZM105.6978,262.6519l22.0893-117.8038H384.2129l22.0893,117.8038ZM389.0023,365.2454a28.5,28.5,0,1,1,28.5-28.5A28.4992,28.4992,0,0,1,389.0023,365.2454Z" />
+                                                        </g>
+                                                    </svg>
+                                                    <span class="link_name">Components</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseComponents" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingComponents" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul class="mm-collapse mm-show">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Tabs
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Accordions
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Notifications
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Modals
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Loading Blockers
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Progress Bar
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"> </i>Tooltips &amp; Popovers
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Carousel
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Calendar
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Pagination
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Count Up
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Scrollable
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Tree View
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Maps
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Ratings
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Image Crop
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Guided Tours
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="li">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTables">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTables" aria-expanded="false"
+                                        aria-controls="flush-collapseTables">
+                                        <div class="iocn-link">
+                                            <div class="svg">
+                                                <a href="#">
+                                                    <svg style="enable-background:new 0 0 50 50;" version="1.1"
+                                                        viewBox="0 0 50 50" xml:space="preserve"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g id="Layer_1">
+                                                            <path
+                                                                d="M49,1H1v48h48V1z M47,3v9H3V3H47z M18,40v-5h14v5H18z M32,42v5H18v-5H32z M18,26v-5h14v5H18z M32,28v5H18v-5H32z M18,19v-5   h14v5H18z M16,19H3v-5h13V19z M16,21v5H3v-5H16z M16,28v5H3v-5H16z M16,35v5H3v-5H16z M34,35h13v5H34V35z M34,33v-5h13v5H34z    M34,26v-5h13v5H34z M34,19v-5h13v5H34z M3,42h13v5H3V42z M34,47v-5h13v5H34z" />
+                                                        </g>
+                                                        <g />
+                                                    </svg>
+                                                    <span class="link_name">Tables</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTables" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTables" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul class="mm-collapse mm-show">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"> </i>Data Tables
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Regular Tables
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Grid Tables
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Dashboard Widgets -->
+                    <li class="li">
+                        <a href="#">
+                            <span class="link_name color">Dashboard Widgets</span>
+                        </a>
+                    </li>
+
+
+                    <li class="li">
+                        <h2 class="accordion-header" id="flush-headingTables">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTables" aria-expanded="false"
+                                aria-controls="flush-collapseTables">
+                                <div class="iocn-link">
+                                    <div class="svg">
+                                        <a href="#">
+                                            <svg style="enable-background:new 0 0 50 50;" version="1.1"
+                                                viewBox="0 0 50 50" xml:space="preserve"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g id="Layer_1">
+                                                    <path
+                                                        d="M25,49c13.233,0,24-10.767,24-24S38.233,1,25,1S1,11.767,1,25S11.767,49,25,49z M25,47c-5.706,0-10.912-2.185-14.825-5.761   L25.414,26h21.561C46.45,37.668,36.796,47,25,47z M46.975,24H26V3.025C37.337,3.535,46.465,12.663,46.975,24z M24,3.025v21.561   L8.761,39.825C5.185,35.912,3,30.706,3,25C3,13.204,12.332,3.55,24,3.025z" />
+                                                </g>
+                                                <g />
+                                            </svg>
+                                            <span class="link_name">Chart Boxes1</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </button>
+                        </h2>
+                    </li>
+
+
+                    <li class="li">
+                        <h2 class="accordion-header" id="flush-headingTables">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTables" aria-expanded="false"
+                                aria-controls="flush-collapseTables">
+                                <div class="iocn-link">
+                                    <div class="svg">
+                                        <a href="#">
+                                            <!DOCTYPE svg
+                                                PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg enable-background="new 0 0 800 800" id="Layer_1" version="1.1"
+                                                viewBox="0 0 800 800" xml:space="preserve"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <path
+                                                        d="M424.801,785.841h-49.61c-9.245,0-16.752-7.502-16.752-16.752V494.473H173.579   c-3.665,0-7.235-1.201-10.152-3.436l-96.828-73.785c-4.085-3.104-6.516-7.908-6.6-13.041c-0.094-5.132,2.188-10.012,6.15-13.26   l96.848-79.006c2.991-2.445,6.73-3.777,10.582-3.777h184.859v-49.844H76.751c-9.255,0-16.752-7.497-16.752-16.752V88.776   c0-9.25,7.497-16.752,16.752-16.752h281.688V30.911c0-9.25,7.507-16.752,16.752-16.752h49.61c9.246,0,16.752,7.502,16.752,16.752   v41.113h184.851c3.87,0,7.609,1.332,10.601,3.772l96.828,79.006c3.982,3.248,6.245,8.133,6.17,13.265   c-0.094,5.128-2.523,9.946-6.6,13.046l-96.847,73.784c-2.917,2.221-6.479,3.427-10.152,3.427H441.553v49.844H723.25   c9.246,0,16.752,7.507,16.752,16.752v152.801c0,9.245-7.506,16.752-16.752,16.752H441.553v274.616   C441.553,778.339,434.047,785.841,424.801,785.841z M391.942,752.337h16.107V477.721c0-9.255,7.497-16.752,16.751-16.752h281.697   V341.672H424.801c-9.254,0-16.751-7.502-16.751-16.752v-83.348c0-9.25,7.497-16.752,16.751-16.752h195.956l75.44-57.486   l-75.758-61.806H424.801c-9.254,0-16.751-7.502-16.751-16.752V47.663h-16.107v41.113c0,9.25-7.507,16.752-16.752,16.752H93.503   V224.82H375.19c9.245,0,16.752,7.502,16.752,16.752v83.348c0,9.25-7.507,16.752-16.752,16.752H179.553l-75.758,61.811   l75.449,57.486H375.19c9.245,0,16.752,7.497,16.752,16.752V752.337z"
+                                                        fill="#4D4D4D" />
+                                                </g>
+                                            </svg>
+                                            <span class="link_name">Chart Boxes2</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </button>
+                        </h2>
+                    </li>
+
+
+                    <li class="li">
+                        <h2 class="accordion-header" id="flush-headingTables">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTables" aria-expanded="false"
+                                aria-controls="flush-collapseTables">
+                                <div class="iocn-link">
+                                    <div class="svg">
+                                        <a href="#">
+                                            <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <g id="layer1">
+                                                    <path
+                                                        d="M 10 0 A 10 10 0 0 0 0 10 A 10 10 0 0 0 10 20 A 10 10 0 0 0 20 10 A 10 10 0 0 0 10 0 z M 10 1 A 9 9 0 0 1 13.755859 1.8320312 L 9.65625 9.5800781 L 1.2578125 12.095703 A 9 9 0 0 1 1 10 A 9 9 0 0 1 10 1 z M 14.640625 2.3007812 A 9 9 0 0 1 17.271484 4.7148438 L 11.337891 8.5410156 L 14.640625 2.3007812 z M 17.8125 5.5546875 A 9 9 0 0 1 19 10 A 9 9 0 0 1 18.939453 11.005859 L 11.353516 9.7226562 L 17.8125 5.5546875 z M 9.6621094 10.623047 L 12.056641 18.75 A 9 9 0 0 1 10 19 A 9 9 0 0 1 1.5429688 13.054688 L 9.6621094 10.623047 z M 10.707031 10.626953 L 18.767578 11.992188 A 9 9 0 0 1 13.015625 18.470703 L 10.707031 10.626953 z "
+                                                        style="fill:#222222;fill-opacity:1;stroke:none;stroke-width:0px;" />
+                                                </g>
+                                            </svg>
+                                            <span class="link_name">Chart Boxes3</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </button>
+                        </h2>
+                    </li>
+
+
+                    <li class="li">
+                        <h2 class="accordion-header" id="flush-headingTables">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTables" aria-expanded="false"
+                                aria-controls="flush-collapseTables">
+                                <div class="iocn-link">
+                                    <div class="svg">
+                                        <a href="#">
+                                            <svg id="Layer_1" style="enable-background:new 0 0 100.4 100.4;"
+                                                version="1.1" viewBox="0 0 100.4 100.4" xml:space="preserve"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <path
+                                                        d="M79.1,10.1H63.2V3.3c0-0.8-0.7-1.5-1.5-1.5H38c-0.8,0-1.5,0.7-1.5,1.5v6.8H19.7c-3.5,0-6.3,2.8-6.3,6.3v75.4   c0,3.5,2.8,6.3,6.3,6.3h59.5c3.5,0,6.3-2.8,6.3-6.3V16.4C85.4,12.9,82.6,10.1,79.1,10.1z M38,29.5h23.7c0.8,0,1.5-0.7,1.5-1.5v-6.5   h10.5v64.7H25.1V21.6h11.4V28C36.5,28.9,37.2,29.5,38,29.5z M60.2,4.8V20c0,0,0,0,0,0s0,0,0,0v6.5H39.5v-6.5c0,0,0,0,0,0s0,0,0,0   v-8.5c0,0,0,0,0,0s0,0,0,0V4.8L60.2,4.8L60.2,4.8z M82.4,91.7c0,1.8-1.5,3.3-3.3,3.3H19.7c-1.8,0-3.3-1.5-3.3-3.3V16.4   c0-1.8,1.5-3.3,3.3-3.3h16.8v5.5H23.6c-0.8,0-1.5,0.7-1.5,1.5v67.7c0,0.8,0.7,1.5,1.5,1.5h51.6c0.8,0,1.5-0.7,1.5-1.5V20.1   c0-0.8-0.7-1.5-1.5-1.5h-12v-5.5h15.9c1.8,0,3.3,1.5,3.3,3.3V91.7z" />
+                                                    <path
+                                                        d="M28.8,46.4c0,0.8,0.7,1.5,1.5,1.5h38.5c0.8,0,1.5-0.7,1.5-1.5s-0.7-1.5-1.5-1.5H30.3C29.5,44.9,28.8,45.6,28.8,46.4z" />
+                                                    <path
+                                                        d="M68.8,55.4H30.3c-0.8,0-1.5,0.7-1.5,1.5s0.7,1.5,1.5,1.5h38.5c0.8,0,1.5-0.7,1.5-1.5S69.6,55.4,68.8,55.4z" />
+                                                    <path
+                                                        d="M68.8,66.4H30.3c-0.8,0-1.5,0.7-1.5,1.5c0,0.8,0.7,1.5,1.5,1.5h38.5c0.8,0,1.5-0.7,1.5-1.5C70.3,67.1,69.6,66.4,68.8,66.4z   " />
+                                                </g>
+                                            </svg>
+                                            <span class="link_name">Profile Boxes</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </button>
+                        </h2>
+                    </li>
+
+                    <!-- Forms -->
+                    <li class="li">
+                        <a href="#">
+                            <span class="link_name color">Forms</span>
+                        </a>
+                    </li>
+
+                    <li class="li">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingEle">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseEle" aria-expanded="false"
+                                        aria-controls="flush-collapseEle">
+                                        <div class="iocn-link">
+                                            <div class="svg">
+                                                <a href="#">
+                                                    <!DOCTYPE svg
+                                                        PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                                    <svg enable-background="new 0 0 617.5898 1010" id="bulb"
+                                                        version="1.1" viewBox="0 0 617.5898 1010" xml:space="preserve"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g id="bulb-bulb">
+                                                            <path
+                                                                d="M308.8193,0C138.5303,0,0,138.604,0,308.918c0,66.6758,20.9599,130.2451,59.8701,182.5942l14.3018,21.2061   c44.5083,65.27,105.4633,154.7798,102.0361,217.4116l-1.2334,22.6856l245.0039-0.1485l21.6504-0.3945l-0.1973-21.6494   c0-0.6906,0.542-71.8789,104.9199-222.6885l9.5186-13.8828c9.1973-12.1069,17.5811-25.1758,24.7568-38.5405   c4.6114-8.4087,8.7285-16.8912,12.4522-25.9156c16.2744-38.1709,24.5107-78.7832,24.5107-120.6777   C617.5898,138.604,479.0595,0,308.8193,0z M553.4531,412.9756c-3.1562,7.7183-6.6328,14.8198-10.5283,21.9707   c-6.3623,11.6143-13.5625,22.8335-21.8233,33.9297l-10.1337,14.6963c-81.9893,118.4824-104.4034,191.8164-110.3702,226.1406   l-182.101,0.1231c-7.5699-72.791-65.4185-157.6651-108.8169-221.3565l-14.4991-21.4033   c-34.1269-46.1113-52.2504-100.729-52.2504-158.1582c0-146.5928,119.3208-265.8398,265.8891-265.8398   c146.544,0,265.8154,119.247,265.8154,265.8398C574.6347,344.9439,567.5332,379.8848,553.4531,412.9756z"
+                                                                fill="#1A1A1A" />
+                                                            <rect fill="#1A1A1A" height="42.9541" width="127.2364"
+                                                                x="245.1767" y="967.0459" />
+                                                            <rect fill="#1A1A1A" height="43.0039" width="257.8018"
+                                                                x="179.9062" y="882.2217" />
+                                                            <path
+                                                                d="M390.6845,155.273c-10.3564-3.8218-22.4638,1.9233-26.2119,12.1567   c-3.8955,10.6275,1.5537,22.3399,12.1573,26.2114c25.792,9.3702,37.4804,34.7437,42.8066,54.2974   c10.4053,38.541,3.2549,85.2681-10.1592,101.3452c-7.1513,8.606-5.9678,21.5269,2.7119,28.7759   c3.6495,3.0576,8.3096,4.6855,13.0694,4.6855c1.4795,0,2.9336-0.1728,4.3886-0.4443c4.4385-1.0107,8.4336-3.4272,11.294-6.8794   c23.499-28.2827,31.4141-88.9419,18.1484-138.1846C447.8916,196.378,423.6523,167.2813,390.6845,155.273z"
+                                                                fill="#1A1A1A" />
+                                                            <rect fill="#1A1A1A" height="43.0039" width="257.8018"
+                                                                x="179.9062" y="797.3975" />
+                                                        </g>
+                                                    </svg>
+                                                    <span class="link_name">Elements</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseEle" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingEle" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul class="mm-collapse mm-show">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Controls
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Layouts
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Validation
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Wizard
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="li">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingWidgets">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseWidgets" aria-expanded="false"
+                                        aria-controls="flush-collapseWidgets">
+                                        <div class="iocn-link">
+                                            <div class="svg">
+                                                <a href="#">
+                                                    <!DOCTYPE svg
+                                                        PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                                    <svg enable-background="new 0 0 64 64" id="Layer_1" version="1.1"
+                                                        viewBox="0 0 64 64" xml:space="preserve"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g>
+                                                            <path
+                                                                d="M63.895,48.717c0.013-0.699-0.016-1.408-0.08-2.132c-0.746-12.008-6.294-17.156-6.294-17.156l-0.003,0.001   c-1.902-1.964-4.566-3.191-7.521-3.191c-1.611,0-3.124,0.385-4.485,1.04l-0.02-0.011c0,0-0.148,0.083-0.395,0.217   c-0.097,0.051-0.2,0.089-0.294,0.146l-0.005-0.002c0,0-0.011,0.008-0.014,0.009c-0.021,0.013-0.04,0.026-0.061,0.041   c-1.171,0.599-3.572,1.703-6.285,2.316c-1.877,0.448-2.058-1.072-2.068-1.479v-0.777c-0.068-0.832-0.501-2.376-2.686-2.718v-9.68   c0.003,0.001,0.005,0.003,0.008,0.003l0.011-3.378c0,0-0.241-3.186,1.152-4.455c0.045-0.045,0.087-0.09,0.132-0.132   c0.019-0.014,0.03-0.036,0.049-0.049c0.01-0.006,0.018-0.007,0.025-0.012c0.925-0.806,2.122-0.937,2.831-0.935   c0.186,0.01,3.267,0.246,3.267,4.502v5.906h0.01c0.049,3.171,2.625,5.727,5.807,5.727c2.757,0,5.025-1.931,5.62-4.505   c0.009-0.025,0.021-0.034,0.03-0.062c0.13-0.396,0.14-0.705,0.118-0.971c0-0.005,0.003-0.009,0.003-0.016   c0-0.016-0.01-0.031-0.01-0.048c-0.021-0.167-0.043-0.305-0.083-0.412c-0.016-0.039-0.025-0.074-0.044-0.11   c-0.052-0.114-0.099-0.192-0.099-0.192l-0.021,0.013c-0.244-0.361-0.637-0.613-1.105-0.613c-0.636,0-1.132,0.45-1.279,1.04   c-0.014,0.045-0.034,0.098-0.053,0.148h-0.016c0,0,0.002,0.028,0.002,0.04c-0.23,0.647-0.678,1.717-1.208,2.008   c-0.582,0.41-1.493,0.813-2.48,0.334c-1.163-0.631-1.974-1.83-1.974-3.249c0-0.102,0.021-0.196,0.029-0.297h-0.029v-4.104V8.847   V8.575c0-1.169-0.667-2.354-1.176-3.093c-0.021-0.033-0.045-0.065-0.068-0.097c-0.102-0.144-0.197-0.275-0.274-0.374h-0.033   c-1.288-1.617-3.25-2.673-5.478-2.673c-3.088,0-5.678,2.002-6.615,4.772c-0.172,0.667-0.415,2.241-0.415,5.82v12.039   c-2.406,0.136-2.672,2.09-2.686,2.775v0.622c-0.046,0.736-0.422,2.2-2.706,1.562c-2.308-0.582-4.205-1.542-5.109-2.057   c-0.135-0.087-0.274-0.164-0.413-0.245c-0.105-0.065-0.17-0.105-0.17-0.105v0.009c-1.482-0.815-3.177-1.292-4.992-1.292   c-2.22,0-4.278,0.695-5.972,1.874l-0.004-0.003c0,0-0.201,0.136-0.515,0.391c-0.63,0.498-1.201,1.066-1.702,1.692   c-2.093,2.427-4.995,7.228-5.73,15.513c-0.204,1.337-0.255,2.648-0.188,3.917c0,0.05-0.004,0.096-0.004,0.146   c0.003,0,0.008,0,0.011,0c0.334,5.491,3.114,10.07,7.559,11.473c3.886,1.222,8.115-0.282,11.403-3.564l-0.003,0.009   c0,0,0.033-0.037,0.082-0.093c0.144-0.142,0.286-0.287,0.426-0.439c0.866-0.859,2.809-2.577,5.509-3.762   c0.096-0.04,0.216-0.09,0.371-0.146c0.025-0.013,0.053-0.019,0.077-0.031c1.866-0.681,7.291-2.178,13.634,0.468   c2.802,1.299,4.973,3.062,5.91,3.895c0.004,0.007,0.011,0.01,0.015,0.016c0.317,0.282,0.502,0.461,0.502,0.461l-0.007-0.037   c3.173,2.815,7.074,4.062,10.688,2.924c4.613-1.454,7.435-6.327,7.587-12.097c0.003-0.004,0.006-0.007,0.009-0.007   C63.897,48.794,63.895,48.757,63.895,48.717z M60.825,48.648h-0.006c-0.235,3.87-2.197,7.101-5.331,8.088   c-2.07,0.652-4.271,0.183-6.225-1.074l-0.003,0.016c0,0-0.059-0.043-0.146-0.105c-0.12-0.08-0.238-0.167-0.355-0.253   c-1.319-0.926-5.133-3.466-9.121-4.91c-0.278-0.148-0.823-0.334-1.78-0.566c-0.016-0.003-0.033-0.006-0.048-0.01   c-0.834-0.22-1.657-0.364-2.454-0.427c-3.998-0.482-7.939-0.012-9.106,0.155c-0.066,0.009-0.136,0.019-0.204,0.03   c-0.086,0.013-0.147,0.021-0.147,0.021l-0.001,0.007c-5.749,1.009-9.63,4.712-9.63,4.712l-0.005-0.021   c-2.181,1.816-4.8,2.602-7.243,1.831c-3.133-0.986-5.093-4.217-5.328-8.087c-0.003,0-0.006,0-0.009,0   c0-0.037,0.003-0.068,0.003-0.105c-0.046-0.895-0.012-1.819,0.133-2.76c0.519-5.843,2.565-9.228,4.041-10.94   c0.353-0.442,0.755-0.843,1.2-1.192c0.221-0.183,0.364-0.275,0.364-0.275h0.001c1.196-0.829,2.646-1.321,4.211-1.321   c0.791,0,1.541,0.146,2.249,0.382c-0.001-0.001-0.006-0.014-0.006-0.014s0.126,0.05,0.337,0.13c0.09,0.034,0.18,0.065,0.268,0.103   c0.995,0.374,3.073,1.126,5.122,1.667v0.002c0,0,10.105,3.024,20.154-0.453c4.361-1.226,6.351-1.692,7.177-1.861   c0.066-0.014,0.135-0.029,0.201-0.04c0.255-0.048,0.345-0.058,0.345-0.058l0.002,0.019c4.242-0.518,7.163,3.507,7.163,3.507   c1.476,1.713,3.524,5.098,4.041,10.94c0.146,0.94,0.179,1.866,0.133,2.76C60.822,48.58,60.825,48.611,60.825,48.648z"
+                                                                fill="#241F20" />
+                                                            <path
+                                                                d="M18.452,41.307h-0.634c-1.174,0.014-1.316-0.845-1.329-1.186v-0.837c0-1.828-1.816-1.808-1.872-1.807   c-0.464,0.01-1.89,0.162-1.89,1.782v0.954c-0.029,0.391-0.232,1.086-1.32,1.093h-0.534c-0.481,0.008-1.96,0.17-1.974,1.879v0.418   c0.054,0.557,0.396,1.478,2.111,1.465h0.422c0.28,0.005,1.278,0.098,1.293,1.196v1.046c0.008,0.331,0.119,1.585,1.453,1.585h0.781   c0.543-0.038,1.528-0.311,1.528-1.789v-0.811c0.034-0.452,0.248-1.233,1.378-1.228h0.679c0.619-0.037,1.827-0.292,1.771-1.749   v-0.134C20.318,41.516,18.971,41.322,18.452,41.307z"
+                                                                fill="#241F20" />
+                                                        </g>
+                                                    </svg>
+                                                    <span class="link_name">Widgets</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseWidgets" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingWidgets" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul class="mm-collapse mm-show">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Datepicker
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Range Slider
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Input Selects
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Toggle Switch
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>WYSIWYG Editor
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Input Mask
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Clipboard
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="metismenu-icon"></i>Textarea Autosize
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Charts -->
+                    <li class="li">
+                        <a href="#">
+                            <span class="link_name color">Charts</span>
+                        </a>
+                    </li>
+
+                    <li class="li">
+                        <h2 class="accordion-header" id="flush-headingTables">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTables" aria-expanded="false"
+                                aria-controls="flush-collapseTables">
+                                <div class="iocn-link">
+                                    <div class="svg">
+                                        <a href="#">
+                                            <?xml version="1.0" ?>
+                                            <!DOCTYPE svg
+                                                PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                                version="1.1" viewBox="0 0 846.66 846.66" xml:space="preserve"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <defs>
+                                                    <style type="text/css">
+                                                    </style>
+                                                </defs>
+                                                <g id="Layer_x0020_1">
+                                                    <path class="fil0"
+                                                        d="M31.56 71.06l783.54 0c11.39,0 20.63,9.24 20.63,20.63l0 541.95c0,11.4 -9.24,20.63 -20.63,20.63l-257.9 0 0 80.07 134.07 0c27.14,0 27.14,41.26 0,41.26 -178.63,0 -357.25,0 -535.88,0 -27.13,0 -27.13,-41.26 0,-41.26l134.07 0 0 -80.07 -257.9 0c-11.39,0 -20.63,-9.23 -20.63,-20.63l0 -541.95c0,-11.39 9.24,-20.63 20.63,-20.63zm644.83 155.67l5.09 64.66c2.01,27.04 -39.1,30.09 -41.11,3.06l-1.99 -25.57 -211.38 171.12c-9.5,8.02 -24.02,5.84 -30.68,-4.75l-64.15 -101.7 -126 142.79c-17.89,20.23 -48.67,-7.02 -30.78,-27.23l144.14 -163.36c9.14,-10.32 25.56,-8.83 32.79,2.66l66.45 105.33 192.46 -155.8 -23.21 -6c-26.18,-6.78 -15.86,-46.59 10.32,-39.81l62.4 16.15c8.95,2.17 14.8,9.55 15.65,18.45zm-160.45 427.54l-185.22 0 0 80.07 185.22 0 0 -80.07zm278.53 -541.95l-742.28 0 0 500.69c247.43,0 494.85,0 742.28,0l0 -500.69z" />
+                                                </g>
+                                            </svg>
+                                            <span class="link_name">Chart JS</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </button>
+                        </h2>
+                    </li>
+
+                    <li class="li">
+                        <h2 class="accordion-header" id="flush-headingTables">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTables" aria-expanded="false"
+                                aria-controls="flush-collapseTables">
+                                <div class="iocn-link">
+                                    <div class="svg">
+                                        <a href="#">
+                                            <svg style="enable-background:new 0 0 50 50;" version="1.1"
+                                                viewBox="0 0 50 50" xml:space="preserve"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g id="Layer_1">
+                                                    <path
+                                                        d="M25,49c13.233,0,24-10.767,24-24S38.233,1,25,1S1,11.767,1,25S11.767,49,25,49z M25,47c-5.706,0-10.912-2.185-14.825-5.761   L25.414,26h21.561C46.45,37.668,36.796,47,25,47z M46.975,24H26V3.025C37.337,3.535,46.465,12.663,46.975,24z M24,3.025v21.561   L8.761,39.825C5.185,35.912,3,30.706,3,25C3,13.204,12.332,3.55,24,3.025z" />
+                                                </g>
+                                                <g />
+                                            </svg>
+                                            <span class="link_name">Apex Charts</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </button>
+                        </h2>
+                    </li>
+
+                    <li class="li">
+                        <h2 class="accordion-header" id="flush-headingTables">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTables" aria-expanded="false"
+                                aria-controls="flush-collapseTables">
+                                <div class="iocn-link">
+                                    <div class="svg">
+                                        <a href="#">
+                                            <svg fill="none" viewBox="0 0 170 99" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0)">
+                                                    <path
+                                                        d="M159.524 0.393145C156.399 0.123788 154.058 0.750571 152.37 2.30179C150.171 4.32164 149.108 7.85474 149.031 13.4077C147.212 15.4816 145.399 17.5445 143.593 19.5965C139.42 24.3401 135.106 29.2446 130.918 34.0834C126.73 38.9222 122.505 43.8811 118.419 48.6762C116.665 50.7333 114.91 52.7923 113.152 54.8533C112.677 54.843 112.182 54.8083 111.663 54.7723C110.128 54.5701 108.57 54.6493 107.064 55.0063C105.06 55.6145 103.869 55.0462 102.107 53.6307C92.4085 45.8476 83.3948 39.8002 74.55 35.1446C73.8555 34.8254 73.2439 34.3489 72.7624 33.752C72.2816 33.1552 71.9436 32.4542 71.7758 31.704C71.0743 29.0054 69.3499 26.6922 66.9731 25.2626C64.5969 23.833 61.7583 23.4013 59.0692 24.0605C56.3348 24.7041 53.9423 26.364 52.3692 28.7085C50.7961 31.0531 50.1584 33.9097 50.5836 36.7075C50.6933 37.4468 50.826 38.1861 50.9536 38.89L51.056 39.4685L15.5387 73.8969C15.3582 73.8795 15.1783 73.8596 14.9991 73.8409C14.4072 73.7767 13.7946 73.7124 13.1805 73.6963C7.30631 73.5259 3.69542 76.116 1.80964 81.8503C0.395138 86.151 1.94355 89.9895 3.23178 92.5031C4.10457 94.3089 5.43379 95.8517 7.0859 96.9748C8.73803 98.0985 10.6546 98.7639 12.6428 98.9034C12.843 98.9143 13.0427 98.9195 13.2422 98.9201C15.156 98.8912 17.0327 98.382 18.7028 97.4396C20.3728 96.4965 21.7836 95.1497 22.8082 93.5201C25.8693 88.8825 26.3451 84.5362 24.2534 80.2489L58.7173 47.1571L68.318 44.1679L96.7993 63.863C97.0238 68.0989 98.0703 71.2753 100.173 74.1232C101.397 75.8724 103.174 77.1517 105.213 77.7521C107.252 78.3519 109.432 78.2368 111.398 77.4262C117.081 75.2495 120.237 70.4261 120.088 64.1697L154.653 20.8963C159.556 21.8606 163.362 21.4107 165.969 19.5528C167.985 18.1186 169.212 15.895 169.615 12.9436C169.846 11.4554 169.772 9.93496 169.397 8.4767C169.022 7.01851 168.354 5.65349 167.434 4.46625C166.462 3.27794 165.259 2.30335 163.898 1.60274C162.538 0.902131 161.049 0.490445 159.524 0.393145Z"
+                                                        fill="black" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0">
+                                                        <rect fill="white" height="99" transform="translate(0.777344)"
+                                                            width="169" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span class="link_name">Chart Sparklines</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </button>
+                        </h2>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="home-section">
+                <div class="container-fluid">
+                    <!-- header section -->
+                    <div class="row header-section">
+                        <div class="col-lg-12 p-5">
+                            <div class="row">
+                                <div class="col-lg-1 p-0">
+                                    <div class="page-title-icon">
+                                        <img class="img-component" src="./assests/component.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-8">
+                                    <h4 class="Analaytic">Analytics Dashboard</h4>
+                                    <p class="Analaytic-text">Lorem ipsum dolor sit, amet consectetur adipisicing to the
+                                        analaytic dashboard
+                                        component</p>
+                                </div>
+
+                                <div class="col-lg-3 d-flex justify-content-end">
+                                    <div class="">
+                                        <button type="button" class="btn btn-dark btn-shadow" data-toggle="tooltip"
+                                            data-placement="bottom" title="Tooltip on bottom">
+                                            <i class="bi bi-star-fill"></i>
+                                        </button>
+                                    </div>
+
+                                    <div class="dropdown p-0">
+                                        <button class="btn btn-info btn-shadow btn-color dropdown-toggle" type="button"
+                                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="btn-icon-wrapper pr-2 opacity-7">
+                                                <i class="fa fa-business-time fa-w-20"></i>
+                                            </span>Buttons
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- tab section -->
+                    <ul class="nav nav-tab">
+                        <li class="nav-item animated">
+                            <a role="tab" class="nav-link tab active" href="index.html">
+                                <span>Variation 1</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a role="tab" class="nav-link tab" href="analytics-variation.html">
+                                <span>Variation 2</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- 1 section portfolio-performance-->
+                    <div class="row section-1 mt-5">
+                        <div class="col-lg-12 bg-white border-radius shadow">
+                            <div class="row section my-3">
+                                <div class="col-lg-12">
+                                    <div class="section-header d-flex">
+                                        <div
+                                            class="section-header-title font-size-lg text-capitalize font-weight-normal">
+                                            Portfolio Performance</div>
+                                        <button type="button" class="btn btn-outline-dark">view All</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row section-text">
+
+                                <div class="col-lg-4 d-flex justify-content-space-between">
+
+                                    <div class="icon-wrapper bg-warning rounded-circle">
+                                        <i class="bi bi-pc-display-horizontal text-dark opacity-8"></i>
+                                    </div>
+
+                                    <div class="section-content">
+                                        <div class="cash-deposit">Cash Deposits</div>
+                                        <div class="Widget-number">1,7M</div>
+                                        <div class="widget-description opacity-8 text-focus">
+                                            <div class="d-inline text-danger pr-1">
+                                                <i class="fa fa-angle-down"><span class="mx-2">54.1%</span></i>
+                                            </div>
+                                            less earnings
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 d-flex justify-content-space-between">
+                                    <div class="icon-wrapper bg-danger rounded-circle">
+                                        <i class="bi bi-mortarboard-fill text-white opacity-9"></i>
+                                    </div>
+                                    <div class="section-content">
+                                        <div class="cash-deposit">Invested Dividents</div>
+                                        <div class="Widget-number">9M</div>
+                                        <div class="widget-description opacity-8 text-focus">
+                                            Grow Rate:
+                                            <div class="d-inline text-info pr-1 mx-2">
+                                                <i class="fa fa-angle-down"><span class="mx-2">14.1%</span></i>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 d-flex justify-content-space-between">
+                                    <div class="icon-wrapper bg-success rounded-circle">
+                                        <i class="bi bi-buildings text-white"></i>
+                                    </div>
+                                    <div class="section-content">
+                                        <div class="cash-deposit">Capital Gains</div>
+                                        <div class="Widget-number text-success opacity-9">$563</div>
+                                        <div class="widget-description opacity-8 text-focus">
+                                            Increased by
+                                            <div class="d-inline text-warning pr-1 mx-2">
+                                                <i class="fa fa-angle-up"><span class="mx-2">7.35%</span></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 section-btn">
+                                    <button class="btn btn-primary view-button" type="submit">View Complete
+                                        Report</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 section carousel/timeline -->
+                    <div class="row mt-5 section-2">
+
+                        <!-- carousel -->
+                        <div class="col-lg-6">
+
+                            <div class="carousel mx-4 bg-white shadow">
+
+                                <div class="card-header-tab card-header d-flex justify-content-between">
+                                    <div class="card-header-title font-size-lg text-capitalize font-weight-normal"><i
+                                            class='bx bx-data'></i>Technical Support
+                                    </div>
+                                    <a href="#" title="Add Friend to this chat">
+                                        <button class="menu-icon-btn" data-menu-icon-btn>
+                                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                                                focusable="false" class="menu-icon">
+                                                <g>
+                                                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </div>
+
+                                <div id="carousel" class="carousel slide" data-bs-slide="carousel">
+                                    <div class="carousel-inner">
+
+                                        <div class="carousel-item  active">
+                                            <div class="carousel-caption text-lg-start text-warning py-5">
+                                                <div class="widget-chart-content widget-chart-content-lg pb-0">
+                                                    <div class="widget-chart-flex">
+                                                        <div class="widget-title opacity-5 text-muted text-uppercase">
+                                                            New Accounts since 2018
+                                                        </div>
+                                                    </div>
+                                                    <div class="widget-numbers">
+                                                        <div class="widget-chart d-flex">
+                                                            <div>
+                                                                <span class="opacity-10 text-success pr-2">
+                                                                    <i class="fa fa-angle-up"></i>
+                                                                </span>
+                                                                <span class="text-dark fw-700">78</span>
+                                                                <small class="opacity-5 pl-1">%</small>
+                                                            </div>
+                                                            <div
+                                                                class="widget-title ml-2 font-size-lg font-weight-normal text-muted">
+                                                                <span class="text-success pl-2">+14</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="widget-image">
+                                                    <img src="./assests/Line-Chart-PNG-Image.png" height="200px"
+                                                        width="400px" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div class="carousel-caption text-lg-start text-warning py-5">
+                                                <div class="widget-chart-content widget-chart-content-lg pb-0">
+                                                    <div class="widget-chart-flex">
+                                                        <div class="widget-title opacity-5 text-muted text-uppercase">
+                                                           LAST YESR TOTAL SALES</div>
+                                                    </div>
+                                                    <div class="widget-numbers">
+                                                        <div class="widget-chart d-flex">
+                                                            <div>
+                                                                <small class="opacity-5 pl-1">$</small>
+                                                                <span class="text-dark fw-700">629</span>
+                                                                <span class="opacity-10 text-primary pr-2">
+                                                                    <i class="fa fa-angle-down"></i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="widget-image">
+                                                    <img src="./assests/Line-Chart-PNG-Image.png" height="200px"
+                                                        width="400px" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div class="carousel-caption text-lg-start text-warning py-5">
+                                                <div class="widget-chart-content widget-chart-content-lg pb-0">
+                                                    <div class="widget-chart-flex">
+                                                        <div class="widget-title opacity-5 text-muted text-uppercase">
+                                                            HELPDESK TICKETS</div>
+                                                    </div>
+                                                    <div class="widget-numbers">
+                                                        <div class="widget-chart d-flex">
+                                                            <div>
+                                                                <span class="text-warning fw-700">34</span>
+                                                                <small class="opacity-5 pl-1 text-muted">5%</small>
+                                                                <span class="text-dark fw-300 fs-5">increase</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="widget-image">
+                                                    <img src="./assests/Line-Chart-PNG-Image.png" height="200px"
+                                                        width="400px" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+
+                                <div class="d-block text-center card-footer">
+                                    <div class="widget-content-wrapper d-flex justify-content-space-between">
+                                        <div class="widget-content-left margin-3">
+                                            <div class="widget-heading">Total Orders</div>
+                                            <div class="widget-subheading last-year">Last year expenses</div>
+                                        </div>
+                                        <div class="widget-content-right">
+                                            <div class="widget-numbers text-success">1896</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="widget-progress-wrapper">
+                                        <div class="progress-bar-sm progress-bar-animated-alt progress">
+                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100" style="width: 43%;">
+                                        </div>
+                                        </div>
+                                        <div class="progress-sub-label">
+                                        <div class="sub-label-left">YoY Growth</div>
+                                        <div class="sub-label-right">100%</div>
+                                        </div>
+                                        </div>
+                            </div>
+                                
+                            </div>
+
+                        </div>
+
+                        <!-- Timeline -->
+                        <div class="col-lg-6">
+
+                            <div class="main-card mx-3 card timeline">
+
+                                <div class="card-header-tab card-header d-flex justify-content-between">
+                                    <div class="card-header-title font-size-lg text-capitalize font-weight-normal"><i
+                                            class='bx bx-data'></i>Timeline Example
+                                    </div>
+                                    <a href="#" title="Add Friend to this chat">
+                                        <button class="menu-icon-btn" data-menu-icon-btn>
+                                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                                                focusable="false" class="menu-icon">
+                                                <g>
+                                                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </div>
+
+                                <div class="scroll-area-sm" id="Style-2">
+                                    <div
+                                        class="vertical-timeline timeline vertical-timeline--animate vertical-timeline--one-column">
+                                        <div class="vertical-timeline-item vertical-timeline-element">
+                                            <div>
+                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                    <i class="badge badge-dot badge-dot-xl badge-success"></i>
+                                                </span>
+                                                <div class="vertical-timeline-element-content bounce-in">
+                                                    <p>All Hands Meeting</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vertical-timeline-item vertical-timeline-element">
+                                            <div>
+                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                    <i class="badge badge-dot badge-dot-xl badge-warning"> </i>
+                                                </span>
+                                                <div class="vertical-timeline-element-content bounce-in">
+                                                    <p>Yet another one, at <a class="text-danger">15:00 PM</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vertical-timeline-item vertical-timeline-element">
+                                            <div>
+                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                    <i class="badge badge-dot badge-dot-xl badge-danger"> </i>
+                                                </span>
+                                                <div class="vertical-timeline-element-content bounce-in">
+                                                    <p>Build the production release<a>
+                                                            <button type="button" class="btn btn-danger">New</button>
+                                                        </a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vertical-timeline-item vertical-timeline-element">
+                                            <div>
+                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                    <i class="badge badge-dot badge-dot-xl badge-primary"> </i>
+                                                </span>
+                                                <div class="vertical-timeline-element-content bounce-in">
+                                                    <p>Something not important</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vertical-timeline-item vertical-timeline-element">
+                                            <div>
+                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                    <i class="badge badge-dot badge-dot-xl badge-success"> </i>
+                                                </span>
+                                                <div class="vertical-timeline-element-content bounce-in">
+                                                    <p>This dot has an info state</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vertical-timeline-item vertical-timeline-element">
+                                            <div>
+                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                    <i class="badge badge-dot badge-dot-xl badge-warning"> </i>
+                                                </span>
+                                                <div class="vertical-timeline-element-content bounce-in">
+                                                    <p>This dot has an dark state</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="vertical-timeline-item vertical-timeline-element">
+                                            <div>
+                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                    <i class="badge badge-dot badge-dot-xl badge-warning"> </i>
+                                                </span>
+                                                <div class="vertical-timeline-element-content bounce-in">
+                                                    <p>All Hands Meeting</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vertical-timeline-item vertical-timeline-element">
+                                            <div>
+                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                    <i class="badge badge-dot badge-dot-xl badge-warning"> </i>
+                                                </span>
+                                                <div class="vertical-timeline-element-content bounce-in">
+                                                    <p>Yet another one, at <a class="text-danger">15:00 PM</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vertical-timeline-item vertical-timeline-element">
+                                            <div>
+                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                    <i class="badge badge-dot badge-dot-xl badge-danger"> </i>
+                                                </span>
+                                                <div class="vertical-timeline-element-content bounce-in">
+                                                    <p>Build the production release<a>
+                                                            <button type="button" class="btn btn-danger">New</button>
+                                                        </a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vertical-timeline-item vertical-timeline-element">
+                                            <div>
+                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                    <i class="badge badge-dot badge-dot-xl badge-primary"> </i>
+                                                </span>
+                                                <div class="vertical-timeline-element-content bounce-in">
+                                                    <p>Something not important</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-block text-center card-footer card-footer-timeline"><button
+                                        class="btn btn-secondary timeline-footer">View All Messages</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- 3 section card -->
+                    <div class="row section-3 row-cols-1 row-cols-md-3 g-4">
+                         <!-- card-1 -->
+                        <div class="col-lg-3">
+                          <div class="card widget-card-body shadow">
+                            <div class="card-body">
+                                <div class="fs-4">
+                                    <small class="opacity-5 card-dollar">$</small>
+                                    <span class="card-number">874</span>
+                                </div>
+                                <h6 class="card-text">Sales last months</h6>
+                            </div>
+                            <img src="./assests/Line-Chart-PNG-Image.png" alt="" height="50%" width="100%">
+                          </div>
+                        </div>
+ <!-- card-2 -->
+                        <div class="col-lg-3">
+                          <div class="card widget-card-body-1 shadow">
+                            <div class="card-body">
+                                <div class="fs-4">
+                                    <small class="opacity-5 card-dollar">$</small>
+                                    <span class="card-number">1283</span>
+                                </div>
+                                <h6 class="card-text">Sales Income</h6>
+                            </div>
+                            <img src="./assests/Line-Chart-PNG-Image.png" alt="" height="50%" width="100%">
+                          </div>
+                        </div>
+ <!-- card-3 -->
+                        <div class="col-lg-3">
+                            <div class="card widget-card-body-2 shadow">
+                                <div class="card-body">
+                                    <div class="fs-4">
+                                        <small class="opacity-5 card-dollar">$</small>
+                                        <span class="card-number">1286</span>
+                                    </div>
+                                    <h6 class="card-text">Last month sales</h6>
+                                </div>
+                                <img src="./assests/Line-Chart-PNG-Image.png" alt="" height="50%" width="100%">
+                            </div>
+                        </div>
+ <!-- card-4 -->
+                        <div class="col-lg-3">
+                            <div class="card widget-card-body-3 shadow">
+                              <div class="card-body">
+                                  <div class="fs-4">
+                                      <small class="opacity-5 card-dollar">$</small>
+                                      <span class="card-number">564</span>
+                                  </div>
+                                  <h6 class="card-text">total revenue</h6>
+                              </div>
+                              <img src="./assests/Line-Chart-PNG-Image.png" alt="" height="50%" width="100%">
+                            </div>
+                          </div>
+                      </div>
+
+                    <!-- 4 section filter-table -->
+                    <div class="row section-4 mt-5">
+                        <!-- filter table -->
+                        <div class="col-lg-12 filter-table shadow bg-white p-5">
+                            <table id="example" class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start date</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011-04-25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>2011-07-25</td>
+                                        <td>$170,750</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009-01-12</td>
+                                        <td>$86,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cedric Kelly</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2012-03-29</td>
+                                        <td>$433,060</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Airi Satou</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>33</td>
+                                        <td>2008-11-28</td>
+                                        <td>$162,700</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brielle Williamson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td>2012-12-02</td>
+                                        <td>$372,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Herrod Chandler</td>
+                                        <td>Sales Assistant</td>
+                                        <td>San Francisco</td>
+                                        <td>59</td>
+                                        <td>2012-08-06</td>
+                                        <td>$137,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rhona Davidson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>Tokyo</td>
+                                        <td>55</td>
+                                        <td>2010-10-14</td>
+                                        <td>$327,900</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Colleen Hurst</td>
+                                        <td>Javascript Developer</td>
+                                        <td>San Francisco</td>
+                                        <td>39</td>
+                                        <td>2009-09-15</td>
+                                        <td>$205,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sonya Frost</td>
+                                        <td>Software Engineer</td>
+                                        <td>Edinburgh</td>
+                                        <td>23</td>
+                                        <td>2008-12-13</td>
+                                        <td>$103,600</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jena Gaines</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>30</td>
+                                        <td>2008-12-19</td>
+                                        <td>$90,560</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Quinn Flynn</td>
+                                        <td>Support Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2013-03-03</td>
+                                        <td>$342,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Charde Marshall</td>
+                                        <td>Regional Director</td>
+                                        <td>San Francisco</td>
+                                        <td>36</td>
+                                        <td>2008-10-16</td>
+                                        <td>$470,600</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Haley Kennedy</td>
+                                        <td>Senior Marketing Designer</td>
+                                        <td>London</td>
+                                        <td>43</td>
+                                        <td>2012-12-18</td>
+                                        <td>$313,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tatyana Fitzpatrick</td>
+                                        <td>Regional Director</td>
+                                        <td>London</td>
+                                        <td>19</td>
+                                        <td>2010-03-17</td>
+                                        <td>$385,750</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Michael Silva</td>
+                                        <td>Marketing Designer</td>
+                                        <td>London</td>
+                                        <td>66</td>
+                                        <td>2012-11-27</td>
+                                        <td>$198,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Paul Byrd</td>
+                                        <td>Chief Financial Officer (CFO)</td>
+                                        <td>New York</td>
+                                        <td>64</td>
+                                        <td>2010-06-09</td>
+                                        <td>$725,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gloria Little</td>
+                                        <td>Systems Administrator</td>
+                                        <td>New York</td>
+                                        <td>59</td>
+                                        <td>2009-04-10</td>
+                                        <td>$237,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bradley Greer</td>
+                                        <td>Software Engineer</td>
+                                        <td>London</td>
+                                        <td>41</td>
+                                        <td>2012-10-13</td>
+                                        <td>$132,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dai Rios</td>
+                                        <td>Personnel Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>35</td>
+                                        <td>2012-09-26</td>
+                                        <td>$217,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jenette Caldwell</td>
+                                        <td>Development Lead</td>
+                                        <td>New York</td>
+                                        <td>30</td>
+                                        <td>2011-09-03</td>
+                                        <td>$345,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Yuri Berry</td>
+                                        <td>Chief Marketing Officer (CMO)</td>
+                                        <td>New York</td>
+                                        <td>40</td>
+                                        <td>2009-06-25</td>
+                                        <td>$675,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Caesar Vance</td>
+                                        <td>Pre-Sales Support</td>
+                                        <td>New York</td>
+                                        <td>21</td>
+                                        <td>2011-12-12</td>
+                                        <td>$106,450</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Doris Wilder</td>
+                                        <td>Sales Assistant</td>
+                                        <td>Sydney</td>
+                                        <td>23</td>
+                                        <td>2010-09-20</td>
+                                        <td>$85,600</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Angelica Ramos</td>
+                                        <td>Chief Executive Officer (CEO)</td>
+                                        <td>London</td>
+                                        <td>47</td>
+                                        <td>2009-10-09</td>
+                                        <td>$1,200,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gavin Joyce</td>
+                                        <td>Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>42</td>
+                                        <td>2010-12-22</td>
+                                        <td>$92,575</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jennifer Chang</td>
+                                        <td>Regional Director</td>
+                                        <td>Singapore</td>
+                                        <td>28</td>
+                                        <td>2010-11-14</td>
+                                        <td>$357,650</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brenden Wagner</td>
+                                        <td>Software Engineer</td>
+                                        <td>San Francisco</td>
+                                        <td>28</td>
+                                        <td>2011-06-07</td>
+                                        <td>$206,850</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fiona Green</td>
+                                        <td>Chief Operating Officer (COO)</td>
+                                        <td>San Francisco</td>
+                                        <td>48</td>
+                                        <td>2010-03-11</td>
+                                        <td>$850,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shou Itou</td>
+                                        <td>Regional Marketing</td>
+                                        <td>Tokyo</td>
+                                        <td>20</td>
+                                        <td>2011-08-14</td>
+                                        <td>$163,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Michelle House</td>
+                                        <td>Integration Specialist</td>
+                                        <td>Sydney</td>
+                                        <td>37</td>
+                                        <td>2011-06-02</td>
+                                        <td>$95,400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Suki Burks</td>
+                                        <td>Developer</td>
+                                        <td>London</td>
+                                        <td>53</td>
+                                        <td>2009-10-22</td>
+                                        <td>$114,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Prescott Bartlett</td>
+                                        <td>Technical Author</td>
+                                        <td>London</td>
+                                        <td>27</td>
+                                        <td>2011-05-07</td>
+                                        <td>$145,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gavin Cortez</td>
+                                        <td>Team Leader</td>
+                                        <td>San Francisco</td>
+                                        <td>22</td>
+                                        <td>2008-10-26</td>
+                                        <td>$235,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Martena Mccray</td>
+                                        <td>Post-Sales support</td>
+                                        <td>Edinburgh</td>
+                                        <td>46</td>
+                                        <td>2011-03-09</td>
+                                        <td>$324,050</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Unity Butler</td>
+                                        <td>Marketing Designer</td>
+                                        <td>San Francisco</td>
+                                        <td>47</td>
+                                        <td>2009-12-09</td>
+                                        <td>$85,675</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Howard Hatfield</td>
+                                        <td>Office Manager</td>
+                                        <td>San Francisco</td>
+                                        <td>51</td>
+                                        <td>2008-12-16</td>
+                                        <td>$164,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hope Fuentes</td>
+                                        <td>Secretary</td>
+                                        <td>San Francisco</td>
+                                        <td>41</td>
+                                        <td>2010-02-12</td>
+                                        <td>$109,850</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vivian Harrell</td>
+                                        <td>Financial Controller</td>
+                                        <td>San Francisco</td>
+                                        <td>62</td>
+                                        <td>2009-02-14</td>
+                                        <td>$452,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Timothy Mooney</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>37</td>
+                                        <td>2008-12-11</td>
+                                        <td>$136,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jackson Bradshaw</td>
+                                        <td>Director</td>
+                                        <td>New York</td>
+                                        <td>65</td>
+                                        <td>2008-09-26</td>
+                                        <td>$645,750</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Olivia Liang</td>
+                                        <td>Support Engineer</td>
+                                        <td>Singapore</td>
+                                        <td>64</td>
+                                        <td>2011-02-03</td>
+                                        <td>$234,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bruno Nash</td>
+                                        <td>Software Engineer</td>
+                                        <td>London</td>
+                                        <td>38</td>
+                                        <td>2011-05-03</td>
+                                        <td>$163,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sakura Yamamoto</td>
+                                        <td>Support Engineer</td>
+                                        <td>Tokyo</td>
+                                        <td>37</td>
+                                        <td>2009-08-19</td>
+                                        <td>$139,575</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thor Walton</td>
+                                        <td>Developer</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td>2013-08-11</td>
+                                        <td>$98,540</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Finn Camacho</td>
+                                        <td>Support Engineer</td>
+                                        <td>San Francisco</td>
+                                        <td>47</td>
+                                        <td>2009-07-07</td>
+                                        <td>$87,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Serge Baldwin</td>
+                                        <td>Data Coordinator</td>
+                                        <td>Singapore</td>
+                                        <td>64</td>
+                                        <td>2012-04-09</td>
+                                        <td>$138,575</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zenaida Frank</td>
+                                        <td>Software Engineer</td>
+                                        <td>New York</td>
+                                        <td>63</td>
+                                        <td>2010-01-04</td>
+                                        <td>$125,250</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zorita Serrano</td>
+                                        <td>Software Engineer</td>
+                                        <td>San Francisco</td>
+                                        <td>56</td>
+                                        <td>2012-06-01</td>
+                                        <td>$115,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jennifer Acosta</td>
+                                        <td>Junior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>43</td>
+                                        <td>2013-02-01</td>
+                                        <td>$75,650</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cara Stevens</td>
+                                        <td>Sales Assistant</td>
+                                        <td>New York</td>
+                                        <td>46</td>
+                                        <td>2011-12-06</td>
+                                        <td>$145,600</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hermione Butler</td>
+                                        <td>Regional Director</td>
+                                        <td>London</td>
+                                        <td>47</td>
+                                        <td>2011-03-21</td>
+                                        <td>$356,250</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lael Greer</td>
+                                        <td>Systems Administrator</td>
+                                        <td>London</td>
+                                        <td>21</td>
+                                        <td>2009-02-27</td>
+                                        <td>$103,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jonas Alexander</td>
+                                        <td>Developer</td>
+                                        <td>San Francisco</td>
+                                        <td>30</td>
+                                        <td>2010-07-14</td>
+                                        <td>$86,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shad Decker</td>
+                                        <td>Regional Director</td>
+                                        <td>Edinburgh</td>
+                                        <td>51</td>
+                                        <td>2008-11-13</td>
+                                        <td>$183,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Michael Bruce</td>
+                                        <td>Javascript Developer</td>
+                                        <td>Singapore</td>
+                                        <td>29</td>
+                                        <td>2011-06-27</td>
+                                        <td>$183,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Donna Snider</td>
+                                        <td>Customer Support</td>
+                                        <td>New York</td>
+                                        <td>27</td>
+                                        <td>2011-01-25</td>
+                                        <td>$112,000</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start date</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+
+
+                    <!-- 5 section task-list/chat-box -->
+                    <div class="row section-5 mt-5">
+
+                        <div class="col-lg-6">
+                            <!-- Task List -->
+                            <div class="card border-0 shadow mb-3">
+
+                                <div class="card-header-tab card-header d-flex justify-content-between">
+                                    <div class="card-header-title font-size-lg text-capitalize font-weight-normal"><i
+                                            class='bx bx-data'></i>Task Lists
+                                    </div>
+                                    <a href="#" title="Add Friend to this chat">
+                                        <button class="menu-icon-btn" data-menu-icon-btn>
+                                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                                                focusable="false" class="menu-icon">
+                                                <g>
+                                                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </div>
+
+                                <div class="scroll-area-sm" id="Style-2">
+                                    <div class="ps-show-limits">
+
+                                        <div class="ps-content">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item ">
+                                                    <div class="todo-indicator bg-warning"></div>
+                                                    <div class="widget-content p-0">
+                                                        <div class="widget-content-wrapper">
+                                                            <div class="widget-content-left mr-2">
+                                                                <div class="custom-checkbox custom-control">
+                                                                    <input class="custom-control-input"
+                                                                        id="exampleCustomCheckbox12"
+                                                                        type="checkbox"><label
+                                                                        class="custom-control-label"
+                                                                        for="exampleCustomCheckbox12">&nbsp;</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="widget-content-left">
+                                                                <div class="widget-heading">Call Sam For payments <div
+                                                                        class="badge badge-danger ml-2">Rejected</div>
+                                                                </div>
+                                                                <div class="widget-subheading">By Bob</div>
+                                                            </div>
+                                                            <div class="widget-content-right">
+                                                                <button
+                                                                    class="border-0 btn-transition btn btn-outline-success">
+                                                                    <i class="fa fa-check"></i></button>
+                                                                <button
+                                                                    class="border-0 btn-transition btn btn-outline-danger">
+                                                                    <i class="fa fa-trash"></i>
+
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="list-group-item">
+                                                    <div class="todo-indicator bg-focus"></div>
+                                                    <div class="widget-content p-0">
+                                                        <div class="widget-content-wrapper">
+                                                            <div class="widget-content-left mr-2">
+                                                                <div class="custom-checkbox custom-control"><input
+                                                                        class="custom-control-input"
+                                                                        id="exampleCustomCheckbox1"
+                                                                        type="checkbox"><label
+                                                                        class="custom-control-label"
+                                                                        for="exampleCustomCheckbox1">&nbsp;</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="widget-content-left">
+                                                                <div class="widget-heading">Make payment to Bluedart
+                                                                </div>
+                                                                <div class="widget-subheading">
+                                                                    <div>By Johnny <div
+                                                                            class="badge badge-pill badge-info ml-2">NEW
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="widget-content-right">
+                                                                <button
+                                                                    class="border-0 btn-transition btn btn-outline-success">
+                                                                    <i class="fa fa-check"></i></button>
+                                                                <button
+                                                                    class="border-0 btn-transition btn btn-outline-danger">
+                                                                    <i class="fa fa-trash"></i>
+
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="list-group-item">
+                                                    <div class="todo-indicator bg-primary"></div>
+                                                    <div class="widget-content p-0">
+                                                        <div class="widget-content-wrapper">
+                                                            <div class="widget-content-left mr-2">
+                                                                <div class="custom-checkbox custom-control"><input
+                                                                        class="custom-control-input"
+                                                                        id="exampleCustomCheckbox4"
+                                                                        type="checkbox"><label
+                                                                        class="custom-control-label"
+                                                                        for="exampleCustomCheckbox4">&nbsp;</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="widget-content-left flex2">
+                                                                <div class="widget-heading">Office rent </div>
+                                                                <div class="widget-subheading">By Samino!</div>
+                                                            </div>
+
+                                                            <div class="widget-content-right">
+                                                                <button
+                                                                    class="border-0 btn-transition btn btn-outline-success">
+                                                                    <i class="fa fa-check"></i></button>
+                                                                <button
+                                                                    class="border-0 btn-transition btn btn-outline-danger">
+                                                                    <i class="fa fa-trash"></i>
+
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="list-group-item">
+                                                    <div class="todo-indicator bg-info"></div>
+                                                    <div class="widget-content p-0">
+                                                        <div class="widget-content-wrapper">
+                                                            <div class="widget-content-left mr-2">
+                                                                <div class="custom-checkbox custom-control"><input
+                                                                        class="custom-control-input"
+                                                                        id="exampleCustomCheckbox2"
+                                                                        type="checkbox"><label
+                                                                        class="custom-control-label"
+                                                                        for="exampleCustomCheckbox2">&nbsp;</label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="widget-content-left">
+                                                                <div class="widget-heading">Office grocery shopping
+                                                                </div>
+                                                                <div class="widget-subheading">By Tida</div>
+                                                            </div>
+                                                            <div class="widget-content-right">
+                                                                <button
+                                                                    class="border-0 btn-transition btn btn-outline-success">
+                                                                    <i class="fa fa-check"></i></button>
+                                                                <button
+                                                                    class="border-0 btn-transition btn btn-outline-danger">
+                                                                    <i class="fa fa-trash"></i>
+
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="list-group-item">
+                                                    <div class="todo-indicator bg-success"></div>
+                                                    <div class="widget-content p-0">
+                                                        <div class="widget-content-wrapper">
+                                                            <div class="widget-content-left mr-2">
+                                                                <div class="custom-checkbox custom-control"><input
+                                                                        class="custom-control-input"
+                                                                        id="exampleCustomCheckbox3"
+                                                                        type="checkbox"><label
+                                                                        class="custom-control-label"
+                                                                        for="exampleCustomCheckbox3">&nbsp;</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="widget-content-left flex2">
+                                                                <div class="widget-heading">Ask for Lunch to Clients
+                                                                </div>
+                                                                <div class="widget-subheading">By Office Admin</div>
+                                                            </div>
+
+                                                            <div class="widget-content-right">
+                                                                <button
+                                                                    class="border-0 btn-transition btn btn-outline-success">
+                                                                    <i class="fa fa-check"></i></button>
+                                                                <button
+                                                                    class="border-0 btn-transition btn btn-outline-danger">
+                                                                    <i class="fa fa-trash"></i>
+
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="list-group-item">
+                                                    <div class="todo-indicator bg-success"></div>
+                                                    <div class="widget-content p-0">
+                                                        <div class="widget-content-wrapper">
+                                                            <div class="widget-content-left mr-2">
+                                                                <div class="custom-checkbox custom-control"><input
+                                                                        class="custom-control-input"
+                                                                        id="exampleCustomCheckbox10"
+                                                                        type="checkbox"><label
+                                                                        class="custom-control-label"
+                                                                        for="exampleCustomCheckbox10">&nbsp;</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="widget-content-left flex2">
+                                                                <div class="widget-heading">Client Meeting at 11 AM
+                                                                </div>
+                                                                <div class="widget-subheading">By CEO</div>
+                                                            </div>
+
+                                                            <div class="widget-content-right">
+                                                                <button
+                                                                    class="border-0 btn-transition btn btn-outline-success">
+                                                                    <i class="fa fa-check"></i></button>
+                                                                <button
+                                                                    class="border-0 btn-transition btn btn-outline-danger">
+                                                                    <i class="fa fa-trash"></i>
+
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="d-block text-right card-footer"><button
+                                        class="mr-2 btn btn-link btn-sm">Cancel</button><button
+                                        class="btn btn-primary">Add
+                                        Task</button>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <!-- chat Box -->
+                            <div class=" bg-white shadow rounded">
+
+                                <div class="card-header-tab card-header d-flex justify-content-between">
+                                    <div class="card-header-title font-size-lg text-capitalize font-weight-normal"><i
+                                            class='bx bx-printer'></i>Chat Box</div>
+                                    <a href="#" title="Add Friend to this chat">
+                                        <button class="menu-icon-btn" data-menu-icon-btn>
+                                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                                                focusable="false" class="menu-icon">
+                                                <g>
+                                                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </div>
+
+                                <div class="chat-box">
+                                    <div class="scroll-area-sm" id="Style-2" style="height: 370px;">
+                                        <div class="message-box left-img">
+                                            <div class="picture">
+                                                <img src="./assests/avtars/3.jpg" title="user name" />
+                                            </div>
+                                            <div class="message-left">
+                                                <span>Bobby Giangeruso</span>
+                                                <p>Hey Mike, how are you doing?</p>
+                                            </div><br>
+                                            <span class="time">10 mins</span>
+                                        </div>
+
+                                        <div class="message-box right-img">
+                                            <div class="picture">
+                                                <img src="./assests/avtars/2.jpg" title="user name" />
+                                            </div>
+                                            <div class="message">
+                                                <span>Mike Moloney</span>
+                                                <p>Pretty good, Eating nutella, nommommom</p>
+                                            </div><br>
+                                            <span class="time-2min">2 mins</span>
+                                        </div>
+
+                                        <div class="message-box right-img">
+                                            <div class="picture">
+                                                <img src="./assests/avtars/2.jpg" title="user name" />
+                                            </div>
+                                            <div class="message">
+                                                <span>Mike Moloney</span>
+                                                <p>Pretty good, Eating nutella, nommommom</p>
+                                            </div><br>
+                                            <span class="time-2min">2 mins</span>
+                                        </div>
+
+                                        <div class="message-box left-img">
+                                            <div class="picture">
+                                                <img src="./assests/avtars/3.jpg" title="user name" />
+                                            </div>
+                                            <div class="message-left">
+                                                <span>Bobby Giangeruso</span>
+                                                <p>Hey Mike, how are you doing?</p>
+                                            </div><br>
+                                            <span class="time">10 mins</span>
+                                        </div>
+
+                                        <div class="message-box right-img">
+                                            <div class="picture">
+                                                <img src="./assests/avtars/2.jpg" title="user name" />
+                                            </div>
+                                            <div class="message">
+                                                <span>Mike Moloney</span>
+                                                <p>Pretty good, Eating nutella, nommommom</p>
+                                            </div><br>
+                                            <span class="time-2min">2 mins</span>
+                                        </div>
+
+                                        <div class="message-box right-img">
+                                            <div class="picture">
+                                                <img src="./assests/avtars/2.jpg" title="user name" />
+                                            </div>
+                                            <div class="message">
+                                                <span>Mike Moloney</span>
+                                                <p>Pretty good, Eating nutella, nommommom</p>
+                                            </div><br>
+                                            <span class="time-2min">2 mins</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="enter-message d-block card-footer">
+                                    <input type="text" placeholder="Write here and hit enter to send.." /><a
+                                        href="#" class="send">Send</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- section-6 total-order -->
+                    <div class="row bg-white section-6 shadow mt-5">
+                        <div class="col-lg-12">
+                            <div class="row my-3">
+                                <div class="col-lg-4">
+                                    <div class="widget-content-wrapper d-flex justify-content-space-between">
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Total Orders</div>
+                                            <div class="widget-subheading">Last year expenses</div>
+                                        </div>
+                                        <div class="widget-content-right">
+                                            <div class="widget-numbers text-success">1896</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="widget-content-wrapper d-flex justify-content-space-between">
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Products Sold</div>
+                                            <div class="widget-subheading">Total revenue streams</div>
+                                        </div>
+                                        <div class="widget-content-right">
+                                            <div class="widget-numbers text-warning">$3M</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="widget-content-wrapper d-flex justify-content-space-between">
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Total Orders</div>
+                                            <div class="widget-subheading">Last year expenses</div>
+                                        </div>
+                                        <div class="widget-content-right">
+                                            <div class="widget-numbers text-success">1896</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr"></div>
+                        <div class="col-lg-12">
+                            <div class="row my-3">
+                                <div class="col-lg-4">
+                                    <div class="widget-content-wrapper d-flex justify-content-space-between">
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Clients</div>
+                                            <div class="widget-subheading">Total Clients Profit</div>
+                                        </div>
+                                        <div class="widget-content-right">
+                                            <div class="widget-numbers text-primary">$12.6k</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="widget-content-wrapper d-flex justify-content-space-between">
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Followers</div>
+                                            <div class="widget-subheading">People Interested</div>
+                                        </div>
+                                        <div class="widget-content-right">
+                                            <div class="widget-numbers text-danger">45,9%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="widget-content-wrapper d-flex justify-content-space-between">
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Clients</div>
+                                            <div class="widget-subheading">Total Clients Profit</div>
+                                        </div>
+                                        <div class="widget-content-right">
+                                            <div class="widget-numbers text-primary">$12.6k</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <div class="footer-dashboard mt-5">
+
+                <div class="app-footer-left">
+                    <ul class="d-flex ">
+                        <div class="nav-item dropup padding-top">
+                            <a class="nav-link dropdown-pin" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="lh-0 bi bi-megaphone"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <div class="vr"></div>
+
+                        <div class="nav-item dropup padding-top">
+                            <a class="nav-link lh-0" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="lh-0 bi bi-globe-asia-australia"></i>
+                            </a>
+                        </div>
+                        <div class="vr"></div>
+
+                        <div class="nav-item dropup padding-top">
+                            <a class="nav-link dropdown-pin" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class=" lh-0 bi bi-pie-chart"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+
+                    </ul>
+                </div>
+                <div class="app-footer-right">
+                    <ul class="d-flex ">
+
+                        <div class="nav-item dropup">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Footer Menu
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-item dropup">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Grid Menu
+                                <span class="badge badge-dark ml-0 ml-1">
+                                    <small>NEW</small>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- js -->
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- js bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

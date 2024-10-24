@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap-icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="./custom.css">
+    <!-- script -->
+    <script src="./script.js" defer></script>
+    <title>page-2</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="bg-white">        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-3">
+                    <a class="logo" href="index.html"><img src="./assests/MicrosoftTeams-image-removebg-preview.png" alt=""></a>
+                </div>
+            <div class="col-md-6 col-6">
+                <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Add new</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Batch Upload</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </nav>
+        </div>
+        <div class="col-md-3 col-3">
+            <div class="d-flex justify-content-end" role="search">
+                
+                <a class="icon">
+                    <span class="material-icons"><i class="bi bi-bell px-2"></i></span>
+                    <span class="icon-button__badge">2</span>
+                  </a>
+
+                <div class="vr"></div>
+                <div class="dropdown user mx-2">
+                    <div class="dropdown-toggle" type="" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <a class="rounded-circle img-dropdown">GB</a>
+                    </div>
+                    <div class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+        </div>
+    </header>
+
+    <div class="hr"></div>
+
+    <div class="addnew bg-white p-3">Search</div>
+
+    <!-- body -->
+    <div class="container wrapper">
+        <div class="section-10 p-3">
+            <div class="d-flex justify-content-between">
+                <small>Search Record</small>
+                <i class="bi bi-chevron-up"></i>
+            </div>
+            <div class="hr"></div>
+
+            <h5>Form ID</h5>
+            <div class="row mt-2">
+                <div class="col-lg-3">
+                    <label for="formid">Form ID</label>
+                    <input type="text" class="form-control" id="formid" name="formid" placeholder="Enter Form Id">
+                </div>
+
+                <div class="col-lg-3">
+                    <label for="Rdate">Entry Date From</label>
+                    <input type="date" class="form-control" id="Rdate" name="Rdate">
+                </div>
+
+                <div class="col-lg-3">
+                    <label for="Rdate">Entry Date To</label><br>
+                    <input type="date" class="form-control" id="Rdate" name="Rdate">
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="Type">Status</div>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-lg-3">
+                    <div class="Type">Source Type</div>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section-11 p-3">
+            <h5>Policy Holder</h5>
+            <div class="row">
+                <div class="col-lg-3">
+                    <label for="fname">First Name </label>
+                    <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter First Name">
+                </div>
+
+                <div class="col-lg-3">
+                    <label for="lname">Last Name </label>
+                    <input type="text" class="form-control" id="lname" name="lname" placeholder="Enter Last Name">
+                </div>
+
+                <div class="col-lg-3">
+                    <label for="client">Client ID</label>
+                    <input type="text" class="form-control" id="client" name="client" placeholder="Enter Client Id">
+                </div>
+
+                <div class="col-lg-3">
+                    <label for="ssn">SSN</label>
+                    <input type="text" class="form-control" id="ssn" name="ssn" placeholder="Enter SSN">
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-lg-3">
+                    <label for="dobaf">DOB From</label><br>
+                    <input type="date" class="form-control" id="dobaf" name="dobaf">
+                </div>
+
+                <div class="col-lg-3">
+                    <label for="dob2">DOB To</label><br>
+                    <input type="date" class="form-control" id="dob2" name="dob2">
+                </div>
+            </div>
+        </div>
+
+        <div class="section-12 p-3">
+            <h5>Policy</h5>
+            <div class="row">
+                <div class="col-lg-3">
+                    <label for="Carrier">Carrier Code</label><br>
+                    <input type="text" class="form-control" id="Carrier" name="Carrier" placeholder="Enter Carrier Code">
+                </div>
+
+                <div class="col-lg-3">
+                    <label for="CCarrier">Client Carrier Code</label><br>
+                    <input type="text" class="form-control" id="CCarrier" name="CCarrier" placeholder="Enter Client Carrier Code">
+                </div>
+
+                <div class="col-lg-3">
+                    <label for="Policy">Policy number </label><br>
+                    <input type="text" class="form-control" id="Policy" name="Policy" placeholder="Enter Policy Number">
+                </div>
+
+                <div class="col-lg-3">
+                    <label for="Group">Group Number </label><br>
+                    <input type="text" class="form-control" id="Group" name="Group" placeholder="Enter Group Number">
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-lg-3">
+                    <label for="dobf">DOB From</label><br>
+                    <input type="date" class="form-control" id="dobf" name="dobf">
+                </div>
+
+                <div class="col-lg-3">
+                    <label for="dobt">DOB To</label><br>
+                    <input type="date" class="form-control" id="dobt" name="dobt">
+                </div>
+            </div>
+        </div>
+
+        <div class="section-13 p-3">
+            <h5>Recipient</h5>
+            <div class="row">
+                <div class="col-lg-3">
+                    <label for="ffname">First Name </label>
+                    <input type="text" class="form-control" id="ffname" name="ffname" placeholder="Enter First Name">
+                </div>
+
+                <div class="col-lg-3">
+                    <label for="llname">Last Name </label>
+                    <input type="text" class="form-control" id="llname" name="llname" placeholder="Enter Last Name">
+                </div>
+
+                <div class="col-lg-3">
+                    <label for="cclient">Client ID</label>
+                    <input type="text" class="form-control" id="cclient" name="cclient" placeholder="Enter Client Id">
+                </div>
+
+                <div class="col-lg-3">
+                    <label for="sssn">SSN</label>
+                    <input type="text" class="form-control" id="sssn" name="sssn" placeholder="Enter SSN">
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-lg-3">
+                    <label for="dobfrom">DOB From</label><br>
+                    <input type="date" class="form-control" id="dobfrom" name="dobfrom">
+                </div>
+
+                <div class="col-lg-3">
+                    <label for="dobto">DOB To</label><br>
+                    <input type="date" class="form-control" id="dobto" name="dobto">
+                </div>
+            </div>
+        </div>
+
+        <div class="hr mt-2"></div>
+
+        <div class="d-flex justify-content-end mt-3 gap-2 p-3">
+            <button type="button" class="btn btn-outline border-radius">Clear</button>
+            <button type="button" class="btn btn-secondary border-radius">Search</button>
+        </div>
+    </div>
+
+    <footer class="footer mt-5 p-3 text-center">
+        ©2023 Gainwell All Rights Reserved
+    </footer>
+    <!-- js bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

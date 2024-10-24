@@ -1,0 +1,25 @@
+.py-5 {
+    padding-top: 150px !important;
+    line-height: 0 !important;
+}
+
+.btn-rectangle-rounded {
+    background-color: #ee0979;
+    border-radius: 20px;
+    font-size: small;
+    font-weight: 300;
+}
+
+h3 {
+    margin-top: 80px;
+    font-weight: 300;
+    color: #808284;
+}
+
+p {
+    color: #27323d;
+}
+
+.fixed-top {
+    background: rgba(71, 4, 35, .2) !important;
+}

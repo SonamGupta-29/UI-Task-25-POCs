@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="./tabnewcustom.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap-icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-header bg-color p-2 pt-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul class="header-item d-flex gap-4">
+                            <li class="text-light">Welcome to Our Store Multicart</li>
+                            <li class="text-light"><i class="fa fa-phone text-light" aria-hidden="true"
+                                    style="color: red;"></i>&nbsp;&nbsp;Call Us:
+                                123 - 456 - 7890</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="header-item d-flex justify-content-end gap-4">
+                            <li class="mobile-wishlist text-light"><a href="#"><i class="fa fa-heart text-light"
+                                        aria-hidden="true"></i></a>
+                            </li>
+                            <li class="onhover-dropdown mobile-account text-light"> <i class="fa fa-user text-light"
+                                    aria-hidden="true"></i>
+                                My Account
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="main-menu d-flex justify-content-between mt-4">
+
+                        <div class="menu-left d-flex gap-5">
+
+                            <div class="brand-logo pt-3">
+                                <a href="index.html"><img src="./assests/images/logo.png"
+                                        class="img-fluid blur-up lazyloaded" alt=""></a>
+                            </div>
+                        </div>
+
+                        <div class="wrap text-center">
+                            <div class="search">
+                                <input type="text" class="searchTerm" placeholder="Search any Device or Gadgets...">
+                                <button type="submit" class="searchButton">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="icons pt-3 gap-3">
+                            <img src="./assests/images/icon/setting.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <img src="./assests/images/icon/cart.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="delivery-area">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    <div class="d-flex mx-2">
+                        <h6 class="align-items-center mt-2">Delivery to</h6>
+                        <h5 class="mx-2 mt-1">400520</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="text-center">
+                    <ul class="d-flex gap-4 pt-3">
+                        <li><a>HOME</a></li>
+                        <li><a>FEATURE</a><img src="./assests/images/Arrow small down.png" alt=""></li>
+                        <li><a>SHOP</a><img src="./assests/images/Arrow small down.png" alt=""></li>
+                        <li><a>PRODUCT</a><img src="./assests/images/Arrow small down.png" alt=""></li>
+                        <li><a>PAGES</a><img src="./assests/images/Arrow small down.png" alt=""></li>
+                        <li><a>BLOG</a><img src="./assests/images/Arrow small down.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="breadcrumb-section mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="page-title">
+                        <h2>collection</h2>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <nav aria-label="breadcrumb" class="theme-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="">home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">collection</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="sidebar">
+                    <a class="active text-uppercase" href="#home">Grocery & staples</a>
+                    <a href="#news">Vegetables</a>
+                    <a href="#contact">Dairy Items</a>
+                    <a href="#about">Eggs, Meat, Fish</a>
+                    <a href="#news">cold drinks & juices</a>
+                    <a href="#contact">cleaning products</a>
+                    <a href="#about">organic items</a>
+                    <a href="#news">biscuits & snacks</a>
+                    <a href="#contact">household items</a>
+                </div>
+            </div>
+
+            <div class="col-lg-9">
+                <div class="tab">
+                    <div class="title8">
+                        <h2>Grocery &amp; Staples</h2>
+                        <p>atta, dal, rice and more</p>
+                    </div>
+
+                    <div class="row g-sm-4 g-3">
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product-box product-style-5">
+                                <a href="product-page.html">
+                                    <h6>Lemon - Organically Grown (Loose)</h6>
+                                </a>
+                                <h5>1 Kg</h5>
+                                <h4>$5.00</h4>
+                                <img class="img-responsive" width="60%" src="./assests/images/vegetable/1.png" alt="">
+                                <div class="input_group d-flex">
+                                    <i class="fa fa-minus n"></i>
+                            <div class="number-n">1</div>
+                                    <i class="fa fa-plus n"></i>
+                        </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product-box product-style-5">
+                                <a href="product-page.html">
+                                    <h6>Lemon - Organically Grown (Loose)</h6>
+                                </a>
+                                <h5>1 Kg</h5>
+                                <h4>$5.00</h4>
+                                <img class="img-responsive" width="60%" src="./assests/images/vegetable/2.png" alt="">
+                                <div class="addtocart_btn">
+                                    <button class="add-button add_cart" title="Add to cart">
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product-box product-style-5">
+                                <a href="product-page.html">
+                                    <h6>Lemon - Organically Grown (Loose)</h6>
+                                </a>
+                                <h5>1 Kg</h5>
+                                <h4>$5.00</h4>
+                                <img class="img-responsive" width="60%" src="./assests/images/vegetable/3.png" alt="">
+                                <div class="addtocart_btn">
+                                    <button class="add-button add_cart" title="Add to cart">
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product-box product-style-5">
+                                <a href="product-page.html">
+                                    <h6>Lemon - Organically Grown (Loose)</h6>
+                                </a>
+                                <h5>1 Kg</h5>
+                                <h4>$5.00</h4>
+                                <img class="img-responsive" width="60%" src="./assests/images/vegetable/4.png" alt="">
+                                <div class="addtocart_btn">
+                                    <button class="add-button add_cart" title="Add to cart">
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product-box product-style-5">
+                                <a href="product-page.html">
+                                    <h6>Lemon - Organically Grown (Loose)</h6>
+                                </a>
+                                <h5>1 Kg</h5>
+                                <h4>$5.00</h4>
+                                <img class="img-responsive" width="60%" src="./assests/images/vegetable/5.png" alt="">
+                                <div class="addtocart_btn">
+                                    <button class="add-button add_cart" title="Add to cart">
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product-box product-style-5">
+                                <a href="product-page.html">
+                                    <h6>Lemon - Organically Grown (Loose)</h6>
+                                </a>
+                                <h5>1 Kg</h5>
+                                <h4>$5.00</h4>
+                                <img class="img-responsive" width="60%" src="./assests/images/vegetable/6.png" alt="">
+                                <div class="addtocart_btn">
+                                    <button class="add-button add_cart" title="Add to cart">
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product-box product-style-5">
+                                <a href="product-page.html">
+                                    <h6>Lemon - Organically Grown (Loose)</h6>
+                                </a>
+                                <h5>1 Kg</h5>
+                                <h4>$5.00</h4>
+                                <img class="img-responsive" width="60%" src="./assests/images/vegetable/7.png" alt="">
+                                <div class="addtocart_btn">
+                                    <button class="add-button add_cart" title="Add to cart">
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product-box product-style-5">
+                                <a href="product-page.html">
+                                    <h6>Lemon - Organically Grown (Loose)</h6>
+                                </a>
+                                <h5>1 Kg</h5>
+                                <h4>$5.00</h4>
+                                <img class="img-responsive" width="60%" src="./assests/images/vegetable/8.png" alt="">
+                                <div class="addtocart_btn">
+                                    <button class="add-button add_cart" title="Add to cart">
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="theme-settings right" id="right-left">
+
+        <ul>
+            <li class="demo-li mt-5">
+                <a href="./assests/images/ajax-loader.gif">
+                    <div class="setting-sidebar" id="setting-icon">
+                        <h5>50+ <br>demo</h5>
+                    </div>
+                </a>
+            </li>
+            <li class="demo-li">
+                <div class="backend-btn"><a target="_blank" href="./assests/images/ajax-loader.gif">Admin</a></div>
+            </li>
+            <li>
+                <div class="dark-btn" onclick="myFunction()">Dark</div>
+            </li>
+            
+            <li>
+                <div class="rtl-btn" onclick="rtl()" id="rtl">RTL</div>
+                <div class="rtl-btn" onclick="ltl()" id="ltl" style="display: none;">LTL</div>
+            </li>
+
+            <li class="input-picker">
+                <input id="ColorPicker1" type="color" value="#206664" name="Background">
+                <!-- <span data-color= "#f4a261" style="background-color: #f4a261;"></span> -->
+            </li>
+
+            <li class="input-picker">
+                <input id="ColorPicker1" type="color" value="#ee7a63" name="Background">
+                <!-- <span data-color= "#2a9d8f" style="background-color: #2a9d8f;"></span> -->
+            </li>
+        </ul>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer-light pt-4 mt-5">
+        <section class="section-b-space light-layout pt-4">
+            <div class="container">
+                <div class="row footer-theme partition-f">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-title footer-mobile-title">
+                            <div class="brand-logo pt-3">
+                                <a href="index.html"><img src="./assests/images/logo.png"
+                                        class="img-fluid blur-up lazyloaded" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="footer-contant">
+                            <div class="footer-logo"><img src="../assets/images/icon/logo.png" alt=""></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                            <div class="footer-social pt-5">
+                                <ul class="d-flex justify-content-between">
+                                    <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col offset-xl-1">
+                        <div class="sub-title">
+                            <div class="footer-title">
+                                <h4 class="color">MY ACCOUNT</h4>
+                            </div>
+                            <div class="footer-contant">
+                                <ul>
+                                    <li><a href="#">mens</a></li>
+                                    <li><a href="#">womens</a></li>
+                                    <li><a href="#">clothing</a></li>
+                                    <li><a href="#">accessories</a></li>
+                                    <li><a href="#">featured</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="sub-title">
+                            <div class="footer-title">
+                                <h4 class="color">WHY WE CHOOSE</h4>
+                            </div>
+                            <div class="footer-contant">
+                                <ul>
+                                    <li><a href="#">shipping &amp; return</a></li>
+                                    <li><a href="#">secure shopping</a></li>
+                                    <li><a href="#">gallary</a></li>
+                                    <li><a href="#">affiliates</a></li>
+                                    <li><a href="#">contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="sub-title">
+                            <div class="footer-title">
+                                <h4 class="color">STORE INFORMATION</h4>
+                            </div>
+                            <div class="footer-contant">
+                                <ul class="contact-list">
+                                    <li><i class="fa fa-map-marker"></i>Multikart Demo Store, Demo store India
+                                        345-659</li>
+                                    <li><i class="fa fa-phone"></i>Call Us: 123-456-7898</li>
+                                    <li><i class="fa fa-envelope"></i>Email Us: <a href="#">Support@Multikart.com</a>
+                                    </li>
+                                    <li><i class="fa fa-fax"></i>Fax: 123456</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <div class="sub-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                    <div class="footer-end">
+                        <p><i class="fa fa-copyright" aria-hidden="true"></i> 2023-24 themeforest powered by
+                            pixelstrap</p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                    <div class="payment-card-bottom">
+                        <ul class="d-flex justify-content-end gap-2">
+                            <li>
+                                <a href="#"><img src="./assests/images/icon/visa.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assests/images/icon/mastercard.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assests/images/icon/paypal.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assests/images/icon/mastercard.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assests/images/icon/discover.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

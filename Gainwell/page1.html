@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap-icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="./custom.css">
+    <!-- script -->
+    <script src="./script.js" defer></script>
+    <title>Gainwell</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="bg-white">        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-3">
+                    <a class="logo" href="index.html"><img src="./assests/MicrosoftTeams-image-removebg-preview.png" alt=""></a>
+                </div>
+            <div class="col-md-6 col-6">
+                <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Add new</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Batch Upload</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </nav>
+        </div>
+        <div class="col-md-3 col-3">
+            <div class="d-flex justify-content-end" role="search">
+              
+                <a class="icon">
+                    <span class="material-icons"><i class="bi bi-bell px-2"></i></span>
+                    <span class="icon-button__badge">2</span>
+                  </a>
+
+                <div class="vr"></div>
+                
+                <div class="dropdown user mx-2">
+                    <div class="dropdown-toggle" type="" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <a class="rounded-circle img-dropdown">GB</a>
+                    </div>
+                    <div class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+        </div>
+    </header>
+
+
+    <div class="hr"></div>
+
+    <div class="addnew bg-white p-3">Add New</div>
+
+    <div class="container">
+
+        <!-- section-1 -->
+        <div class="section-1">
+            <div class="row">
+                <div class="row">
+
+                    <div class="col-lg-3">
+                        <div class="Type">Source Type</div>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="Type">Source Organisation</div>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- section-2 -->
+       
+        <div class="section-2">
+            <div class="d-flex justify-content-between pt-1 px-2">
+                <small>Search/Enter HMS Information</small>
+                <i class="bi bi-chevron-up" data-bs-toggle="collapse" data-bs-target="#demo2"></i>
+            </div>
+            <div class="hr"></div>
+
+           <div id="demo2" class="collapse collapse show p-3">
+            <div class="row mt-2">
+                <div class="col-lg-3">
+                    <label for="form">Form ID</label><br>
+                    <input type="text" class="form-control" id="form" name="form" placeholder="Enter Form Id">
+                </div>
+
+                <div class="col-lg-3">
+                    <label for="Rdate">Received Date</label><br>
+                    <input type="date" class="form-control" id="Rdate" name="Rdate">
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="Add Type">Add</div>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="Lead Type">Verification Lead</div>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                
+                <div class="col-lg-3">
+                    <label for="CE">Case</label><br>
+                    <input type="text" class="form-control" id="CE" name="CE" placeholder="Enter Case">
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="Lead Type">Form Entry Type</div>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+           </div>
+
+        </div>
+
+        <!-- section-3 -->
+        <div class="section-3">
+            <div class="d-flex justify-content-between pt-1 px-2">
+                <small>Search/Enter HMS Information</small>
+                <i class="bi bi-chevron-up" data-bs-toggle="collapse" data-bs-target="#demo3"></i>
+            </div>
+            <div class="hr"></div>
+
+           <div id="demo3" class="collapse collapse show p-3">
+            <div class="row mt-2">
+                <div class="col-lg-3">
+                    <label for="SN">SSN</label><br>
+                    <input type="text" class="form-control" id="SN" name="SN" placeholder="Enter Form Id">
+                </div>
+
+                <div class="col-lg-3">
+                    <label for="CT">Client </label><br>
+                    <input type="text" class="form-control" id="CT" name="CT" placeholder="Enter Client Id">
+                </div>
+
+                <div class="col-lg-3">
+                    <label for="birthday">DOB</label><br>
+                    <input type="date" class="form-control" id="birthday" name="birthday">
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-lg-3">
+                    <label for="FN">First Name</label><br>
+                    <input type="text" class="form-control" id="FN" name="FN" placeholder="Enter First Name">
+                </div>
+
+                <div class="col-lg-3">
+                    <label for="LN">Last Name</label><br>
+                    <input type="text" class="form-control" id="LN" name="LN" placeholder="Enter Last Name">
+                </div>
+
+                <div class="col-lg-3">
+                    <form class="">
+                        <div class="Gen Type">Gender</div>
+                        <input type="radio" class="form-check-input" id="age1" name="age" value="30">
+                        <label for="age1 form-check-label">Male</label>
+                        <input type="radio" class="form-check-input" id="age2" name="age" value="60">
+                        <label for="age2 form-check-label">Female</label><br>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-lg-3">
+                    <label for="addres">Address 1</label><br>
+                    <input type="text" class="form-control" id="addres" name="addres" placeholder="Enter Address">
+                </div>
+
+                <div class="col-lg-3">
+                    <label for="c">City</label><br>
+                    <input type="text" class="form-control" id="c" name="c" placeholder="Enter City Name">
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="Lead Type">State</div>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+
+                <div class="col-lg-3">
+                    <label for="z">Zip</label><br>
+                    <input type="text" class="form-control" id="z" name="z" placeholder="Enter Zip Code">
+                </div>
+            </div>
+
+           </div>
+        </div>
+
+        <!-- section-4 -->
+        <div class="section-4">
+            <div class="d-flex justify-content-between pt-1 px-2">
+                <small>Search/Enter HMS Information</small>
+                <i class="bi bi-chevron-up" data-bs-toggle="collapse" data-bs-target="#demo4"></i>
+            </div>
+            <div class="hr"></div>
+
+            <div id="demo4" class="row collapse collapse show p-3">
+
+                <div class="col-lg-3">
+                    <label for="code">Client Carrier Code</label><br>
+                    <input type="text" class="form-control" id="code" name="code" placeholder="Enter Client Carrier Code">
+                </div>
+
+                <div class="col-lg-3">
+                    <label for="segment">TPL Segment ID</label><br>
+                    <input type="text" class="form-control" id="segment" name="segment" placeholder="Enter Segment ID">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- section-5 -->
+        <div class="section-5">
+            <div class="d-flex justify-content-between pt-1 px-2">
+                <small>Search/Enter HMS Information</small>
+                <i class="bi bi-chevron-up" data-bs-toggle="collapse" data-bs-target="#demo5"></i>
+            </div>
+            <div class="hr"></div>
+
+            <div id="demo5" class="collapse collapse show p-3">
+                <div class="row mt-2">
+                    <div class="col-lg-3">
+                        <div class="Lead Type">Relationship</div>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+    
+                    <div class="col-lg-3">
+                        <label for="client">Client </label><br>
+                        <input type="text" class="form-control" id="client" name="client" placeholder="Enter Form ID">
+                    </div>
+    
+                    <div class="col-lg-3">
+                        <label for="ssn">SSN</label><br>
+                        <input type="text" class="form-control" id="ssn" name="ssn" placeholder="Enter Client ID">
+                    </div>
+    
+                    <div class="col-lg-3">
+                        <label for="dob">DOB</label><br>
+                        <input type="date" class="form-control" id="dob" name="dob">
+                    </div>
+                </div>
+    
+                <div class="row mt-3">
+                    <div class="col-lg-3">
+                        <label for="fname">First Name</label><br>
+                        <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter First Name">
+                    </div>
+    
+                    <div class="col-lg-3">
+                        <label for="lname">Last Name</label><br>
+                        <input type="text" class="form-control" id="lname" name="lname" placeholder="Enter Last Name">
+                    </div>
+    
+                    <div class="col-lg-3">
+                        <label for="number">Sequence number</label><br>
+                        <input type="text" class="form-control" id="number" name="number" placeholder="Enter Sequence Number">
+                    </div>
+    
+                    <div class="col-lg-3">
+                        <form class="">
+                            <div class="gender Type">Gender</div>
+                            <input type="radio" class="form-check-input" id="male" name="gender" value="30">
+                            <label for="male form-check-label">Male</label>
+                            <input type="radio" class="form-check-input" id="female" name="gender" value="60">
+                            <label for="female form-check-label">Female</label><br>
+                        </form>
+                    </div>
+                </div>
+    
+                <div class="row mt-3">
+                    <div class="col-lg-3">
+                        <label for="address1">Address 1</label><br>
+                        <input type="text" class="form-control" id="address1" name="address1" placeholder="Enter Address">
+                    </div>
+    
+                    <div class="col-lg-3">
+                        <label for="address2">Address 2</label><br>
+                        <input type="text" class="form-control" id="address2" name="address2" placeholder="Enter Address">
+                    </div>
+    
+                    <div class="col-lg-3">
+                        <label for="city">City</label><br>
+                        <input type="text" class="form-control" id="city" name="city" placeholder="Enter City Name">
+                    </div>
+    
+                    <div class="col-lg-3">
+                        <div class="Lead Type">State</div>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 mt-3">
+                    <label for="zip">Zip</label><br>
+                    <input type="text" class="form-control" id="zip" name="zip" placeholder="Enter Zip Code">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- section-6 -->
+        <div class="section-6">
+            <div class="d-flex justify-content-between pt-1 px-2">
+                <small>Search/Enter HMS Information</small>
+                <i class="bi bi-chevron-up" data-bs-toggle="collapse" data-bs-target="#demo6"></i>
+            </div>
+            <div class="hr"></div>
+
+             <div id="demo6" class="collapse collapse show p-3">
+                <div class="row mt-2">
+                    <div class="col-lg-3">
+                        <label for="Careercode">Career Code </label><br>
+                        <input type="text" class="form-control" id="Careercode" name="Careercode" placeholder="Enter Carrier Code">
+                    </div>
+
+                    <div class="col-lg-3">
+                        <label for="officecode">Office Code </label><br>
+                        <input type="text" class="form-control" id="officecode" name="officecode" placeholder="Enter Office Code">
+                    </div>
+
+                    <div class="col-lg-3">
+                        <label for="carriername">Carrier Name </label><br>
+                        <input type="text" class="form-control" id="carriername" name="carriername" placeholder="Enter Carrier Name">
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="Lead Type">HMS Carrier Code Format</div>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-lg-3">
+                        <label for="oneAdd">Address 1</label><br>
+                        <input type="text" class="form-control" id="oneAdd" name="oneAdd" placeholder="Enter Address">
+                    </div>
+
+                    <div class="col-lg-3">
+                        <label for="TwoAdd">Address 2</label><br>
+                        <input type="text" class="form-control" id="TwoAdd" name="TwoAdd" placeholder="Enter Address">
+                    </div>
+
+                    <div class="col-lg-3">
+                        <label for="citi">City</label><br>
+                        <input type="text" class="form-control" id="citi" name="citi" placeholder="Enter City Name">
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="Lead Type">State</div>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-lg-3">
+                        <label for="jip">Zip</label><br>
+                        <input type="text" class="form-control" id="jip" name="jip" placeholder="Enter Zip Code">
+                    </div>
+
+                    <div class="col-lg-3">
+                        <label for="phn">Phone</label><br>
+                        <input type="text" class="form-control" id="phn" name="phn" placeholder="Enter Phone Number">
+                    </div>
+                </div>
+
+                <h5>Enter Policy Info</h5>
+                <div class="row mt-3">
+                    <div class="col-lg-3">
+                        <label for="policy">Policy</label><br>
+                        <input type="text" class="form-control" id="policy" name="policy" placeholder="Enter Policy">
+                    </div>
+
+                    <div class="col-lg-3">
+                        <label for="Group">Group</label><br>
+                        <input type="text" class="form-control" id="Group" name="Group" placeholder="Enter Group">
+                    </div>
+
+                    <div class="col-lg-3">
+                        <label for="Startd">Start Date</label><br>
+                        <input type="date" class="form-control" id="Startd" name="Startd">
+                    </div>
+
+                    <div class="col-lg-3">
+                        <label for="Endd">End Date</label><br>
+                        <input type="date" class="form-control" id="Endd" name="Endd">
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-lg-6">
+                        <form>
+                            <label for="comments">Comments</label><br>
+                            <textarea class="form-control" rows="4" cols="60" name="comments" form="usrform">
+                            Enter Your Comments</textarea>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <form>
+                            <label for="claim" class="form-check-label">Claim Type</label><br>
+                            <input type="checkbox" class="form-check-input" id="vehicle1" name="vehicle1" value="Bike">
+                            <label for="vehicle1" class="form-check-label"> Dental</label>
+                            <input type="checkbox" class="form-check-input" id="vehicle2" name="vehicle2" value="Car">
+                            <label for="vehicle2" class="form-check-label"> Hospital</label>
+                            <input type="checkbox" class="form-check-input" id="vehicle3" name="vehicle3" value="Boat">
+                            <label for="vehicle3" class="form-check-label"> Long Term</label><br>
+
+                            <input type="checkbox" class="form-check-input" id="vehicle1" name="vehicle1" value="Bike">
+                            <label for="vehicle1" class="form-check-label"> Medical</label>
+                            <input type="checkbox" class="form-check-input" id="vehicle2" name="vehicle2" value="Car">
+                            <label for="vehicle2" class="form-check-label"> Pharmacy</label>
+                            <input type="checkbox" class="form-check-input" id="vehicle3" name="vehicle3" value="Boat">
+                            <label for="vehicle3" class="form-check-label"> Vision</label><br>
+
+                            <input type="checkbox" class="form-check-input" id="vehicle1" name="vehicle1" value="Bike">
+                            <label for="vehicle1" class="form-check-label"> Mental Health</label>
+                            <input type="checkbox" class="form-check-input" id="vehicle2" name="vehicle2" value="Car">
+                            <label for="vehicle2" class="form-check-label"> Physician</label>
+                            <input type="checkbox" class="form-check-input" id="vehicle3" name="vehicle3" value="Boat">
+                            <label for="vehicle3" class="form-check-label"> Medicare Supplemental</label>
+                        </form>
+                    </div>
+                </div>
+             </div>
+
+        </div>
+
+        <!-- section-7 -->
+        <div class="section-7">
+            <div class="d-flex justify-content-between pt-1 px-2">
+                <small>Search/Enter HMS Information</small>
+                <i class="bi bi-chevron-up" data-bs-toggle="collapse" data-bs-target="#demo7"></i>
+            </div>
+            <div class="hr"></div>
+
+            <div id="demo7" class="collapse collapse show p-3">
+                <div class="row mt-2">
+                    <div class="col-lg-3">
+                        <label for="ma">Provider MA</label><br>
+                        <input type="text" class="form-control" id="ma" name="ma" placeholder="Enter Provider MA">
+                    </div>
+    
+                    <div class="col-lg-3">
+                        <label for="cname">Contact Name</label><br>
+                        <input type="text" class="form-control" id="cname" name="cname" placeholder="Enter Contact Name">
+                    </div>
+    
+                    <div class="col-lg-3">
+                        <label for="phone">Contact Phone</label><br>
+                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Phone Number">
+                    </div>
+                </div>
+    
+                <div class="row mt-3">
+                    <div class="col-lg-3">
+                        <label for="email">Provider Email</label><br>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Enter Provider Email">
+                    </div>
+    
+                    <div class="col-lg-3">
+                        <label for="fax">Provider FAX</label><br>
+                        <input type="text" class="form-control" id="fax" name="fax" placeholder="Enter Provider Fax">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- section-8 -->
+        <div class="section-8">
+            <div class="d-flex justify-content-between pt-1 px-2">
+                <small>Search/Enter HMS Information</small>
+                <i class="bi bi-chevron-up" data-bs-toggle="collapse" data-bs-target="#demo8"></i>
+            </div>
+            <div class="hr"></div>
+
+            <div id="demo8" class="row collapse collapse show p-3">
+                <div class="col-lg-12">
+                    <form class="">
+                        <input type="radio" class="form-check-input" id="Complete" name="item" value="30">
+                        <label for="Complete" class="form-check-label">Complete</label>
+                        <input type="radio" class="form-check-input" id="Incomplete" name="item" value="60">
+                        <label for="Incomplete" class="form-check-label">Incomplete</label>
+                        <input type="radio" class="form-check-input" id="Copy" name="item" value="30">
+                        <label for="Copy" class="form-check-label">Copy & Complete</label>
+                        <input type="radio" class="form-check-input" id="Copy2" name="item" value="60">
+                        <label for="Copy2" class="form-check-label">Copy & Incomplete</label>
+                        <input type="radio" class="form-check-input" id="Bypass" name="item" value="60">
+                        <label for="Bypass" class="form-check-label">Bypass</label>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="hr mt-4"></div>
+
+    </div>
+
+
+
+    <div class="d-flex justify-content-end mt-3 gap-2">
+        <button type="button" class="btn btn-outline border-radius">Clear</button>
+        <button type="button" class="btn btn-secondary border-radius">Search</button>
+    </div>
+
+    <footer class="footer mt-5 p-3 text-center">
+        ©2023 Gainwell All Rights Reserved
+    </footer>
+
+
+    <!-- js bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap-icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./custom.css">
+    <!-- Perfect Scrollbar css -->
+    <link rel="stylesheet" href="./assests/css/perfectscrollbar.css">
+    <title>Soft UI Dashboard</title>
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="container-fluid border-radius header-fix mt-3">
+        <div class="row margin-left-right-header">
+
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="navbar-left">
+                    <div>Pages / </div>
+                    <div class="mx-1">Virtual Reality</div>
+                </div>
+                <h6 class="font-weight-bolder">Virtual Reality</h6>
+            </div>
+
+            <div class="col-lg-8 col-md-12 col-sm-12">
+                <div class="d-flex justify-content-end">
+                    <div class="form-group has-search me-3">
+                        <i class="bi bi-search search-icon"></i>
+                        <input type="text" class="search" placeholder="Type here..">
+                    </div>
+
+                    <div class="online-builder-button me-3">
+                        <button type="button" class="btn btn-outline-primary btn-online">ONLINE BUILDER</button>
+                    </div>
+
+                    <div class="user d-flex justify-content-space-around text-body">
+                        <div class="d-flex justify-content-center">
+                            <i class="bi bi-person-fill navbar-icon icon-font-size"></i><span class="sign-in">Sign
+                                in</span>
+                        </div>
+
+                        <!-- setting trigger modal -->
+                        <div type="setting" class="card-show" onclick="myFunction()">
+                            <i class="bi bi-gear-fill lh-2 px-3"></i>
+                        </div>
+
+                        <!-- toggle button -->
+                        <div class="toggle-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+                            aria-controls="offcanvas" aria-label="Toggle navigation" onclick="myToggle()">
+                            <i class="bi bi-list icon-font-size"></i>
+                        </div>
+
+                        <!-- setting card  -->
+
+                        <div class="card card-hide" id="myDIV">
+                            <div class="card-content p-3">
+                                <div class="card-content-header">
+                                    <div class="float-start">
+                                        <h5 class="mt-3 mb-0 invoices">Soft UI Configurator</h5>
+                                        <p class="fs sidenav-color">See our dashboard options.</p>
+                                    </div>
+                                    <div class="float-end mt-2">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close" onclick="myFunction()"></button>
+                                    </div>
+                                </div>
+                                <div class="card-content-body mt-5">
+                                    <div class="sidebar-colors">
+                                        <h6 class="mb-0 invoices">Sidebar Colors</h6>
+                                    </div>
+
+                                    <div class="color-group mt-2">
+                                        <ul class="color-grid">
+                                            <li class="color-option is-selected" data-color="#5B00B7"
+                                                onclick="colorchange()"></li>
+                                            <li class="color-option" data-color="#3a68b7" onclick="colorchange()"></li>
+                                            <li class="color-option" data-color="#34b7b0" onclick="colorchange()"></li>
+                                            <li class="color-option" data-color="#4f8f44" onclick="colorchange()"></li>
+                                            <li class="color-option" data-color="#c0582f" onclick="colorchange()"></li>
+                                            <li class="color-option" data-color="#a83030" onclick="colorchange()"></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <h6 class="mb-0 invoices sidenav-color">Sidenav Type</h6>
+                                        <p class="text-sm fs">Choose between 2 different sidenav types.</p>
+                                    </div>
+
+                                    <div class="d-flex mt-3">
+                                        <button class="btn bg-gradient-primary w-100 px-3 mb-2">Transparent</button>
+                                        <button class="btn bg-gradient-light w-100 px-3 mb-2 ms-2">White</button>
+                                    </div>
+
+                                    <div class="mt-3 modal-toggle-navbar">
+                                        <h6 class="mb-0 invoices">Navbar Fixed</h6>
+                                        <input type="checkbox" id="switch" /><label for="switch"></label>
+                                    </div>
+                                </div>
+
+                                <div class="card-content-footer mt-4">
+                                    <button type="button" class="btn btn-primary bg-gradient-dark w-100">FREE
+                                        DOWNLOAD</button>
+                                    <button type="button" class="btn btn-outline-dark w-100 mt-2">VIEW
+                                        DOCUMENTATION</button>
+
+                                    <button type="button" class="btn btn-light star mt-2">Star</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <i class="bi bi-bell-fill lh-2 pe-2"></i>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="background-image mx-3 mt-4">
+
+        <!-- sidenavbar -->
+        <nav class="navbar navbar-expand-lg ">
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasNavbar">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="sidenav">
+
+                        <div class="nav-list" id="description">
+                            <div class="sidenav-header d-flex justify-content-space-around">
+                                <div class="logo">
+                                    <img src="./assests/images/logo-ct-dark.webp" class="navbar-brand-img" alt="">
+                                </div>
+                                <div class="dashboard font-weight-bold">Soft UI Dashboard</div>
+                            </div>
+
+                            <ul class=" perfect-scrollbar">
+
+                                <li class="li">
+                                    <div class="iocn-link">
+                                        <div class="sidebar_icon">
+                                            <a href="#">
+                                                <div class="icon-background">
+                                                    <img src="./assests/images/sidebar image/Dashboard.png"
+                                                        class="icon-padding" alt="">
+                                                </div>
+                                                <span class="link_name">Dashboard</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li">
+                                    <div class="iocn-link">
+                                        <div class="sidebar_icon">
+                                            <a href="#">
+                                                <div class="icon-background">
+                                                    <img src="./assests/images/sidebar image/Table.png"
+                                                        class="icon-padding" alt="">
+                                                </div>
+                                                <span class="link_name">Tables</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li">
+                                    <div class="iocn-link">
+                                        <div class="sidebar_icon">
+                                            <a href="#">
+                                                <div class="icon-background">
+                                                    <img src="./assests/images/sidebar image/Wrench.png"
+                                                        class="icon-padding" alt="">
+                                                </div>
+                                                <span class="link_name">Billing</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li">
+                                    <div class="iocn-link">
+                                        <div class="sidebar_icon sidebar_icon_background shadow-sm">
+                                            <a href="#">
+                                                <div class="icon-background-virtual virtual-margin-left">
+                                                    <img src="./assests/images/sidebar image/Hardhat.png"
+                                                        class="icon-virtual-padding" alt="">
+                                                </div>
+                                                <span class="link_name color">Virtual Reality</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li">
+                                    <div class="iocn-link">
+                                        <div class="sidebar_icon">
+                                            <a href="#">
+                                                <div class="icon-background">
+                                                    <img src="./assests/images/sidebar image/App window.png"
+                                                        class="icon-padding" alt="">
+                                                </div>
+                                                <span class="link_name">RTL</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                                <li class="li">
+                                    <a href="#">
+                                        <span class="link_name account m-0">ACCOUNT PAGES</span>
+                                    </a>
+                                </li>
+
+                                <li class="li">
+                                    <div class="iocn-link">
+                                        <div class="sidebar_icon">
+                                            <a href="#">
+                                                <div class="icon-background">
+                                                    <img src="./assests/images/sidebar image/User.png"
+                                                        class="icon-padding" alt="">
+                                                </div>
+                                                <span class="link_name">Profile</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li">
+                                    <div class="iocn-link">
+                                        <div class="sidebar_icon">
+                                            <a href="#">
+                                                <div class="icon-background">
+                                                    <img src="./assests/images/sidebar image/Rocket.png"
+                                                        class="icon-padding" alt="">
+                                                </div>
+                                                <span class="link_name">Sign In</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li">
+                                    <div class="iocn-link">
+                                        <div class="sidebar_icon">
+                                            <a href="#">
+                                                <div class="icon-background">
+                                                    <img src="./assests/images/sidebar image/Sign out.png"
+                                                        class="icon-padding" alt="">
+                                                </div>
+                                                <span class="link_name">Sign Up</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="documentation" id="background-change">
+                                <span>need help</span>
+                            </div>
+
+                            <div class="upgrade">
+                                <span>UPGRADE TO PRO </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="main-content">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-1 col-md-1 col-sm-1">
+                        <div class="iconbar d-flex icon-header">
+                            <ul class="nav nav-pills flex-column text-center">
+
+                                <li>
+                                    <a href="#" class="nav-link rounded-0">
+                                        <img class="img-svg" src="./assests/images/chefs-2.jpg">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="nav-link rounded-0">
+                                        <div class="svg">
+                                            <img src="./assests/images/More.svg" class="img-fix" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="nav-link rounded-0">
+                                        <div class="svg">
+                                            <img src="./assests/images/Home.svg" class="img-fix">
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="nav-link rounded-0">
+                                        <div class="svg">
+                                            <img src="./assests/images/Search.svg" class="img-fix">
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-11 col-md-11 col-sm-11">
+                        <div class="container">
+                            <div class="row mx-4">
+
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="d-flex cloud-top-fix">
+                                        <div class="me-auto cloud">
+                                            <h1 class="display-1 mb-0">28°C</h1>
+                                            <h6 class="text-uppercase cloudy">Cloudy</h6>
+                                        </div>
+                                        <div class="img-cloud">
+                                            <img class="w-50 float-end" src="./assests/images/icon-sun-cloud.png"
+                                                alt="image sun">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                            <div class="card border-0">
+                                                <div class="card-body card-color">
+                                                    <div class="d-flex mt-3">
+                                                        <h6 class="mb-0 me-3">08:00</h6>
+                                                        <h6 class="mb-0">Synk up with Mark<br>
+                                                            <small
+                                                                class="text-secondary font-weight-normal">Hangouts</small>
+                                                        </h6>
+                                                    </div>
+
+                                                    <div class="d-flex mt-3">
+                                                        <h6 class="mb-0 me-3">09:30</h6>
+                                                        <h6 class="mb-0 margin-left-gym">Gym <br>
+                                                            <small class="text-secondary font-weight-normal">World
+                                                                Class</small>
+                                                        </h6>
+                                                    </div>
+
+                                                    <div class="d-flex mt-3">
+                                                        <h6 class="mb-0 me-3">11:00</h6>
+                                                        <h6 class="mb-0 margin-left-design">Design Review<br>
+                                                            <small
+                                                                class="text-secondary font-weight-normal">Zoom</small>
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                            <div class="card border-0 bg-gradient-light">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <h5 class="mb-0 text-white">To Do</h5>
+                                                        <div class="ms-auto">
+                                                            <h1 class="text-white text-end mb-0 mt-n2">7</h1>
+                                                            <p class="text-sm mb-0 text-white">items</p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="text-white mb-0">Shopping</p>
+                                                    <p class="mb-0 text-white">Meeting</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="card border-0 mt-4">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <p class="mb-0 email">Emails (21)</p>
+                                                        <a href="" class="ms-auto check" data-bs-toggle="tooltip"
+                                                            data-bs-placement="top"
+                                                            data-bs-original-title="Check your emails">
+                                                            Check
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                            <div class="card border-0 full-back-img">
+                                                <div class="card-body">
+                                                    <h5 class="text-white mb-0">Some Kind Of Blues</h5>
+                                                    <p class="text-white text-sm">Deftones</p>
+                                                    <div class="d-flex mt-5">
+                                                        <button class="btn btn-outline-white rounded-circle p-2 mb-0"
+                                                            type="button" data-bs-toggle="tooltip"
+                                                            data-bs-placement="top" aria-label="Prev"
+                                                            data-bs-original-title="Prev">
+                                                            <i class="fas fa-backward p-2" aria-hidden="true"></i>
+                                                        </button>
+                                                        <button
+                                                            class="btn btn-outline-white rounded-circle p-2 mx-2 mb-0"
+                                                            type="button" data-bs-toggle="tooltip"
+                                                            data-bs-placement="top" aria-label="Pause"
+                                                            data-bs-original-title="Pause">
+                                                            <i class="fas fa-play p-2" aria-hidden="true"></i>
+                                                        </button>
+                                                        <button class="btn btn-outline-white rounded-circle p-2 mb-0"
+                                                            type="button" data-bs-toggle="tooltip"
+                                                            data-bs-placement="top" aria-label="Next"
+                                                            data-bs-original-title="Next">
+                                                            <i class="fas fa-forward p-2" aria-hidden="true"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card border-0 mt-4">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <p class="my-auto">Messages</p>
+                                                        <div class="ms-auto">
+                                                            <div class="avatar-group">
+                                                                <a href=""
+                                                                    class="avatar avatar-sm border-0 rounded-circle"
+                                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                    aria-label="2 New Messages"
+                                                                    data-bs-original-title="2 New Messages">
+                                                                    <img class="img-height" alt="Image placeholder"
+                                                                        src="./assests/images/team-1.jpg">
+                                                                </a>
+                                                                <a href=""
+                                                                    class="avatar avatar-sm border-0 rounded-circle"
+                                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                    aria-label="1 New Message"
+                                                                    data-bs-original-title="1 New Message">
+                                                                    <img class="img-height" alt="Image placeholder"
+                                                                        src="./assests/images/team-2.jpg">
+                                                                </a>
+                                                                <a href=""
+                                                                    class="avatar avatar-sm border-0 rounded-circle"
+                                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                    aria-label="13 New Messages"
+                                                                    data-bs-original-title="13 New Messages">
+                                                                    <img class="img-height" alt="Image placeholder"
+                                                                        src="./assests/images/team-3.jpg">
+                                                                </a>
+                                                                <a href=""
+                                                                    class="avatar avatar-sm border-0 rounded-circle"
+                                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                    aria-label="7 New Messages"
+                                                                    data-bs-original-title="7 New Messages">
+                                                                    <img class="img-height" alt="Image placeholder"
+                                                                        src="./assests/images/team-4.jpg">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="mt-4">
+            <div class="left">© 2023 , made with ❤️ by Creative Tim for a better web</div>
+            <div class="right text-end">
+                <a class="mx-2">Creative Tim</a>
+                <a class="mx-2">About Us</a>
+                <a class="mx-2">Blog</a>
+                <a class="mx-2">License</a>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- js -->
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- js bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- perfect scrollbar js -->
+    <script src="./assests/js/perfectscrollbar.js"></script>
+    <!-- style js -->
+    <script src="./assests/js/style.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- bootstrap-icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- css -->
+    <link rel="stylesheet" href="./custom.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assests/images/logo2.png" type="image/x-icon">
+    <title>Pure Insurance</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="header-navbar">
+
+            <!-- toggle button -->
+            <div class="toggle-button" aria-label="Toggle navigation" onclick="myToggle()">
+                <i class="bi bi-list icon-font-size"></i>
+            </div>
+
+            <div class="logo_details">
+                <div class="logo_name"><img src="./assests/images/logo.svg" alt=""></div>
+                <div class="logo_hide"><img src="./assests/images/logo2.png" alt="" height="40px" width="60px"></div>
+                <i class="bx bx-menu" id="btn"></i>
+            </div>
+
+            <div class="container">
+                <div class="row  pt-2">
+
+                    <div class=" col-lg-7 col-md-7 col-sm-6">
+                        <div class="d-flex justify-content-end justify-content">
+                            <form class="search navbar-form left-navbar">
+                                <input type="text" class="form-control my-search"
+                                    placeholder="Search for Quote No. / Insured Name / ID">
+                                <i class="bi bi-search search-icon"></i>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-5 col-sm-6 pt-2">
+                        <div class="right-navbar float-end d-flex justify-content-space-between gap-3">
+                            <div class="icons d-flex justify-content-space-between gap-3">
+                                <img src="./assests/images/flag.svg" alt="">
+                                <img src="./assests/images/question-mark.svg" alt="">
+                                <div class="notification">
+                                    <img class="Position-relative" src="./assests/images/notification.svg" alt="">
+                                    <span class="position-absolute top-2 translate-middle badge rounded-pill bg-danger">
+                                        1
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="vr"></div>
+                            <div class="user-profile">
+                                <img class="rounded-circle" src="./assests/images/user.jpg" alt="" height="40px"
+                                    width="40px">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+
+            <!-- sidenavbar -->
+            <div class="sidebar" id="navbarVerticalCollapse">
+                <ul class="nav-list">
+
+                    <li class="li mt-4">
+                        <div class="iocn-link icon-dashboard">
+                            <a href="#" class="svg-link">
+                                <svg class="svg-icon svg-block" xmlns="http://www.w3.org/2000/svg" width="14.5"
+                                    height="14.5" viewBox="0 0 14.5 14.5">
+                                    <g id="grid" transform="translate(-2.25 -2.25)">
+                                        <rect id="Rectangle_6452" data-name="Rectangle 6452" width="5" height="5"
+                                            transform="translate(3 3)" fill="none" stroke="#202020"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                        <rect id="Rectangle_6453" data-name="Rectangle 6453" width="5" height="5"
+                                            transform="translate(11 3)" fill="none" stroke="#202020"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                        <rect id="Rectangle_6454" data-name="Rectangle 6454" width="5" height="5"
+                                            transform="translate(11 11)" fill="none" stroke="#202020"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                        <rect id="Rectangle_6455" data-name="Rectangle 6455" width="5" height="5"
+                                            transform="translate(3 11)" fill="none" stroke="#202020"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                    </g>
+                                </svg>
+
+                                <svg class="svg-icon svg-hide" width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_3_75)">
+                                        <path d="M5.75 0.75H0.75V5.75H5.75V0.75Z" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.75 0.75H8.75V5.75H13.75V0.75Z" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.75 8.75H8.75V13.75H13.75V8.75Z" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5.75 8.75H0.75V13.75H5.75V8.75Z" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_3_75">
+                                            <rect width="14.5" height="14.5" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                                <span class="link_name link_name_dash">Dashboard</span>
+                            </a>
+                        </div>
+
+                    </li>
+
+                    <li class="li">
+                        <div class="iocn-link">
+                            <a href="#" class="svg-link">
+                                <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="16.022" height="15.5"
+                                    viewBox="0 0 16.022 15.5">
+                                    <g id="layers_1_" data-name="layers (1)" transform="translate(-0.989 -1.25)">
+                                        <path id="Path_23135" data-name="Path 23135" d="M9,2,2,5.625,9,9.25l7-3.625Z"
+                                            fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="1.5" />
+                                        <path id="Path_23136" data-name="Path 23136" d="M2,17l7,3.625L16,17"
+                                            transform="translate(0 -4.625)" fill="none" stroke="#202020"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                        <path id="Path_23137" data-name="Path 23137" d="M2,12l7,3.625L16,12"
+                                            transform="translate(0 -3.083)" fill="none" stroke="#202020"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                    </g>
+                                </svg>
+
+                                <span class="link_name">My Tasks</span>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="li">
+                        <div class="iocn-link">
+                            <a href="#" class="svg-link">
+                                <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="15.5" height="17.25"
+                                    viewBox="0 0 15.5 17.25">
+                                    <g id="user_7_" data-name="user (7)" transform="translate(-3.25 -2.25)">
+                                        <path id="Path_23138" data-name="Path 23138"
+                                            d="M18,20.25V18.5A3.5,3.5,0,0,0,14.5,15h-7A3.5,3.5,0,0,0,4,18.5v1.75"
+                                            transform="translate(0 -1.5)" fill="none" stroke="#202020"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                        <circle id="Ellipse_405" data-name="Ellipse 405" cx="3.5" cy="3.5" r="3.5"
+                                            transform="translate(8 3)" fill="none" stroke="#202020"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                    </g>
+                                </svg>
+
+                                <span class="link_name">Agent Resources</span>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="li">
+                        <div class="iocn-link">
+                            <a href="#" class="svg-link">
+                                <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="16.5" height="13.955"
+                                    viewBox="0 0 16.5 13.955">
+                                    <g id="users_2_" data-name="users (2)" transform="translate(-0.25 -2.068)">
+                                        <path id="Path_23143" data-name="Path 23143"
+                                            d="M11.909,19.091V17.727A2.727,2.727,0,0,0,9.182,15H3.727A2.727,2.727,0,0,0,1,17.727v1.364"
+                                            transform="translate(0 -3.818)" fill="none" stroke="#202020"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                        <circle id="Ellipse_407" data-name="Ellipse 407" cx="3" cy="3" r="3"
+                                            transform="translate(4 2.818)" fill="none" stroke="#202020"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                        <path id="Path_23144" data-name="Path 23144"
+                                            d="M22.045,19.132V17.769A2.727,2.727,0,0,0,20,15.13"
+                                            transform="translate(-6.045 -3.86)" fill="none" stroke="#202020"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                        <path id="Path_23145" data-name="Path 23145"
+                                            d="M16,3.13a2.727,2.727,0,0,1,0,5.284" transform="translate(-4.773 -0.041)"
+                                            fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="1.5" />
+                                    </g>
+                                </svg>
+
+                                <span class="link_name">Customers</span>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="li">
+                        <div class="iocn-link">
+                            <a href="#" class="svg-link">
+                                <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="15.5" height="19"
+                                    viewBox="0 0 15.5 19">
+                                    <g id="file-text_4_" data-name="file-text (4)" transform="translate(-3.25 -1.25)">
+                                        <path id="Path_23139" data-name="Path 23139"
+                                            d="M12.75,2h-7A1.75,1.75,0,0,0,4,3.75v14A1.75,1.75,0,0,0,5.75,19.5h10.5A1.75,1.75,0,0,0,18,17.75V7.25Z"
+                                            fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="1.5" />
+                                        <path id="Path_23140" data-name="Path 23140" d="M14,2V7.25h5.25"
+                                            transform="translate(-1.25)" fill="none" stroke="#202020"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                        <line id="Line_2182" data-name="Line 2182" x1="7" transform="translate(8 12)"
+                                            fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="1.5" />
+                                        <line id="Line_2183" data-name="Line 2183" x1="7" transform="translate(8 15)"
+                                            fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="1.5" />
+                                        <path id="Path_23141" data-name="Path 23141" d="M9.75,9H8"
+                                            transform="translate(-0.5 -0.875)" fill="none" stroke="#202020"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                    </g>
+                                </svg>
+
+                                <span class="link_name">Quotes</span>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="li">
+                        <div class="iocn-link">
+                            <a href="#" class="svg-link">
+                                <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="15.5" height="19"
+                                    viewBox="0 0 15.5 19">
+                                    <g id="file-text_4_" data-name="file-text (4)" transform="translate(-3.25 -1.25)">
+                                        <path id="Path_23139" data-name="Path 23139"
+                                            d="M12.75,2h-7A1.75,1.75,0,0,0,4,3.75v14A1.75,1.75,0,0,0,5.75,19.5h10.5A1.75,1.75,0,0,0,18,17.75V7.25Z"
+                                            fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="1.5" />
+                                        <path id="Path_23140" data-name="Path 23140" d="M14,2V7.25h5.25"
+                                            transform="translate(-1.25)" fill="none" stroke="#202020"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                    </g>
+                                </svg>
+
+                                <span class="link_name">Policies</span>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="li">
+                        <div class="iocn-link">
+                            <a href="#" class="svg-link">
+                                <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="15.5" height="18.611"
+                                    viewBox="0 0 15.5 18.611">
+                                    <g id="map-pin_2_" data-name="map-pin (2)" transform="translate(-2.25 -0.25)">
+                                        <path id="Path_23146" data-name="Path 23146"
+                                            d="M17,8c0,5.444-7,10.111-7,10.111S3,13.444,3,8A7,7,0,1,1,17,8Z" fill="none"
+                                            stroke="#202020" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="1.5" />
+                                        <circle id="Ellipse_408" data-name="Ellipse 408" cx="2" cy="2" r="2"
+                                            transform="translate(8 6)" fill="none" stroke="#202020"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                    </g>
+                                </svg>
+
+                                <span class="link_name">Locations</span>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="li">
+                        <div class="iocn-link">
+                            <a href="#" class="svg-link">
+                                <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="18.5" height="18.5"
+                                    viewBox="0 0 18.5 18.5">
+                                    <path id="team-line"
+                                        d="M11,10.1a4.5,4.5,0,0,1,4.5,4.5V20H13.7V14.6a2.7,2.7,0,0,0-2.541-2.7L11,11.9a2.7,2.7,0,0,0-2.7,2.541l0,.159V20H6.5V14.6A4.5,4.5,0,0,1,11,10.1ZM5.15,12.8a3.16,3.16,0,0,1,.729.085A5.353,5.353,0,0,0,5.608,14.3l-.008.3v.077a1.344,1.344,0,0,0-.321-.071L5.15,14.6a1.35,1.35,0,0,0-1.344,1.22l-.006.13V20H2V15.95A3.15,3.15,0,0,1,5.15,12.8Zm11.7,0A3.15,3.15,0,0,1,20,15.95V20H18.2V15.95a1.35,1.35,0,0,0-1.22-1.344l-.13-.006a1.348,1.348,0,0,0-.45.077V14.6a5.4,5.4,0,0,0-.278-1.714A3.071,3.071,0,0,1,16.85,12.8ZM5.15,7.4A2.25,2.25,0,1,1,2.9,9.65,2.25,2.25,0,0,1,5.15,7.4Zm11.7,0A2.25,2.25,0,1,1,14.6,9.65,2.25,2.25,0,0,1,16.85,7.4ZM5.15,9.2a.45.45,0,1,0,.45.45A.45.45,0,0,0,5.15,9.2Zm11.7,0a.45.45,0,1,0,.45.45A.45.45,0,0,0,16.85,9.2ZM11,2A3.6,3.6,0,1,1,7.4,5.6,3.6,3.6,0,0,1,11,2Zm0,1.8a1.8,1.8,0,1,0,1.8,1.8A1.8,1.8,0,0,0,11,3.8Z"
+                                        transform="translate(-1.75 -1.75)" stroke="#fff" stroke-width="0.5" />
+                                </svg>
+
+                                <span class="link_name">Partners</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="home-section">
+                <div class="container">
+                    <div class="row py-1">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="left float-start">
+                                <h2 class="my_dashboard">My Dashboard</h2>
+                            </div>
+                            <div class="right float-end">
+                                <ul class="dashboard-right d-flex gap-4">
+
+                                    <li><a href="#" class="today animation-effect">Today</a></li>
+                                    <li><a href="#" class="animation-effect">Yesterday</a></li>
+                                    <li><a href="#" class="animation-effect">7 days</a></li>
+                                    <li><a href="#" class="animation-effect">30 days</a></li>
+                                    <li><a href="#" class="animation-effect">1 year</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-color-card pb-5">
+                    <div class="container">
+                        <div class="row pt-4">
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                                <div class="card">
+                                    <div class="card-body d-flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                            viewBox="0 0 50 50">
+                                            <g id="Group_17445" data-name="Group 17445"
+                                                transform="translate(-300 -212)">
+                                                <circle id="Ellipse_308" data-name="Ellipse 308" cx="25" cy="25" r="25"
+                                                    transform="translate(300 212)" fill="#00857e" />
+                                                <g id="Layer_1" transform="translate(312 224)">
+                                                    <path id="Path_23110" data-name="Path 23110"
+                                                        d="M13,1a11.957,11.957,0,0,0-4.174.746l.348.938A11.043,11.043,0,1,1,6,4.521V8H7V3H2V4H5.063A12,12,0,1,0,13,1Z"
+                                                        fill="#fff" stroke="#fff" stroke-width="0.5" />
+                                                    <path id="Path_23111" data-name="Path 23111"
+                                                        d="M18.035,24.313H17v1.035h8.278V24.313H24.243V22.546L21.87,20.174,24.243,17.8V16.035h1.035V15H17v1.035h1.035V17.8l2.373,2.373-2.373,2.373Zm1.035-6.94V16.035h4.139v1.338l-2.069,2.069Zm2.069,3.533,2.069,2.069v1.338H19.069V22.975Z"
+                                                        transform="translate(-8.139 -7.174)" fill="#fff" stroke="#fff"
+                                                        stroke-width="0.5" />
+                                                    <rect id="Rectangle_6470" data-name="Rectangle 6470" width="1"
+                                                        height="1" transform="translate(9.685 20.167)" fill="#fff"
+                                                        stroke="#fff" stroke-width="0.5" />
+                                                    <rect id="Rectangle_6471" data-name="Rectangle 6471" width="1"
+                                                        height="1" transform="translate(12 20.167)" fill="#fff"
+                                                        stroke="#fff" stroke-width="0.5" />
+                                                    <rect id="Rectangle_6472" data-name="Rectangle 6472" width="1"
+                                                        height="1" transform="translate(14.51 20.167)" fill="#fff"
+                                                        stroke="#fff" stroke-width="0.5" />
+                                                </g>
+                                            </g>
+                                        </svg>
+
+                                        <div class="Quotes">
+                                            <h2 class="number">192</h2>
+                                            <p class="text">Bound Quotes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                                <div class="card">
+                                    <div class="card-body d-flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                            viewBox="0 0 50 50">
+                                            <g id="Group_17178" data-name="Group 17178"
+                                                transform="translate(-327 -232)">
+                                                <circle id="Ellipse_309" data-name="Ellipse 309" cx="25" cy="25" r="25"
+                                                    transform="translate(327 232)" fill="#f28602" />
+                                                <g id="file-minus_1_" data-name="file-minus (1)"
+                                                    transform="translate(340 245)">
+                                                    <path id="Path_23147" data-name="Path 23147"
+                                                        d="M14,2H6A2,2,0,0,0,4,4V20a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V8Z"
+                                                        fill="none" stroke="#fff" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="1.5" />
+                                                    <path id="Path_23148" data-name="Path 23148" d="M14,2V8h6"
+                                                        fill="none" stroke="#fff" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="1.5" />
+                                                    <line id="Line_2185" data-name="Line 2185" x2="6"
+                                                        transform="translate(9 15)" fill="none" stroke="#fff"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.5" />
+                                                </g>
+                                            </g>
+                                        </svg>
+
+                                        <div class="Quotes">
+                                            <h2 class="number">91</h2>
+                                            <p class="text">Incomplete Quotes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                                <div class="card">
+                                    <div class="card-body d-flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                            viewBox="0 0 50 50">
+                                            <g id="Group_17447" data-name="Group 17447"
+                                                transform="translate(-848 -211)">
+                                                <circle id="Ellipse_310" data-name="Ellipse 310" cx="25" cy="25" r="25"
+                                                    transform="translate(848 211)" fill="#8b5cf6" />
+                                                <g id="Group_17176" data-name="Group 17176"
+                                                    transform="translate(261 -22)">
+                                                    <g id="Ellipse_312" data-name="Ellipse 312"
+                                                        transform="translate(600 246)" fill="#8b5cf6" stroke="#fff"
+                                                        stroke-width="1.5">
+                                                        <circle cx="12" cy="12" r="12" stroke="none" />
+                                                        <circle cx="12" cy="12" r="11.25" fill="none" />
+                                                    </g>
+                                                    <rect id="Rectangle_6473" data-name="Rectangle 6473" width="13"
+                                                        height="1.5" transform="translate(606 257)" fill="#fff" />
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <div class="Quotes ">
+                                            <h2 class="number">42</h2>
+                                            <p class="text">Declined Quotes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                                <div class="card">
+                                    <div class="card-body d-flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                            viewBox="0 0 50 50">
+                                            <g id="Group_17446" data-name="Group 17446"
+                                                transform="translate(-1122 -211)">
+                                                <circle id="Ellipse_311" data-name="Ellipse 311" cx="25" cy="25" r="25"
+                                                    transform="translate(1122 211)" fill="#ce2356" />
+                                                <g id="alert-triangle" transform="translate(1135.448 224.103)">
+                                                    <path id="Path_23112" data-name="Path 23112"
+                                                        d="M10.29,3.86,1.82,18a2,2,0,0,0,1.71,3H20.47a2,2,0,0,0,1.71-3L13.71,3.86a2,2,0,0,0-3.42,0Z"
+                                                        fill="none" stroke="#fff" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="1.5" />
+                                                    <line id="Line_2177" data-name="Line 2177" y2="4"
+                                                        transform="translate(12 9)" fill="none" stroke="#fff"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.5" />
+                                                    <line id="Line_2178" data-name="Line 2178" x2="0.01"
+                                                        transform="translate(12 17)" fill="none" stroke="#fff"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.5" />
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <div class="Quotes">
+                                            <h2 class="number">25</h2>
+                                            <p class="text">Overdue Quotes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <div class="card">
+                                    <div class="card-title d-flex justify-content-between px-3 pt-3 mb-0">
+                                        <div class="card-text-header">
+                                            <h3 class="business m-0 me-2">New Business</h3>
+                                            <p class="business-text">Showing recent 5 New Business</p>
+                                        </div>
+                                        <div class="view font-size-sm">
+                                            <p class="view_all">View All <img src="./assests/images/arrow 1.svg" alt="">
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body p-0">
+                                        <table class="table table-borderless">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th>Insured Name <img src="./assests/images/sorting-arrow.svg"
+                                                            alt=""></th>
+                                                    <th>Policy ID</th>
+                                                    <th>Product</th>
+                                                    <th>Premium</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr class="border-bottom">
+                                                    <td class="name">Alex T</td>
+                                                    <td class="id">1224455560</td>
+                                                    <td class="id">Personal Auto - Washington</td>
+                                                    <td class="digit">$0.00</td>
+                                                </tr>
+                                                <tr class="border-bottom">
+                                                    <td class="name">Alex T</td>
+                                                    <td class="id">1228877769</td>
+                                                    <td class="id">Homeowners - California</td>
+                                                    <td class="digit">$0.00</td>
+                                                </tr>
+                                                <tr class="border-bottom">
+                                                    <td class="name">Alex T</td>
+                                                    <td class="id">1233345556</td>
+                                                    <td class="id">Homeowners - Colorado</td>
+                                                    <td class="digit">$0.00</td>
+                                                </tr>
+                                                <tr class="border-bottom">
+                                                    <td class="name">Olivera Smith</td>
+                                                    <td class="id">1299888601</td>
+                                                    <td class="id">Excess Liability - Colorado</td>
+                                                    <td class="digit">$1,310.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="name">Winston C</td>
+                                                    <td class="id">1224433320</td>
+                                                    <td class="id">Excess Liability - California</td>
+                                                    <td class="digit">$16,433.00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <div class="table-foot">
+                                            <p class="text-center pt-4">Total New Business: 30</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12 sm-margin">
+                                <div class="card">
+                                    <div class="card-title d-flex justify-content-between px-3 pt-3 mb-0">
+                                        <div class="card-text-header">
+                                            <h3 class="business m-0 me-2">Quotes</h3>
+                                            <p class="business-text">Showing recent 5 New Quotes</p>
+                                        </div>
+                                        <div class="view font-size-sm">
+                                            <p class="view_all">View All <img src="./assests/images/arrow 1.svg" alt="">
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body p-0">
+                                        <table class="table table-borderless">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th>Insured Name <img src="./assests/images/sorting-arrow.svg"
+                                                            alt=""></th>
+                                                    <th>Quote ID</th>
+                                                    <th class="px-5">Status</th>
+                                                    <th>Premium</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr class="border-bottom">
+                                                    <td class="name">Elizabeth Carter</td>
+                                                    <td class="id">1226555500</td>
+                                                    <td class="id button"><button type="button"
+                                                            class="btn btn-secondary">Incomplete</button></td>
+                                                    <td class="digit">$0.00</td>
+                                                </tr>
+                                                <tr class="border-bottom">
+                                                    <td class="name">Elizabeth Carter</td>
+                                                    <td class="id">1278343400</td>
+                                                    <td class="id button"><button type="button"
+                                                            class="btn btn-secondary">Incomplete</button></td>
+                                                    <td class="digit">$0.00</td>
+                                                </tr>
+                                                <tr class="border-bottom">
+                                                    <td class="name">Elizabeth Carter</td>
+                                                    <td class="id">1288845556</td>
+                                                    <td class="id button"><button type="button"
+                                                            class="btn btn-success">Bound</button></td>
+                                                    <td class="digit">$0.00</td>
+                                                </tr>
+                                                <tr class="border-bottom">
+                                                    <td class="name">Olivera Smith</td>
+                                                    <td class="id">1221218601</td>
+                                                    <td class="id button"><button type="button"
+                                                            class="btn btn-primary">Declined</button></td>
+                                                    <td class="digit">$1,310.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="name">Olivera Smith</td>
+                                                    <td class="id">1289893320</td>
+                                                    <td class="id button"><button type="button"
+                                                            class="btn btn-danger">Overdue</button></td>
+                                                    <td class="digit">$16,433.00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <div class="table-foot">
+                                            <p class="text-center">Total New Business: 350</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <div class="card">
+                                    <div class="card-title px-3 pt-3">
+                                        <h3 class="business m-0 me-2">Summary by Status</h3>
+                                        <div class="d-flex justify-content-around">
+                                           
+                                            <img class="pt-3 img-fluid" src="./assests/images/chart/pie-chart(1).svg"
+                                                alt="">
+                                            
+                                           
+                                            <ul class="align-items-center pt-4">
+                                                <li class="dot-text" style="color: #00857E;">
+                                                    <span class="first-child"> Bound Quotes </span>
+                                                    <span class="last-child pt-1">192</span>
+                                                </li>
+
+                                                <li class="dot-text" style="color:#F28602 ">
+                                                    <span class="first-child">Incomplete Quotes</span>
+                                                    <span class="last-child pt-1">91</span>
+                                                </li>
+
+                                                <li class="dot-text" style="color:#8B5CF6">
+                                                    <span class="first-child">Declined Quotes</span>
+                                                    <span class="last-child pt-1">42</span>
+                                                </li>
+
+                                                <li class="dot-text" style="color:#CE2356">
+                                                    <span class="first-child">Overdue Quotes</span>
+                                                    <span class="last-child pt-1">25</span>
+                                                </li>
+                                            </ul>
+                                       
+                                        </div>
+
+                                        <div class="table-foot">
+                                            <p class="pt-3 mx-5">Total New Business: 350</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12 sm-margin">
+                                <div class="card padding-bottom">
+                                    <div class="card-title d-flex justify-content-between px-3 pt-3 ">
+                                        <div class="card-text-header">
+                                            <h3 class="business m-0 me-2">Recent Activity</h3>
+                                        </div>
+                                        <div class="view font-size-sm">
+                                            <p class="view_all">View All <img src="./assests/images/arrow 1.svg" alt="">
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body p-0">
+                                        <table class="table table-borderless">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th>Insured Name <img src="./assests/images/sorting-arrow.svg"
+                                                            alt=""></th>
+                                                    <th>Status</th>
+                                                    <th>Id</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr class="border-bottom">
+                                                    <td class="name">Elizabeth Carter</td>
+                                                    <td class="id">PolicyQuoteIncomplete</td>
+                                                    <td class="id">1223455529</td>
+                                                </tr>
+                                                <tr class="border-bottom">
+                                                    <td class="name">Elizabeth Carter</td>
+                                                    <td class="id">PolicyQuoteBound</td>
+                                                    <td class="id">1228874449</td>
+                                                </tr>
+                                                <tr class="border-bottom">
+                                                    <td class="name">Elizabeth Carter</td>
+                                                    <td class="id">PolicyQuoteDeclined</td>
+                                                    <td class="id">1223232345</td>
+                                                </tr>
+                                                <tr class="border-bottom">
+                                                    <td class="name">Olivera Smith</td>
+                                                    <td class="id">PolicyQuoteIncomplete</td>
+                                                    <td class="id">1299780621</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="name">Olivera Smith</td>
+                                                    <td class="id">PolicyQuoteBound</td>
+                                                    <td class="id">1224421213</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer mt-4">
+                    <p class="text-center">© PURE 2023. All rights reserved.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <!-- js -->
+        <!-- script -->
+        <script src="./assests/js/script.js"></script>
+        <!-- js bundle -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

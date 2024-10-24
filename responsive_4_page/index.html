@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- bootstrap-icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./assests/browser-edge.svg">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./custom.css">
+    <!-- title -->
+    <title>Demo Responsive Page</title>
+</head>
+
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand text-light px-4" href="#"><i class="bi bi-camera px-2"></i>Album</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <button type="button text-end" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- carousel -->
+        <div class="container-fluid">
+            <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="100s">
+                        <img src="./assests/carousel/hd-maple-leaf-in-water.jpg" height="500rem" class="w-100"
+                            alt="maple-leaf">
+                        <div class="carousel-caption col-lg-4 text-lg-start text-center bg-danger">
+                            <h5>Lorem</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos eum neque amet, ipsa
+                                nesciunt expedita error voluptatem nostrum libero inventore?</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="100s">
+                        <img src="./assests/carousel/hd-sunset-at-beach.jpg" height="500rem" class="w-100"
+                            alt="hd-sunset-at-beach">
+                        <div class="carousel-caption col-lg-4 text-lg-start text-center bg-danger">
+                            <h5>Task</h5>
+                            <p>sonam </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="100s">
+                        <img src="./assests/carousel/full-moon-images-hd.jpg" height="500rem" class="w-100"
+                            alt="full-moon-images-hd">
+                        <div class="carousel-caption col-lg-4 text-lg-start text-center bg-danger">
+                            <h5>Lorem</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos eum neque amet, ipsa
+                                nesciunt expedita error voluptatem nostrum libero inventore?</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="100s">
+                        <img src="./assests/carousel/hd-river-in-the-mountains.jpg" height="500rem" class="w-100"
+                            alt="hd-river-in-the-mountains">
+                        <div class="carousel-caption col-lg-4 text-lg-start text-center bg-danger">
+                            <h5>Lorem</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos eum neque amet, ipsa
+                                nesciunt expedita error voluptatem nostrum libero inventore?</p>
+                        </div>
+                    </div>
+                </div>
+                <button id="toggleCarousel"><i class="bi bi-caret-right bi bi-pause"></i>
+                    <!-- <span class="bi bi-pause-circle-fill"></span> -->
+                </button>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- section of ALBUM EXAMPLE -->
+        <section class="container text-center py-5">
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <h1 class="fw-light">Album example</h1>
+                    <p class="text-body-secondary">Something short and leading about the collection below—its
+                        contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply
+                        skip over it entirely.</p>
+                    <div d-flex>
+                        <button type="button" class="btn btn-primary btn-sg" data-bs-toggle="modal"
+                            data-bs-target="#modalwindow">More call to action</button>
+                        <button type="button" class="btn btn-secondary btn-sg mx-2" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="Hey">secondary action</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal" id="modalwindow">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title">Hi</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">View</button>
+                            <button type="button" class="btn btn-secondary">Edit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- card container -->
+        <div class="container-fluid p-5 mt-5 bg-light ">
+            <div class="row justify-content-center d-flex">
+                <div class="col-lg-4 col-md-4 col-sm-12 my-3">
+                    <div class="card ">
+                        <img src="../responsive_4_page/assests/girl.jpg" class="card-img-top" alt="..."
+                            aria-label="Placeholder: Thumbnail">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center my-3 mx-3">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 my-3">
+                    <div class="card ">
+                        <img src="../responsive_4_page/assests/camera_lense_0.jpeg" class="card-img-top" alt="..."
+                            aria-label="Placeholder: Thumbnail">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center my-3 mx-3">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 my-3">
+                    <div class="card ">
+                        <img src="../responsive_4_page/assests/camera.jpg" class="card-img-top" alt="..."
+                            aria-label="Placeholder: Thumbnail">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center my-3 mx-3">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- image-slider -->
+        <div class="container">
+            <div class="slide-container d-flex" data-bs-toggle="modal" data-bs-target="#modalmessage">
+
+                <div class="slide-image">
+                    <a href="https://www.google.com/">
+                        <img src="./assests/chefs/chefs-1.jpg" height="200px" width="250px" alt="chefs">
+                    </a>
+                </div>
+
+                <div class="slide-image">
+                    <a href="https://www.google.com/">
+                        <img src="./assests/chefs/chefs-2.jpg" height="200px" width="250px" alt="chefs">
+                    </a>
+                </div>
+
+                <div class="slide-image">
+                    <a href="https://www.google.com/">
+                        <img src="./assests/chefs/chefs-3.jpg" height="200px" width="250px" alt="chefs">
+                    </a>
+                </div>
+
+                <div class="slide-image">
+                    <a href="https://www.google.com/">
+                        <img src="./assests/chefs/chefs-1.jpg" height="200px" width="250px" alt="chefs">
+                    </a>
+                </div>
+
+                <div class="slide-image">
+                    <a href="https://www.google.com/">
+                        <img src="./assests/chefs/chefs-2.jpg" height="200px" width="250px" alt="chefs">
+                    </a>
+                </div>
+
+                <div class="slide-image">
+                    <a href="https://www.google.com/">
+                        <img src="./assests/chefs/chefs-3.jpg" height="200px" width="250px" alt="chefs">
+                    </a>
+                </div>
+
+                <div class="slide-image">
+                    <a href="https://www.google.com/">
+                        <img src="./assests/chefs/chefs-1.jpg" height="200px" width="250px" alt="chefs">
+                    </a>
+                </div>
+
+                <div class="slide-image">
+                    <a href="https://www.google.com/">
+                        <img src="./assests/chefs/chefs-2.jpg" height="200px" width="250px" alt="chefs">
+                    </a>
+                </div>
+
+                <div class="slide-image">
+                    <a href="https://www.google.com/">
+                        <img src="./assests/chefs/chefs-3.jpg" height="200px" width="250px" alt="chefs">
+                    </a>
+                </div>
+
+                <div class="slide-image">
+                    <a href="https://www.google.com/">
+                        <img src="./assests/chefs/chefs-1.jpg" height="200px" width="250px" alt="chefs">
+                    </a>
+                </div>
+
+                <div class="slide-image">
+                    <a href="https://www.google.com/">
+                        <img src="./assests/chefs/chefs-2.jpg" height="200px" width="250px" alt="chefs">
+                    </a>
+                </div>
+
+                <div class="slide-image">
+                    <a href="https://www.google.com/">
+                        <img src="./assests/chefs/chefs-3.jpg" height="200px" width="250px" alt="chefs">
+                    </a>
+                </div>
+
+                <div class="slide-image">
+                    <a href="https://www.google.com/">
+                        <img src="./assests/chefs/chefs-1.jpg" height="200px" width="250px" alt="chefs">
+                    </a>
+                </div>
+
+                <div class="slide-image">
+                    <a href="https://www.google.com/">
+                        <img src="./assests/chefs/chefs-2.jpg" height="200px" width="250px" alt="chefs">
+                    </a>
+                </div>
+
+                <div class="slide-image">
+                    <a href="https://www.google.com/">
+                        <img src="./assests/chefs/chefs-3.jpg" height="200px" width="250px" alt="chefs">
+                    </a>
+                </div>
+
+                <div class="slide-image">
+                    <a href="https://www.google.com/">
+                        <img src="./assests/chefs/chefs-1.jpg" height="200px" width="250px" alt="chefs">
+                    </a>
+                </div>
+
+                <div class="slide-image">
+                    <a href="https://www.google.com/">
+                        <img src="./assests/chefs/chefs-2.jpg" height="200px" width="250px" alt="chefs">
+                    </a>
+                </div>
+
+                <div class="slide-image">
+                    <a href="https://www.google.com/">
+                        <img src="./assests/chefs/chefs-3.jpg" height="200px" width="250px" alt="chefs">
+                    </a>
+                </div>
+            </div>
+
+            <!-- modal -->
+            <div class="modal" id="modalmessage">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-body">loading....</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- table -->
+        <div class="container my-5">
+            <table class="table table-bordered border-dark table-hover">
+                <thead class="table-primary">
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Proffession</th>
+                    </tr>
+                </thead>
+                <tbody class="table table-hover">
+                    <tr>
+                        <th>1</th>
+                        <td>Pooja</td>
+                        <td>Gour</td>
+                        <td>HR</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Sonam</td>
+                        <td>Gupta</td>
+                        <td>SE</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Shiv</td>
+                        <td colspan="2">Rawat</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- footer -->
+        <footer class="bg-dark text-center text-lg-start mt-5">
+            <div class="text-center p-3 text-light">
+                Copyright© Your Website 2023
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- js link -->
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- js for bootstrap work/ bootstrap-bundle-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- java script -->
+    <script src="./main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-bs-toggle="popover"]').popover();
+        });
+    </script>
+</body>
+
+</html>

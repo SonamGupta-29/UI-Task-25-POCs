@@ -1,0 +1,38 @@
+.ps-container .ps-scrollbar-y-rail {
+    position: absolute;
+    height: auto;
+    right: 3px;
+    width: 8px;
+    background-color: rgba(52,71,103,.3);;
+    border-radius: 4px;
+    opacity: 0;
+}
+
+.ps-container:hover .ps-scrollbar-y-rail,
+.ps-container.hover .ps-scrollbar-y-rail {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+.ps-container .ps-scrollbar-y {
+    position: absolute;
+    right: 0;
+    width: 8px;
+    background-color: #aaa;
+    border-radius: 4px;
+}
+
+#description {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 230px;
+    overflow: hidden;
+    top: 10px;
+    width: 100%;
+    position: absolute;
+}
+
+ul.perfect-scrollbar {
+    position: absolute;
+    top: 30px;
+}

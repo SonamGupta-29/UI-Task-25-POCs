@@ -1,0 +1,40 @@
+.head-bg, .container-fluid{
+    background-color: rgba(238,238,238,255);
+}
+
+.navbar-light .navbar-brand{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
+    background-color: rgba(206,18,18,255);
+    border-radius: 20px;
+}
+
+h1{
+    font-size: 35px;
+    line-height: 50px;
+}
+
+h3{
+    color: rgba(172,172,172,255);
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.text-center p{
+    color: gray;
+    font-size: small;
+    margin-bottom: 0;
+}
+
+small{
+    color: red;
+}
+

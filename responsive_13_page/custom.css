@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg-nav{
+    background-color: #3F495E;
+    /* padding: 20px; */
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+}
+
+.bx-menu:before {
+    font-size: 20px;
+}
+
+.logo{
+    font-size: 20px;
+    padding: 8px;
+    font-weight: 600;
+}
+
+.github{
+    font-size: 16px;
+    margin: 0px 8px 0px 0px;
+    padding: 8px;
+}
+
+.image{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    float: left;
+    margin: 6px;
+}
+
+.name{
+    font-size: 16px;
+    float: right;
+    padding: 8px;
+}
+
+.w3-sidebar{
+  width:90%;
+  position: static !important;
+  padding-top: 14px;
+}
+
+.w3-light-grey {
+    color: #000!important;
+    background-color: #f1f1f1!important;
+    height: 74rem;
+}
+
+.w3-bar-block .w3-bar-item{
+    border-bottom: 1px solid #dfe4e6;
+        color: #626b7a;
+        font-weight: 100;
+}
+
+.fl-right{
+    float: right;
+}
+
+.tab-text{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 100;
+}
+
+.tab-text:hover{
+    font-weight: 400;
+}
+
+.flex-1 {
+    flex: 1 1 0%;
+}
+
+.flex {
+    display: flex;
+}
+
+/* body */
+.main{
+    margin-top: 25px;
+}
+
+/* section-1 */
+.border-l-8 {
+    border-left: 8px solid #d64230;
+}
+
+.bg-red-vibrant{
+    padding: 20px;
+    background-color: #e46050;
+    text-align: center;
+    color: white;
+}
+
+.bg-info, .bg-warning, .bg-success{
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.border-info-dark{
+    border-left: 8px solid #2cadd4;
+}
+
+.border-warning-dark{
+    border-left: 8px solid #c37c16;
+}
+
+.border-success-dark{
+    border-left: 8px solid #5D9547;
+}
+
+/* table */
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+    border: none !important;
+}
+
+.bg-blue-500 {
+    background-color: #4299e1;
+}
+
+.bg-primary {
+    background-color: #51BE99;
+}
+
+.bg-success {
+    background-color: #72b159;
+}
+
+/* progress bar */
+.blue{
+    background-color: #4299e1;
+}
+
+/* card */
+.-mt-8 {
+    margin-top: -2rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+/* footer */
+footer{
+    background-color: #3d4852 !important;
+}

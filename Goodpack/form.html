@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="./custom.css">
+    <title>GOODPACK</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <!-- As a link -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="logo_image" src="./assests/images/logo.png" alt="logo"></a>
+        </div>
+    </nav>
+
+    <div class="hr"></div>
+
+    <div class="cq p-3">Corrective and Preventive Actions - 8D</div>
+
+    <div class="hr"></div>
+
+    <div class="bg-color">
+
+        <div class="container-fluid pt-3 pb-3">
+            <div class=" wrapper">
+                <div class="section-1 p-3">
+                    <h5>1) Report Details</h5>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 pe-4 mt-3">
+                            <div class="form-group">
+                                <label for="nc_reference" class="pt-1">Report NC Reference:</label>
+                                <input type="text" class="form-control color-placeholder" id="nc_reference"
+                                    placeholder="Enter NC Reference">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 ps-4 pe-4 mt-3">
+                            <div class="form-group">
+                                <label for="rdate" class="pt-1">Report Date:</label>
+                                <input type="date" class="form-control ddate" id="rdate" name="rdate">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 ps-4 pe-4 mt-3">
+                            <div class="form-group">
+                                <label for="reported" class="pt-1">Reported By:</label>
+                                <input type="text" class="form-control color-placeholder" id="reported"
+                                    placeholder="Enter Reporter Name">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3 pe-4">
+                            <div class="form-group">
+                                <label for="leader" class="pt-1">Leader:</label>
+                                <input type="text" class="form-control color-placeholder" id="leader"
+                                    placeholder="Enter Leader Name">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3 ps-4 pe-4">
+                            <div class="form-group">
+                                <label for="sponsor" class="pt-1">Sponsor:</label>
+                                <input type="text" class="form-control color-placeholder" id="sponsor"
+                                    placeholder="Enter Sponsor Name">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3 ps-4 pe-4">
+                            <div class="d-flex">
+                                <label for="reoccurring" class="pt-1">Reoccurring:</label>
+                                <div class="can-toggle margin mx-5">
+                                    <input id="reoccurring" type="checkbox">
+                                    <label for="reoccurring">
+                                        <div class="can-toggle__switch" data-checked="No" data-unchecked="Yes"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-3">
+                       <div class="col-lg-4">
+                        <div class="form-group">
+                            <label for="team_member" class="pt-1">Team Members:</label>
+                            <input type="text" class="form-control color-placeholder" id="team_member"
+                                placeholder="Enter Members Name">
+                        </div>
+                        <div class="add_more d-flex align-items-center">
+                            <div class="box mx-2">+</div>
+                            <small class="add">Add More Member</small>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+
+                <div class="section-2 p-3">
+                    <h5>2) Type of Non-Conformance</h5>
+
+                    <div class="row  pt-3">
+                        <div class="col-lg-8 pt-2">
+                            <label for="sit" class="pt-1 situate">Situation:</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="safety">
+                                <label class="form-check-label form-situation" for="safety">Safety</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="quality">
+                                <label class="form-check-label form-situation" for="quality">Quality</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="delivery">
+                                <label class="form-check-label form-situation" for="delivery">Delivery</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="people">
+                                <label class="form-check-label form-situation" for="people">People</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="other">
+                                <label class="form-check-label form-situation" for="other">Other</label>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 d-flex">
+                            <label for="quantify" class="pt-1">Is this system <br> quantifiable:</label>
+                            <div class="can-toggle margin mx-5">
+                                <input id="quantify" type="checkbox">
+                                <label for="quantify">
+                                    <div class="can-toggle__switch" data-checked="No" data-unchecked="Yes"></div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-3 p-3">
+                    <h5>3) Non-Conformance Details</h5>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mt-3 pe-4">
+                            <div class="form-group">
+                                <label for="detected" class="pt-1">Who detected the problem:</label>
+                                <input type="text" class="form-control color-placeholder" id="detected"
+                                    placeholder="Enter Detector Name">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3 ps-4 pe-4">
+                            <div class="form-group">
+                                <label for="shift" class="pt-1">Time/Shift:</label>
+                                <input type="text" class="form-control color-placeholder" id="shift"
+                                    placeholder="Enter Time/Shift">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3 ps-4 pe-4">
+                            <div class="form-group">
+                                <label for="part" class="pt-1">What Part:</label>
+                                <input type="text" class="form-control color-placeholder" id="part"
+                                    placeholder="Enter Part Name">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3 pe-4">
+                            <div class="form-group">
+                                <label for="mixture" class="pt-1">What Mixture/Fixture:</label>
+                                <input type="text" class="form-control color-placeholder" id="mixture"
+                                    placeholder="Enter Mixture/Fixture">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3 ps-4 pe-4">
+                            <div class="form-group">
+                                <label for="line" class="pt-1">What Line:</label>
+                                <input type="text" class="form-control color-placeholder" id="line"
+                                    placeholder="Enter Line Name">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3 ps-3 pe-4">
+                            <div class="form-group">
+                                <label for="ccondition" class="pt-1">Current Condition /Symptom:</label>
+                                <input type="text" class="form-control color-placeholder" id="ccondition"
+                                    placeholder="Enter Current Condition">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3 pe-4">
+                            <div class="d-flex">
+                                <label for="quantifiable" class="pt-1">Is this system <br> quantifiable:</label>
+                                <div class="can-toggle margin mx-5">
+                                    <input id="quantifiable" type="checkbox">
+                                    <label for="quantifiable">
+                                        <div class="can-toggle__switch" data-checked="No" data-unchecked="Yes"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-4 p-3">
+                    <h5>4) Short Term Fix/Containment</h5>
+
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 mt-3">
+                            <div class="form-group ">
+                                <label for="taken" class="pt-4">Actions Taken:</label>
+                                <input type="text" class="form color-placeholder" id="taken"
+                                    placeholder="Enter Your Comments">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="dimplemented" class="pt-1">Data Implemented:</label>
+                                <input type="text" class="form-control color-placeholder" id="dimplemented"
+                                    placeholder="Enter Data Implemented">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3 ps-4 pe-4">
+                            <div class="form-group">
+                                <label for="bimplemented" class="pt-1">Implemented By:</label>
+                                <input type="text" class="form-control color-placeholder" id="bimplemented"
+                                    placeholder="Enter Implemented Name">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3 ps-4 pe-4">
+                            <div class="form-group">
+                                <label for="confirmation" class="pt-1">Manager Confirmation:</label>
+                                <input type="text" class="form-control color-placeholder" id="confirmation"
+                                    placeholder="Enter Manager Name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-5 p-3">
+                    <h5>5) Describe the Problem Here <p class="text">( Possible causes with data - where? ( In the
+                            process, plant, line, machine/operator, part ), then what (assembly, component))</p>
+                    </h5>
+
+                    <div class="row mt-3">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="form-group ">
+                                <label for="text_box" class="pt-4">Description:</label>
+                                <input type="text" class="form color-placeholder" id="text_box"
+                                    placeholder="Enter Your Comments">
+                            </div>
+                        </div>
+
+                         
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-lg-4">
+                            <form class="upload d-flex justify-content-between">
+                                <label for="text_box" class="pt-2">Attach Image:</label>
+                                <div class="file-upload-wrapper" data-text="Choose file">
+                                    <input name="file-upload-field" type="file" class="file-upload-field" value="">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-6 p-3">
+                    <h5>6) Problem Statement</h5>
+
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 mt-3">
+                            <div class="form-group ">
+                                <label for="message_box" class="pt-4">Description:</label>
+                                <input type="text" class="form color-placeholder" id="message_box"
+                                    placeholder="Enter Your Comments">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-7 p-3">
+                    <h5>7) Cause-and-Effect Diagram</h5>
+                    <div class="bg-image">
+                        <div class="d-flex position-relative">
+                            <div class="cause-effect-measure">
+                                <label for="measure">Measurment</label>
+                                <div class="d-flex">
+                                    <input type="text" class="form-control-cause-effect" id="measure" name="measure"
+                                        placeholder="Enter Cause">
+                                    <div class="box mx-2">+</div><small class="add">Add</small>
+                                </div>
+                            </div>
+
+                            <div class="cause-effect-material">
+                                <label for="material">Materials</label>
+                                <div class="d-flex">
+                                    <input type="text" class="form-control-cause-effect" id="material" name="material"
+                                        placeholder="Enter Cause">
+                                    <div class="box mx-2">+</div><small class="add">Add</small>
+                                </div>
+                            </div>
+
+                            <div class="cause-effect-method">
+                                <label for="method">Method</label>
+                                <div class="d-flex">
+                                    <input type="text" class="form-control-cause-effect" id="method" name="method"
+                                        placeholder="Enter Cause">
+                                    <div class="box mx-2">+</div><small class="add">Add</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex position-relative">
+                            <div class="cause-effect-environment">
+                                <label for="environment">Environment</label>
+                                <div class="d-flex">
+                                    <input type="text" class="form-control-cause-effect" id="environment"
+                                        name="environment" placeholder="Enter Cause">
+                                    <div class="box mx-2">+</div><small class="add">Add</small>
+                                </div>
+                            </div>
+
+                            <div class="cause-effect-machine">
+                                <label for="machine">Machine</label>
+                                <div class="d-flex">
+                                    <input type="text" class="form-control-cause-effect" id="machine" name="machine"
+                                        placeholder="Enter Cause">
+                                    <div class="box mx-2">+</div><small class="add">Add</small>
+                                </div>
+                            </div>
+
+                            <div class="cause-effect-manpower">
+                                <label for="manpower">Manpower</label>
+                                <div class="d-flex">
+                                    <input type="text" class="form-control-cause-effect" id="manpower" name="manpower"
+                                        placeholder="Enter Cause">
+                                    <div class="box mx-2">+</div><small class="add">Add</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-8 p-3">
+                    <h5>8) 5 Whys Diagram</h5>
+                    <div class="row position-relative">
+                        <div class=" col-lg-6 d-flex">
+                            <label for="why1" class="why-1_padding pt-1">Why?:</label>
+                            <img class="why1" src="./assests/images/Group 16612.svg" alt="arrow">
+                            <input type="text" class="form-control width color-placeholder" id="why1"
+                                placeholder="Enter Data Implemented">
+                        </div>
+
+                        <div class="col-lg-6 d-flex">
+                            <label for="why2" class="why-2_padding pt-1">Why?:</label>
+                            <img class="why2" src="./assests/images/Group 16612.svg" alt="arrow">
+                            <input type="text" class="form-control width color-placeholder" id="why2"
+                                placeholder="Enter Data Implemented">
+                        </div>
+
+                        <div class="col-lg-6 d-flex mt-2">
+                            <label for="why3" class="why-3_padding pt-1">Why?:</label>
+                            <img class="why3" src="./assests/images/Group 16612.svg" alt="arrow">
+                            <input type="text" class="form-control width color-placeholder" id="why3"
+                                placeholder="Enter Data Implemented">
+                        </div>
+
+                        <div class="col-lg-6 d-flex mt-2">
+                            <label for="why4" class="why-4_padding pt-1">Why?:</label>
+                            <img class="why4" src="./assests/images/Group 16612.svg" alt="arrow">
+                            <input type="text" class="form-control width color-placeholder" id="why4"
+                                placeholder="Enter Data Implemented">
+                        </div>
+
+                        <div class="col-lg-6 d-flex mt-2">
+                            <label for="why5" class="why-5_padding pt-1">Why?:</label>
+                            <img class="why5" src="./assests/images/Group 16612.svg" alt="arrow">
+                            <input type="text" class="form-control width color-placeholder" id="why5"
+                                placeholder="Enter Data Implemented">
+                        </div>
+
+                        <div class="col-lg-6 d-flex mt-2">
+                            <label for="why6" class="why-6_padding pt-1">Why?:</label>
+                            <img class="why6" src="./assests/images/Group 16612.svg" alt="arrow">
+                            <input type="text" class="form-control width color-placeholder" id="why6"
+                                placeholder="Enter Data Implemented">
+                        </div>
+
+                        <div class="col-lg-6 d-flex mt-2">
+                            <label for="why7" class="why-7_padding pt-1">Why?:</label>
+                            <img class="why7" src="./assests/images/Group 16612.svg" alt="arrow">
+                            <input type="text" class="form-control width color-placeholder" id="why7"
+                                placeholder="Enter Data Implemented">
+                        </div>
+
+                        <div class="col-lg-6 d-flex mt-2">
+                            <label for="why8" class="why-8_padding pt-1">Why?:</label>
+                            <img class="why8" src="./assests/images/Group 16612.svg" alt="arrow">
+                            <input type="text" class="form-control width color-placeholder" id="why8"
+                                placeholder="Enter Data Implemented">
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex mt-2">
+                                <label for="why9" class="why-9_padding pt-1">Why?:</label>
+                                <input type="text" class="form-control width color-placeholder" id="why9"
+                                    placeholder="Enter Data Implemented">
+                            </div>
+                            <small class="margin-small-left">( "Why?" Write the most probable cause from the fish bone
+                                cause )</small>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex mt-2">
+                                <label for="why10" class="why-10_padding pt-1">Why?:</label>
+                                <input type="text" class="form-control width color-placeholder" id="why10"
+                                    placeholder="Enter Data Implemented">
+                            </div>
+                            <small class="margin-small-left">( "Why?" Write the most probable cause from the fish bone
+                                cause )</small>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-4">
+                        <div class="box mx-2">+</div>
+                        <small class="add">Add More Member</small>
+                    </div>
+                </div>
+
+                <div class="section-9 p-3">
+                    <h5>9) Root Cause</h5>
+
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 mt-3">
+                            <div class="form-group ">
+                                <label for="description" class="pt-4">Description:</label>
+                                <input type="text" class="form color-placeholder" id="description"
+                                    placeholder="Enter Your Comments">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-10 p-3">
+                    <h5>10) Counter Measure</h5>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group ">
+                                <label for="corrective" class="pt-2">Corrective Action Plans:</label>
+                                <input type="text" class="form-corrective color-placeholder" id="corrective"
+                                    placeholder="Enter Your Comments">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="who" class="pt-1">Who:</label>
+                                <input type="text" class="form-control color-placeholder" id="who"
+                                    placeholder="Enter Name">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="due_date" class="pt-1">Due Date:</label>
+                                <input type="date" class="form-control ddate" id="due_date" name="due_date">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="status_feedback" class="pt-1">Status:</label>
+                                <select class="form-select form-control" id="status_feedback"
+                                    aria-label="Default select example">
+                                    <option select>Feedback</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="d-flex align-items-center mt-4">
+                                <div class="box mx-2">+</div>
+                                <small class="add">Add More Member</small>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 mt-2">
+                            <div class="form-group ">
+                                <label for="term_corrective" class="pt-2">Long-Term Corrective Action (Preventive) ::</label>
+                                <input type="text" class="form-corrective color-placeholder" id="term_corrective"
+                                    placeholder="Enter Action Plan">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="wo" class="pt-1">Who:</label>
+                                <input type="text" class="form-control color-placeholder" id="wo"
+                                    placeholder="Enter Name">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="de_date" class="pt-1">Due Date:</label>
+                                <input type="date" class="form-control ddate" id="de_date" name="de_date">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="status_implement" class="pt-1">Status:</label>
+                                <select class="form-select form-control" id="status_implement"
+                                    aria-label="Default select example">
+                                    <option select>Implemented</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="d-flex align-items-center mt-4">
+                                <div class="box mx-2">+</div>
+                                <small class="add">Add More Member</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-11 p-3">
+                    <h5>11) Tracking</h5>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="dtracking" class="pt-1">Date Start Tracking:</label>
+                                <input type="date" class="form-control ddate" id="dtracking" name="dtracking">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="dclosed" class="pt-1">Date Closed:</label>
+                                <input type="date" class="form-control ddate" id="dclosed" name="dclosed">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="creator" class="pt-1">Assigned to Creator:</label>
+                                <input type="text" class="form-control color-placeholder" id="creator"
+                                    placeholder="Enter Assigned Name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-12 p-3">
+                    <h5> 12) Lessons Learned and Knowledge Sharing</h5>
+
+                    <div class="row">
+                        <div class="col-lg-12 mt-3 d-flex">
+                            <label for="communication" class="pt-1">Could the communication of this problem and its fixes possibly prevent other departments or plants from incurring the same problem?</label>
+                            <div class="can-toggle margin mx-5">
+                                <input id="communication" type="checkbox">
+                                <label for="communication">
+                                    <div class="can-toggle__switch" data-checked="No" data-unchecked="Yes"></div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 mt-3">
+                            <div class="d-flex">
+                                <div class="form-group">
+                                    <label for="copy" class="pt-1">Copy of Problem Solving Report was sent to</label>
+                                    <input type="text" class="form-control color-placeholder mx-3" id="copy"
+                                        placeholder="Enter Name">
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="box mx-2">+</div>
+                                    <small class="add">Add More Member</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 mt-3 d-flex">
+                            <label for="relevant" class="pt-1">Have the relevant standard work/control/FMEA documents been updated?</label>
+                            <div class="can-toggle margin mx-5">
+                                <input id="relevant" type="checkbox">
+                                <label for="relevant">
+                                    <div class="can-toggle__switch" data-checked="No" data-unchecked="Yes"></div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="manager_confirmation" class="pt-1">Manager Confirmation:</label>
+                                <input type="text" class="form-control color-placeholder" id="manager_confirmation"
+                                    placeholder="Enter Name">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="manager_confirmation_date" class="pt-1">Manager Confirmation Date:</label>
+                                <input type="date" class="form-control ddate" id="manager_confirmation_date" name="manager_confirmation_date">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="operation_director" class="pt-1">Operations Director Confirmation:</label>
+                                <input type="text" class="form-control color-placeholder" id="operation_director"
+                                    placeholder="Enter Name">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="form-group">
+                                <label for="operation_director_date" class="pt-1">Operations Director Confirmation Date:</label>
+                                <input type="date" class="form-control ddate" id="operation_director_date" name="operation_director_date">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hr mt-4 mx-4"></div>
+
+                <div class="section-13 p-3">
+                    <div class=" mt-3 text-end button">
+                        <button type="button" class="btn btn-secondary">Save</button>
+                        <button type="button" class="btn btn-info">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-2 p-2 text-center">
+        Copyright © 2023 Goodpack Pte Ltd. All rights reserved
+    </footer>
+
+    <!-- js -->
+    <!-- bootsrap-bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,1918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap-icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <!-- table -->
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./custom.css">
+    <link rel="stylesheet" href="./perfectscrollbar.css">
+    <!-- js -->
+    <script src="./assests/js/script.js" defer></script>
+    <script src="./assests/js/graphline.js" defer></script>
+    <!-- d3 graph -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <!-- chart -->
+
+    <title>Phoneix</title>
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <nav class="nav">
+            <div class="container-fluid main-menu">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="logo d-flex">
+                            <img class="image mx-2" src="./assests/image/logo.png" alt="">
+                            <h4>Phoneix</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 text-center">
+                        <div class="constrain">
+                            <input class="input-grey-rounded" type="text" placeholder="Search">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-end">
+                        <i class="bi bi-bell mx-2"></i>
+                        <i class="bi bi-grid-3x3-gap-fill mx-2"></i>
+                        <img class="rounded-circle round-img mx-2" src="./assests/image/57.webp" alt="girl-image">
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+      
+            <div class="wrapper">
+                
+                    <div class="sidenav">
+                        <div class="nav-list" id="description">
+                            <ul class=" perfect-scrollbar">
+
+                                <li class="li">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingmenu">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapsemenu"
+                                                    aria-expanded="false" aria-controls="flush-collapsemenu">
+                                                    <div class="iocn-link">
+                                                        <div class="svg">
+                                                            <a href="#">
+                                                                <i class="menu-icon tf-icons bx bx-layout"></i>
+                                                                <span class="link_name">Home</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapsemenu" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingmenu"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul class="mm-collapse mm-show">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Without menu
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Without navbar
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon">
+                                                                </i>Container
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Fluid
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Blank
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Apps -->
+                                <li class="li">
+                                    <a href="#">
+                                        <span class="link_name color">APPS</span>
+                                    </a>
+                                </li>
+
+                                <li class="li">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingSetting">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseSetting"
+                                                    aria-expanded="false" aria-controls="flush-collapseSetting">
+                                                    <div class="iocn-link">
+                                                        <div class="svg">
+                                                            <a href="#">
+                                                                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                                                                <span class="link_name">E commerce</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseSetting" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingSetting"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul class="mm-collapse mm-show">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Account
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Notifications
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Connections
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingAuthentications">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#flush-collapseAuthentications"
+                                                    aria-expanded="false" aria-controls="flush-collapseAuthentications">
+                                                    <div class="iocn-link">
+                                                        <div class="svg">
+                                                            <a href="#">
+                                                                <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
+                                                                <span class="link_name">CRM</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseAuthentications" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingAuthentications"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul class="mm-collapse mm-show">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"> </i>Login
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Register
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Forgot Password
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li">
+                                    <h2 class="accordion-header" id="flush-headingChat">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseChat"
+                                            aria-expanded="false" aria-controls="flush-collapseChat">
+                                            <div class="iocn-link">
+                                                <div class="svg">
+                                                    <a href="#">
+                                                        <i class="menu-icon tf-icons bx bx-collection"></i>
+                                                        <span class="link_name">Chat</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </li>
+
+                                <li class="li">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingManage">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseManage"
+                                                    aria-expanded="false" aria-controls="flush-collapseManage">
+                                                    <div class="iocn-link">
+                                                        <div class="svg">
+                                                            <a href="#">
+                                                                <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                                                                <span class="link_name">Project Management</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseManage" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingManage"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul class="mm-collapse mm-show">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"> </i>Error
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Under Maintenance
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingEmail">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseEmail"
+                                                    aria-expanded="false" aria-controls="flush-collapseEmail">
+                                                    <div class="iocn-link">
+                                                        <div class="svg">
+                                                            <a href="#">
+                                                                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                                                                <span class="link_name">Email</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseEmail" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingEmail"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul class="mm-collapse mm-show">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Account
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Notifications
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Connections
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingEvents">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseEvents"
+                                                    aria-expanded="false" aria-controls="flush-collapseEvents">
+                                                    <div class="iocn-link">
+                                                        <div class="svg">
+                                                            <a href="#">
+                                                                <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
+                                                                <span class="link_name">Events</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseEvents" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingEvents"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul class="mm-collapse mm-show">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"> </i>Login
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Register
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Forgot Password
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingKanban">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseKanban"
+                                                    aria-expanded="false" aria-controls="flush-collapseKanban">
+                                                    <div class="iocn-link">
+                                                        <div class="svg">
+                                                            <a href="#">
+                                                                <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                                                                <span class="link_name">Kanban</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseKanban" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingKanban"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul class="mm-collapse mm-show">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"> </i>Error
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Under Maintenance
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingSocial">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseSocial"
+                                                    aria-expanded="false" aria-controls="flush-collapseSocial">
+                                                    <div class="iocn-link">
+                                                        <div class="svg">
+                                                            <a href="#">
+                                                                <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                                                                <span class="link_name">Social</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseSocial" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingSocial"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul class="mm-collapse mm-show">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"> </i>Error
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Under Maintenance
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li">
+                                    <h2 class="accordion-header" id="flush-headingCalendar">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseCalendar"
+                                            aria-expanded="false" aria-controls="flush-collapseCalendar">
+                                            <div class="iocn-link">
+                                                <div class="svg">
+                                                    <a href="#">
+                                                        <i class="menu-icon tf-icons bx bx-collection"></i>
+                                                        <span class="link_name">Calendar</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </li>
+
+                                <!-- Pages -->
+                                <li class="li">
+                                    <a href="#">
+                                        <span class="link_name color">PAGES</span>
+                                    </a>
+                                </li>
+
+                                <li class="li">
+                                    <h2 class="accordion-header" id="flush-headingStarter">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseStarter"
+                                            aria-expanded="false" aria-controls="flush-collapseStarter">
+                                            <div class="iocn-link">
+                                                <div class="svg">
+                                                    <a href="#">
+                                                        <i class="menu-icon tf-icons bx bx-collection"></i>
+                                                        <span class="link_name">Starter</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </li>
+
+                                <li class="li">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingFaq">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFaq"
+                                                    aria-expanded="false" aria-controls="flush-collapseFaq">
+                                                    <div class="iocn-link">
+                                                        <div class="svg">
+                                                            <a href="#">
+                                                                <i class="menu-icon tf-icons bx bx-box"></i>
+                                                                <span class="link_name">Faq</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseFaq" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingFaq"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul class="mm-collapse mm-show">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"> </i>Accordian
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Alerts
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Badges
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"> </i>Buttons
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Carousel
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Collapse
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"> </i>Dropdowns
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Footer
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>List groups
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"> </i>Modals
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Navbar
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Offcanvas
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"> </i>Paginationa & Breadcrumbs
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Progress
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Spinners
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"> </i>Tabs & Pills
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Toasts
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Tooltips & Popovers
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Typography
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingLanding">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseLanding"
+                                                    aria-expanded="false" aria-controls="flush-collapseLanding">
+                                                    <div class="iocn-link">
+                                                        <div class="svg">
+                                                            <a href="#">
+                                                                <i class="menu-icon tf-icons bx bx-copy"></i>
+                                                                <span class="link_name">Landing</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseLanding" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingLanding"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul class="mm-collapse mm-show">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"> </i>Perfect Scrollbar
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Text Divider
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li">
+                                    <h2 class="accordion-header" id="flush-headingNotifications">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseNotifications"
+                                            aria-expanded="false" aria-controls="flush-collapseNotifications">
+                                            <div class="iocn-link">
+                                                <div class="svg">
+                                                    <a href="#">
+                                                        <i class="menu-icon tf-icons bx bx-crown"></i>
+                                                        <span class="link_name">Notifications</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </li>
+
+                                <li class="li">
+                                    <h2 class="accordion-header" id="flush-headingMembers">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseMembers"
+                                            aria-expanded="false" aria-controls="flush-collapseMembers">
+                                            <div class="iocn-link">
+                                                <div class="svg">
+                                                    <a href="#">
+                                                        <i class="menu-icon tf-icons bx bx-crown"></i>
+                                                        <span class="link_name">Members</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </li>
+
+                                <li class="li">
+                                    <h2 class="accordion-header" id="flush-headingTimeline">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTimeline"
+                                            aria-expanded="false" aria-controls="flush-collapseTimeline">
+                                            <div class="iocn-link">
+                                                <div class="svg">
+                                                    <a href="#">
+                                                        <i class="menu-icon tf-icons bx bx-crown"></i>
+                                                        <span class="link_name">Timeline</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </li>
+
+                                <li class="li">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingErrors">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseErrors"
+                                                    aria-expanded="false" aria-controls="flush-collapseErrors">
+                                                    <div class="iocn-link">
+                                                        <div class="svg">
+                                                            <a href="#">
+                                                                <i class="menu-icon tf-icons bx bx-box"></i>
+                                                                <span class="link_name">Errors</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseErrors" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingErrors"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul class="mm-collapse mm-show">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"> </i>Accordian
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Alerts
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Badges
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"> </i>Buttons
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Carousel
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Collapse
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"> </i>Dropdowns
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Footer
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>List groups
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"> </i>Modals
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Navbar
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Offcanvas
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"> </i>Paginationa & Breadcrumbs
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Progress
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Spinners
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"> </i>Tabs & Pills
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Toasts
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Tooltips & Popovers
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Typography
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingAuthentication">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#flush-collapseAuthentication" aria-expanded="false"
+                                                    aria-controls="flush-collapseAuthentication">
+                                                    <div class="iocn-link">
+                                                        <div class="svg">
+                                                            <a href="#">
+                                                                <i class="menu-icon tf-icons bx bx-copy"></i>
+                                                                <span class="link_name">Authentication</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseAuthentication" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingAuthentication"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul class="mm-collapse mm-show">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"> </i>Perfect Scrollbar
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Text Divider
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingLayouts">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseLayouts"
+                                                    aria-expanded="false" aria-controls="flush-collapseLayouts">
+                                                    <div class="iocn-link">
+                                                        <div class="svg">
+                                                            <a href="#">
+                                                                <i class="menu-icon tf-icons bx bx-copy"></i>
+                                                                <span class="link_name">Layouts</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseLayouts" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingLayouts"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul class="mm-collapse mm-show">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"> </i>Perfect Scrollbar
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Text Divider
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                                <!-- MODULES -->
+                                <li class="li">
+                                    <a href="#">
+                                        <span class="link_name color">Modules</span>
+                                    </a>
+                                </li>
+
+                                <li class="li">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingForms">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseForms"
+                                                    aria-expanded="false" aria-controls="flush-collapseForms">
+                                                    <div class="iocn-link">
+                                                        <div class="svg">
+                                                            <a href="#">
+                                                                <i class="menu-icon tf-icons bx bx-detail"></i>
+                                                                <span class="link_name">Forms</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseForms" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingForms"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul class="mm-collapse mm-show">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Basic Inputs
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Input groups
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingIcons">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseIcons"
+                                                    aria-expanded="false" aria-controls="flush-collapseIcons">
+                                                    <div class="iocn-link">
+                                                        <div class="svg">
+                                                            <a href="#">
+                                                                <i class="menu-icon tf-icons bx bx-detail"></i>
+                                                                <span class="link_name">Icons</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseIcons" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingIcons"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul class="mm-collapse mm-show">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Vertical Form
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Horizontal Form
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingTables">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTables"
+                                                    aria-expanded="false" aria-controls="flush-collapseTables">
+                                                    <div class="iocn-link">
+                                                        <div class="svg">
+                                                            <a href="#">
+                                                                <i class="menu-icon tf-icons bx bx-detail"></i>
+                                                                <span class="link_name">Tables</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseTables" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingTables"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul class="mm-collapse mm-show">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Basic Inputs
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Input groups
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingECharts">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseECharts"
+                                                    aria-expanded="false" aria-controls="flush-collapseECharts">
+                                                    <div class="iocn-link">
+                                                        <div class="svg">
+                                                            <a href="#">
+                                                                <i class="menu-icon tf-icons bx bx-detail"></i>
+                                                                <span class="link_name">ECharts</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseECharts" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingECharts"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul class="mm-collapse mm-show">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Vertical Form
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Horizontal Form
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingComponents">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseComponents"
+                                                    aria-expanded="false" aria-controls="flush-collapseComponents">
+                                                    <div class="iocn-link">
+                                                        <div class="svg">
+                                                            <a href="#">
+                                                                <i class="menu-icon tf-icons bx bx-detail"></i>
+                                                                <span class="link_name">Components</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseComponents" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingComponents"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul class="mm-collapse mm-show">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Basic Inputs
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Input groups
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingUtilities">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseUtilities"
+                                                    aria-expanded="false" aria-controls="flush-collapseUtilities">
+                                                    <div class="iocn-link">
+                                                        <div class="svg">
+                                                            <a href="#">
+                                                                <i class="menu-icon tf-icons bx bx-detail"></i>
+                                                                <span class="link_name">Utilities</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseUtilities" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingUtilities"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul class="mm-collapse mm-show">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Vertical Form
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Horizontal Form
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li">
+                                    <h2 class="accordion-header" id="flush-headingWidgets">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseWidgets"
+                                            aria-expanded="false" aria-controls="flush-collapseWidgets">
+                                            <div class="iocn-link">
+                                                <div class="svg">
+                                                    <a href="#">
+                                                        <i class="menu-icon tf-icons bx bx-table"></i>
+                                                        <span class="link_name">Widgets</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </li>
+
+                                <li class="li">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingMulti">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseMulti"
+                                                    aria-expanded="false" aria-controls="flush-collapseMulti">
+                                                    <div class="iocn-link">
+                                                        <div class="svg">
+                                                            <a href="#">
+                                                                <i class="menu-icon tf-icons bx bx-detail"></i>
+                                                                <span class="link_name">Multi level</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseMulti" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingMulti"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul class="mm-collapse mm-show">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Vertical Form
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Horizontal Form
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Documentation -->
+                                <li class="li">
+                                    <a href="#">
+                                        <span class="link_name color">DOCUMENTATION</span>
+                                    </a>
+                                </li>
+
+                                <li class="li">
+                                    <h2 class="accordion-header" id="flush-headingGetting">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseGetting"
+                                            aria-expanded="false" aria-controls="flush-collapseGetting">
+                                            <div class="iocn-link">
+                                                <div class="svg">
+                                                    <a href="#">
+                                                        <i class="menu-icon tf-icons bx bx-support"></i>
+                                                        <span class="link_name">Getting started</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </li>
+
+                                <li class="li">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingCustomization">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#flush-collapseCustomization" aria-expanded="false"
+                                                    aria-controls="flush-collapseCustomization">
+                                                    <div class="iocn-link">
+                                                        <div class="svg">
+                                                            <a href="#">
+                                                                <i class="menu-icon tf-icons bx bx-detail"></i>
+                                                                <span class="link_name">Customization</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseCustomization" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingCustomization"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul class="mm-collapse mm-show">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Vertical Form
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Horizontal Form
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingLayouts">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseLayouts"
+                                                    aria-expanded="false" aria-controls="flush-collapseLayouts">
+                                                    <div class="iocn-link">
+                                                        <div class="svg">
+                                                            <a href="#">
+                                                                <i class="menu-icon tf-icons bx bx-detail"></i>
+                                                                <span class="link_name">Layouts doc</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseLayouts" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingLayouts"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul class="mm-collapse mm-show">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Vertical Form
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="metismenu-icon"></i>Horizontal Form
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li">
+                                    <h2 class="accordion-header" id="flush-headingGulp">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseGulp"
+                                            aria-expanded="false" aria-controls="flush-collapseGulp">
+                                            <div class="iocn-link">
+                                                <div class="svg">
+                                                    <a href="#">
+                                                        <i class="menu-icon tf-icons bx bx-file"></i>
+                                                        <span class="link_name">Gulp</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </li>
+
+                                <li class="li">
+                                    <h2 class="accordion-header" id="flush-headingDesign">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseDesign"
+                                            aria-expanded="false" aria-controls="flush-collapseDesign">
+                                            <div class="iocn-link">
+                                                <div class="svg">
+                                                    <a href="#">
+                                                        <i class="menu-icon tf-icons bx bx-support"></i>
+                                                        <span class="link_name">Design file</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </li>
+
+                                <li class="li">
+                                    <h2 class="accordion-header" id="flush-headingChangelog">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseChangelog"
+                                            aria-expanded="false" aria-controls="flush-collapseChangelog">
+                                            <div class="iocn-link">
+                                                <div class="svg">
+                                                    <a href="#">
+                                                        <i class="menu-icon tf-icons bx bx-file"></i>
+                                                        <span class="link_name">Changelog</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </li>
+
+                                <li class="li">
+                                    <h2 class="accordion-header" id="flush-headingShowcase">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseShowcase"
+                                            aria-expanded="false" aria-controls="flush-collapseShowcase">
+                                            <div class="iocn-link">
+                                                <div class="svg">
+                                                    <a href="#">
+                                                        <i class="menu-icon tf-icons bx bx-file"></i>
+                                                        <span class="link_name">Showcase</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                <div class="custom-container mt-3 pt-4">
+                    <div class="container bg-color">
+                        <div class="layout-body mt-5">
+                                        <h1>Ecommerce Dashboard</h1>
+                                        <p>Here’s what’s going on at your business right now</p>
+                               
+
+                                <div class="row mt-5">
+                                    <div class="col-lg-3">
+                                        <h5>57 new orders</h5>
+                                        <p>Awating processing</p>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <h5>5 orders</h5>
+                                        <p>On hold</p>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <h5>15 products</h5>
+                                        <p>Out of stock</p>
+                                    </div>
+                                </div>
+
+                            <div class="line"></div>
+
+                           
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h3>Total Sells</h3>
+                                        <p>Payment received across all channels</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <select class="form-select form-select-sm mt-2">
+                                            <option>Mar 1 - 31, 2022</option>
+                                            <option>April 1 - 30, 2022</option>
+                                            <option>May 1 - 31, 2022</option>
+                                        </select>
+                                    </div>
+                                </div>
+                           
+
+                            <div id="my_dataviz"></div>
+
+                            
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="card-head d-flex justify-content-between">
+                                                    <div class="card-left">
+                                                        <h3>Total orders</h3>
+                                                        <p>Last 7 days</p>
+                                                    </div>
+
+                                                    <div class="card-right">
+                                                        <h3>16,247</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <canvas id="myChart4"></canvas>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="card">
+                                            <div class="card-head d-flex justify-content-between p-3">
+                                                <div class="card-left">
+                                                    <h3>Total orders</h3>
+                                                    <p>Last 7 days</p>
+                                                </div>
+
+                                                <div class="card-right">
+                                                    <h3>16,247</h3>
+                                                </div>
+                                            </div>
+
+                                            <canvas class="mt-2" id="myChart3"></canvas>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 mt-5">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="card-head d-flex justify-content-between">
+                                                    <div class="card-left">
+                                                        <h3>Total orders</h3>
+                                                        <p>Last 7 days</p>
+                                                    </div>
+
+                                                    <div class="card-right">
+                                                        <h3>16,247</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="my_dountgraph"></div>
+
+                                            <div class="pt-2 mt-1">
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <div class="bullet-item bg-primary me-2"></div>
+                                                    <h6 class="text-900 fw-semi-bold flex-1 mb-0">Percentage discount
+                                                    </h6>
+                                                    <h6 class="text-900 fw-semi-bold mb-0">72%</h6>
+                                                </div>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <div class="bullet-item bg-primary-200 me-2"></div>
+                                                    <h6 class="text-900 fw-semi-bold flex-1 mb-0">Fixed card discount
+                                                    </h6>
+                                                    <h6 class="text-900 fw-semi-bold mb-0">18%</h6>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="bullet-item bg-info-500 me-2"></div>
+                                                    <h6 class="text-900 fw-semi-bold flex-1 mb-0">Fixed product discount
+                                                    </h6>
+                                                    <h6 class="text-900 fw-semi-bold mb-0">10%</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="col-lg-6 mt-5">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="card-head d-flex justify-content-between">
+                                                    <div class="card-left">
+                                                        <h3>Total orders</h3>
+                                                        <p>Last 7 days</p>
+                                                    </div>
+
+                                                    <div class="card-right">
+                                                        <h3>16,247</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress-circle">
+                                                <div class="barOverflow">
+                                                    <div class="bar"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="mt-5">
+                                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                                    <!-- <div class="bullet-item bg-primary me-2"></div> -->
+                                                    <h6 class="text-900 fw-semi-bold flex-1 mb-0">Paying customer</h6>
+                                                    <h6 class="text-900 fw-semi-bold mb-0">30%</h6>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <!-- <div class="bullet-item bg-primary-100 me-2"></div> -->
+                                                    <h6 class="text-900 fw-semi-bold flex-1 mb-0">Non-paying customer
+                                                    </h6>
+                                                    <h6 class="text-900 fw-semi-bold me-0">70%</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 filter-table bg-white mt-5">
+                        <div id="example_wrapper" class="dataTables_wrapper dt-bootstrap5">
+                            <div class="row dt-row" style="overflow-x:auto;">
+                                <div class="col-sm-12">
+                                    <table id="example" class="table dataTable" aria-describedby="example_info">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <div class="form-check mb-0 fs-0"><input class="form-check-input"
+                                                            id="checkbox-bulk-reviews-select" type="checkbox"
+                                                            data-bulk-select="{&quot;body&quot;:&quot;table-latest-review-body&quot;}">
+                                                    </div>
+                                                </th>
+                                                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1"
+                                                    colspan="1"
+                                                    aria-label="Position: activate to sort column ascending">Product
+                                                </th>
+                                                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1"
+                                                    colspan="1" aria-label="Office: activate to sort column ascending">
+                                                    Customer</th>
+                                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example"
+                                                    rowspan="1" colspan="1"
+                                                    aria-label="Age: activate to sort column descending"
+                                                    aria-sort="ascending">Rating</th>
+                                                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1"
+                                                    colspan="1" aria-label="Salary: activate to sort column ascending">
+                                                    Review</th>
+                                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example"
+                                                    rowspan="1" colspan="1"
+                                                    aria-label="Age: activate to sort column descending"
+                                                    aria-sort="ascending">Status</th>
+                                                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1"
+                                                    colspan="1" aria-label="Salary: activate to sort column ascending">
+                                                    Time</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="odd">
+                                                <td>
+                                                    <div class="form-check mb-0 fs-0"><input class="form-check-input"
+                                                            id="checkbox-bulk-reviews-select" type="checkbox"
+                                                            data-bulk-select="{&quot;body&quot;:&quot;table-latest-review-body&quot;}">
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <img src="./assests/image/product/15.png" alt=""><a class="fw"
+                                                        href="https://prium.github.io/phoenix/v1.13.0/apps/e-commerce/landing/product-details.html">Sony
+                                                        X85J 75 Inch Sony 4K Ultra HD LED Smart G...</a>
+                                                </td>
+                                                <td class="fw">Richard Dawkins</td>
+                                                <td>*****</td>
+                                                <td class="sorting_1 fw">This Fitbit is fantastic! I was trying to be in
+                                                    better
+                                                    shape and needed some motivation, so I decided to treat myself to a
+                                                    new Fitbit.
+                                                </td>
+                                                <td class="fw">Approved</td>
+                                                <td class="fw">time</td>
+                                            </tr>
+                                            <tr class="even">
+                                                <td>
+                                                    <div class="form-check mb-0 fs-0"><input class="form-check-input"
+                                                            id="checkbox-bulk-reviews-select" type="checkbox"
+                                                            data-bulk-select="{&quot;body&quot;:&quot;table-latest-review-body&quot;}">
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <img src="./assests/image/product/2.png" alt=""><a
+                                                        href="https://prium.github.io/phoenix/v1.13.0/apps/e-commerce/landing/product-details.html">Apple
+                                                        MacBook Pro 13 inch-M1-8/256GB-space</a>
+                                                </td>
+                                                <td>Ashley Garrett</td>
+                                                <td>*****</td>
+                                                <td class="sorting_1">The order was delivered ahead of schedule. To give
+                                                    us
+                                                    additional time, you should leave the packaging sealed with plastic.
+                                                </td>
+                                                <td>Approved</td>
+                                                <td>time</td>
+                                            </tr>
+                                            <tr class="odd">
+                                                <td>
+                                                    <div class="form-check mb-0 fs-0"><input class="form-check-input"
+                                                            id="checkbox-bulk-reviews-select" type="checkbox"
+                                                            data-bulk-select="{&quot;body&quot;:&quot;table-latest-review-body&quot;}">
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <img src="./assests/image/product/3.png" alt=""><a
+                                                        href="https://prium.github.io/phoenix/v1.13.0/apps/e-commerce/landing/product-details.html">Apple
+                                                        iMac 24" 4K Retina Display M1 8 Core CPU...</a>
+                                                </td>
+                                                <td>Richard Dawkins</td>
+                                                <td>*****</td>
+                                                <td class="sorting_1">It's a Mac, after all. Once you've gone Mac,
+                                                    there's no going
+                                                    back. My first Mac lasted over nine years, and this is my second.
+                                                </td>
+                                                <td>Approved</td>
+                                                <td>time</td>
+                                            </tr>
+                                            <tr class="even">
+                                                <td>
+                                                    <div class="form-check mb-0 fs-0"><input class="form-check-input"
+                                                            id="checkbox-bulk-reviews-select" type="checkbox"
+                                                            data-bulk-select="{&quot;body&quot;:&quot;table-latest-review-body&quot;}">
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <img src="./assests/image/product/4.png" alt=""><a
+                                                        href="https://prium.github.io/phoenix/v1.13.0/apps/e-commerce/landing/product-details.html">Razer
+                                                        Kraken v3 x Wired 7.1 Surroung Sound Gam...</a>
+                                                </td>
+                                                <td>Richard Dawkins</td>
+                                                <td>*****</td>
+                                                <td class="sorting_1">Personally, I like the minimalist style, but I
+                                                    wouldn't choose
+                                                    it if I were searching for a computer that I would use frequently.
+                                                    It's...See
+                                                    more</td>
+                                                <td>Approved</td>
+                                                <td>time</td>
+                                            </tr>
+                                            <tr class="odd">
+                                                <td>
+                                                    <div class="form-check mb-0 fs-0"><input class="form-check-input"
+                                                            id="checkbox-bulk-reviews-select" type="checkbox"
+                                                            data-bulk-select="{&quot;body&quot;:&quot;table-latest-review-body&quot;}">
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <img src="./assests/image/product/5.png" alt=""><a
+                                                        href="https://prium.github.io/phoenix/v1.13.0/apps/e-commerce/landing/product-details.html">PlayStation
+                                                        5 DualSense Wireless Controller</a>
+                                                </td>
+                                                <td>Richard Dawkins</td>
+                                                <td>*****</td>
+                                                <td class="sorting_1">It performs exactly as expected. There are three
+                                                    of these in
+                                                    the family.</td>
+                                                <td>Approved</td>
+                                                <td>time</td>
+                                            </tr>
+                                            <tr class="even">
+                                                <td>
+                                                    <div class="form-check mb-0 fs-0"><input class="form-check-input"
+                                                            id="checkbox-bulk-reviews-select" type="checkbox"
+                                                            data-bulk-select="{&quot;body&quot;:&quot;table-latest-review-body&quot;}">
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <img src="./assests/image/product/6.png" alt=""><a
+                                                        href="https://prium.github.io/phoenix/v1.13.0/apps/e-commerce/landing/product-details.html">2021
+                                                        Apple 12.9-inch iPad Pro (Wi‑Fi, 128GB) -...</a>
+                                                </td>
+                                                <td>Richard Dawkins</td>
+                                                <td>*****</td>
+                                                <td class="sorting_1">The controller is quite comfy for me. Despite its
+                                                    increased
+                                                    size, the controller still fits well in my hands</td>
+                                                <td>Approved</td>
+                                                <td>time</td>
+                                            </tr>
+                                            <tr class="odd">
+                                                <td>
+                                                    <div class="form-check mb-0 fs-0"><input class="form-check-input"
+                                                            id="checkbox-bulk-reviews-select" type="checkbox"
+                                                            data-bulk-select="{&quot;body&quot;:&quot;table-latest-review-body&quot;}">
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <img src="./assests/image/product/7.png" alt=""><a
+                                                        href="https://prium.github.io/phoenix/v1.13.0/apps/e-commerce/landing/product-details.html">Amazon
+                                                        Basics Matte Black Wired Keyboard - US ...</a>
+                                                </td>
+                                                <td>Richard Dawkins</td>
+                                                <td>*****</td>
+                                                <td class="sorting_1">The response time and service I received when
+                                                    contacted the
+                                                    designers were Phenomenal!</td>
+                                                <td>Approved</td>
+                                                <td>time</td>
+                                            </tr>
+                                            <tr class="even">
+                                                <td>
+                                                    <div class="form-check mb-0 fs-0"><input class="form-check-input"
+                                                            id="checkbox-bulk-reviews-select" type="checkbox"
+                                                            data-bulk-select="{&quot;body&quot;:&quot;table-latest-review-body&quot;}">
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <img src="./assests/image/product/8.png" alt=""><a
+                                                        href="https://prium.github.io/phoenix/v1.13.0/apps/e-commerce/landing/product-details.html">Amazon
+                                                        Basics Mesh, Mid-Back, Swivel Office De...</a>
+                                                </td>
+                                                <td>Richard Dawkins</td>
+                                                <td>*****</td>
+                                                <td class="sorting_1">I have started using this theme in the last week
+                                                    and it has
+                                                    really impressed me very much, the support is second to none.</td>
+                                                <td>Approved</td>
+                                                <td>time</td>
+                                            </tr>
+                                            <tr class="odd">
+                                                <td>
+                                                    <div class="form-check mb-0 fs-0"><input class="form-check-input"
+                                                            id="checkbox-bulk-reviews-select" type="checkbox"
+                                                            data-bulk-select="{&quot;body&quot;:&quot;table-latest-review-body&quot;}">
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <img src="./assests/image/product/9.png" alt=""><a
+                                                        href="https://prium.github.io/phoenix/v1.13.0/apps/e-commerce/landing/product-details.html">Apple
+                                                        Magic Mouse (Wireless, Rechargable) - Si...</a>
+                                                </td>
+                                                <td>Richard Dawkins</td>
+                                                <td>*****</td>
+                                                <td class="sorting_1">The best experience we could hope for. Customer
+                                                    service team
+                                                    is amazing and the quality of their products is unsurpassed. Great
+                                                    theme ...See
+                                                    more</td>
+                                                <td>Approved</td>
+                                                <td>time</td>
+                                            </tr>
+                                            <tr class="even">
+                                                <td>
+                                                    <div class="form-check mb-0 fs-0"><input class="form-check-input"
+                                                            id="checkbox-bulk-reviews-select" type="checkbox"
+                                                            data-bulk-select="{&quot;body&quot;:&quot;table-latest-review-body&quot;}">
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <img src="./assests/image/product/10.png" alt=""><a
+                                                        href="https://prium.github.io/phoenix/v1.13.0/apps/e-commerce/landing/product-details.html">Echo
+                                                        Dot (4th Gen) _ Smart speaker with Alexa ...</a>
+                                                </td>
+                                                <td>Richard Dawkins</td>
+                                                <td>*****</td>
+                                                <td class="sorting_1">This template has allowed me to convert my
+                                                    existing web app
+                                                    into a great looking, easy to use UI in less than 2 weeks. Very easy
+                                                    to us...See
+                                                    more</td>
+                                                <td>Approved</td>
+                                                <td>time</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <!-- <tr>
+                                            <th rowspan="1" colspan="1">Name</th>
+                                            <th rowspan="1" colspan="1">Position</th>
+                                            <th rowspan="1" colspan="1">Office</th>
+                                            <th rowspan="1" colspan="1">Age</th>
+                                            <th rowspan="1" colspan="1">Start date</th>
+                                            <th rowspan="1" colspan="1">Salary</th>
+                                        </tr> -->
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-12 pt-5 background-color">
+                        <div class="row">
+                            <div class="col-lg-6">
+                               <h3>Top regions by revenue</h3>
+                               <p>Where you generated most of the revenue</p>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="responsive-map">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.7806761080233!2d-93.29138368446431!3d44.96844997909819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32b6ee2c87c91%3A0xc20dff2748d2bd92!2sWalker+Art+Center!5e0!3m2!1sen!2sus!4v1514524647889" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                     <div class="col-lg-12 mt-5">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="graph">
+                                    <div class="project">
+                                        <h3>Projection vs actual</h3>
+                                        <p>Actual earnings vs projected earnings</p>
+                                    </div>
+                                    <div class="revenue d-flex">
+                                        <h6>Projected Revenue</h6>
+                                        <h6>Actual Revenue</h6>
+                                    </div>
+
+                                    <div id="myChart7"></div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+
+            </div>
+
+    </div>
+
+
+    <!-- js -->
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- js bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="./perfectscrollbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        // for doughnut graph
+        // set the dimensions and margins of the graph
+        var width = 100
+        height = 100
+        margin = 10
+
+        // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
+        var radius = Math.min(width, height) / 2 - margin
+
+        // append the svg object to the div called 'my_dataviz'
+        var svg = d3.select("#my_dountgraph")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .append("g")
+            .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+        // Create dummy data
+        var data = { a: 8, b: 20, c: 30 }
+
+        // set the color scale
+        var color = d3.scaleOrdinal()
+            .domain(data)
+            .range(["#adc5ff", "#0281c7", "#3874ff"])
+
+        // Compute the position of each group on the pie:
+        var pie = d3.pie()
+            .value(function (d) { return d.value; })
+        var data_ready = pie(d3.entries(data))
+
+        // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+        svg
+            .selectAll('whatever')
+            .data(data_ready)
+            .enter()
+            .append('path')
+            .attr('d', d3.arc()
+                .innerRadius(50)         // This is the size of the donut hole
+                .outerRadius(radius)
+            )
+            .attr('fill', function (d) { return (color(d.data.key)) })
+            .attr("stroke", "none")
+            .style("stroke-width", "1px")
+            .style("opacity", 0.7)
+    </script>
+</body>
+
+</html>
